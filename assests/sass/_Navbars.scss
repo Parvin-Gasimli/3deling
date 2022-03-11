@@ -39,6 +39,9 @@ nav {
         h1 {
             font-weight: 400;
             font-size: 70px;
+            @media (max-width:768px) {
+                font-size: 34px;
+            }
 
             span {
                 color: $DarkBlue;
@@ -52,6 +55,11 @@ nav {
             padding: 8px 2px;
             text-transform: uppercase;
             border: 1px solid $WhiteColor;
+            @media (max-width:768px) {
+                width: 147px;
+                height: 42px;
+                
+            }
         }
     }
 }

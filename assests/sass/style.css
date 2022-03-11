@@ -47,6 +47,12 @@ nav .BackGrondtext h1 {
   font-size: 70px;
 }
 
+@media (max-width: 768px) {
+  nav .BackGrondtext h1 {
+    font-size: 34px;
+  }
+}
+
 nav .BackGrondtext h1 span {
   color: #1794DB;
 }
@@ -59,6 +65,13 @@ nav .BackGrondtext button {
   padding: 8px 2px;
   text-transform: uppercase;
   border: 1px solid #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  nav .BackGrondtext button {
+    width: 147px;
+    height: 42px;
+  }
 }
 
 #Application {
@@ -377,6 +390,219 @@ nav .BackGrondtext button {
 
 #WORKFLOW .TextWorkFlow p {
   font-size: 1rem;
+}
+
+#OurProduct {
+  font-family: "Raleway";
+}
+
+#OurProduct h1 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+
+#OurProduct .ProductItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#OurProduct .ProductItem .ProductLogo img {
+  width: 170px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#OurProduct .ProductItem h5 {
+  display: inline-block;
+}
+
+#OurProduct .ProductItem p {
+  font-size: 1rem;
+}
+
+#Promotion .Logo {
+  max-width: 100%;
+}
+
+#Promotion .Logo img {
+  max-width: 100%;
+  cursor: pointer;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  opacity: 0.7;
+}
+
+#Promotion .Logo img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  #Promotion .Logo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+#Isotope {
+  font-family: "Raleway";
+  /* ********* SASS EXTENDS  ********* */
+  /* ********* SASS FUNCTIONS ********* */
+  /* ********* SASS MIXINS ********* */
+  /* FILTERS */
+  /* LIST */
+}
+
+#Isotope .content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#Isotope .header {
+  margin-bottom: 2.25em;
+  text-align: center;
+}
+
+#Isotope h1 {
+  margin-bottom: 0.1875em;
+  line-height: 1;
+  font-family: "Asap", sans-serif;
+  font-weight: 500;
+  color: black;
+}
+
+#Isotope h2 {
+  font-weight: 400;
+}
+
+#Isotope .copyright {
+  font-style: italic;
+}
+
+#Isotope .content {
+  text-align: center;
+}
+
+#Isotope p {
+  margin-bottom: 0.375em;
+}
+
+#Isotope ul {
+  margin-bottom: 1em;
+  list-style: none;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#Isotope .button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  font-family: "Asap", sans-serif;
+}
+
+#Isotope button {
+  margin: 0.5em;
+  padding: 0.5em;
+  border: 1px solid #393838;
+  color: #393838;
+  background: none;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  font-size: 0.875em;
+}
+
+#Isotope button.is-active {
+  background: #393838;
+  color: #ffffff;
+}
+
+#Isotope .list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#Isotope .list__item {
+  display: block;
+  width: 100%;
+  height: 18em;
+  overflow: hidden;
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: white;
+  -webkit-box-shadow: 0 0 2px rgba(57, 56, 56, 0.2);
+          box-shadow: 0 0 2px rgba(57, 56, 56, 0.2);
+}
+
+#Isotope .list__item__title {
+  display: block;
+  margin-top: 30%;
+}
+
+@media screen and (min-width: 600px) {
+  #Isotope .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #Isotope .list__item {
+    width: calc(33% - 1em);
+    margin-right: 1em;
+  }
+  #Isotope .list__item:nth-child(3n) {
+    clear: left;
+  }
+  #Isotope .list__item:nth-child(-n + 2) {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #Isotope button {
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  #Isotope .list__item {
+    width: calc(20% - 1em);
+  }
+  #Isotope .list__item:nth-child(2n) {
+    margin-right: 1em;
+  }
+  #Isotope .list__item:nth-child(3n) {
+    clear: none;
+    margin-right: 0;
+  }
+  #Isotope .list__item:nth-child(4n) {
+    clear: left;
+  }
+  #Isotope .list__item:nth-child(-n + 3) {
+    margin-top: 0;
+  }
 }
 
 *, *::before, *::after {

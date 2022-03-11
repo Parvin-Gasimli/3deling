@@ -1,0 +1,21 @@
+#Promotion{
+    .Logo{
+        max-width: 100%;
+        img{
+            max-width: 100%;
+            cursor: pointer;
+            filter: grayscale(1);
+            transition: .2s all;
+            opacity: 0.7;
+            &:hover{
+                filter: grayscale(0);
+                opacity: 1;
+            }
+        }
+        @media (max-width:768px) {
+            text-align: center;
+            margin-bottom: 10px;
+            
+        }
+    }
+}

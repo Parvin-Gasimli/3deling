@@ -1,0 +1,25 @@
+#OurProduct {
+    font-family: $FirstFontfamily;
+    h1 {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 600;
+        padding: 10px 0px
+    }
+    .ProductItem {
+        @include Flex(none, center, column);
+        .ProductLogo {
+            img {
+                width: 170px !important;
+                object-fit: cover;
+            }
+        }
+
+        h5 {
+            display: inline-block;
+        }
+        p {
+            font-size: $textFont;
+        }
+    }
+}
