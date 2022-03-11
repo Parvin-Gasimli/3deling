@@ -1,0 +1,44 @@
+@mixin Flex($justify,$alignItems,$flexDirection) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $alignItems;
+    flex-direction: $flexDirection;
+}
+@mixin BeforeBg {
+    top: 10px;
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 200px;
+  
+    left: 117px;
+    background-color: $grayColor;
+}
+@mixin AfterBg {
+    top: 10px;
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 200px;
+  
+    right: 117px;
+    background-color: $grayColor;
+}
+@mixin BeforeBgAbout3Deling {
+    top: 41px;
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 240px;
+    left: 200px;
+    background-color: $grayColor;
+}
+@mixin AfterBgAbout3Deling {
+    top: 41px;
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 240px;
+    right: 200px;
+    background-color: $grayColor;
+}

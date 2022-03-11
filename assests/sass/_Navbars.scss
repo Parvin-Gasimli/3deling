@@ -1,0 +1,57 @@
+nav {
+    font-family: $FirstFontfamily;
+    height: 650px;
+    .Logoimg {
+        margin-top: 30px;
+        img {
+            width: 100px;
+            height: 43px;
+            object-fit: cover;
+        }
+    }
+    .Menu {
+        ul {
+            margin-top: 30px;
+
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            li {
+                a {
+                    text-decoration: none;
+                    color: $WhiteColor;
+                    font-family: $FirstFontfamily;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: $textFont;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    .BackGrondtext {
+        p {
+            display: inline-block;
+            color: $WhiteColor;
+            font-size: $textFont;
+            border-bottom: 1px solid $WhiteColor;
+        }
+        h1 {
+            font-weight: 400;
+            font-size: 70px;
+
+            span {
+                color: $DarkBlue;
+            }
+        }
+        button {
+            background: transparent;
+            width: 210px;
+            height: 51px;
+            color: $WhiteColor;
+            padding: 8px 2px;
+            text-transform: uppercase;
+            border: 1px solid $WhiteColor;
+        }
+    }
+}

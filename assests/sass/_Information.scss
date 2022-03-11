@@ -1,0 +1,37 @@
+#ABOUT3DELING {
+    #Information {
+        margin-top: 10px;
+        padding-top: 20px;
+        h6 {
+            letter-spacing: 0.5px;
+        }
+
+        .Info {
+            display: flex;
+            .InfoHead {
+                margin-left: 25px;
+            }
+            i {
+                font-size: 20px;
+                color: $RedColor;
+            }
+            h5 {
+                font-size: 20px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: .2s all;
+                &:hover{
+                    color: $RedColor;
+                }
+            }
+            p {
+                font-size: $textFont;
+            }
+            a {
+                text-decoration: none;
+                color: $RedColor;
+                font-weight: 600;
+            }
+        }
+    }
+}
