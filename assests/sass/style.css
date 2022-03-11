@@ -433,10 +433,6 @@ nav .BackGrondtext button {
   font-size: 1rem;
 }
 
-#Promotion .Logo {
-  width: 300px;
-}
-
 #Promotion .Logo img {
   max-width: 100%;
   cursor: pointer;
@@ -458,6 +454,18 @@ nav .BackGrondtext button {
     text-align: center;
     margin-bottom: 20px;
   }
+}
+
+#Promotion .col-lg-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #Isotope {
