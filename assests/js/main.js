@@ -1,3 +1,20 @@
+AOS.init({
+  offset: 120,
+  delay: 120,
+  easing: 'ease',
+  duration: 1200,
+  disable: false,
+  once: false,
+  mirror: false,
+  anchorPlacement: 'top-bottom',
+  startEvent: 'DOMContentLoaded',
+  animatedClassName: 'aos-animate',
+  initClassName: 'aos-init',
+  useClassNames: false,
+  disableMutationObserver: false,
+  throttleDelay: 99,
+  debounceDelay: 50
+});
 var elem = document.querySelector('.grid');
 var iso = new Isotope( elem, {
   // options
