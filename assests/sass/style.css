@@ -91,8 +91,32 @@ nav .BackGrondtext button {
   position: absolute;
   height: 19px;
   width: 200px;
-  left: 117px;
+  left: 87px;
   background-color: #C4C4C4;
+}
+
+@media (max-width: 1200px) {
+  #Application h1::before {
+    top: 10px;
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 200px;
+    left: -65px;
+    background-color: #C4C4C4;
+  }
+}
+
+@media (max-width: 992px) {
+  #Application h1::before {
+    top: 15px;
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 86px;
+    left: -46px;
+    background-color: #C4C4C4;
+  }
 }
 
 @media (max-width: 768px) {
@@ -107,8 +131,32 @@ nav .BackGrondtext button {
   position: absolute;
   height: 19px;
   width: 200px;
-  right: 117px;
+  right: 87px;
   background-color: #C4C4C4;
+}
+
+@media (max-width: 1200px) {
+  #Application h1::after {
+    top: 10px;
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 200px;
+    right: -65px;
+    background-color: #C4C4C4;
+  }
+}
+
+@media (max-width: 992px) {
+  #Application h1::after {
+    top: 15px;
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 86px;
+    right: -46px;
+    background-color: #C4C4C4;
+  }
 }
 
 @media (max-width: 768px) {
@@ -242,6 +290,28 @@ nav .BackGrondtext button {
   background-color: #C4C4C4;
 }
 
+@media (max-width: 1200px) {
+  #ABOUT3DELING .HeadAbout3Deling h2::before {
+    top: 41px;
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 240px;
+    left: 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  #ABOUT3DELING .HeadAbout3Deling h2::before {
+    top: 41px;
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 200px;
+    left: -40px;
+  }
+}
+
 @media (max-width: 768px) {
   #ABOUT3DELING .HeadAbout3Deling h2::before {
     display: none;
@@ -256,6 +326,28 @@ nav .BackGrondtext button {
   width: 240px;
   right: 200px;
   background-color: #C4C4C4;
+}
+
+@media (max-width: 1200px) {
+  #ABOUT3DELING .HeadAbout3Deling h2::after {
+    top: 41px;
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 240px;
+    right: 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  #ABOUT3DELING .HeadAbout3Deling h2::after {
+    top: 41px;
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 200px;
+    right: -40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -359,7 +451,29 @@ nav .BackGrondtext button {
   height: 19px;
   width: 240px;
   left: 66px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
+}
+
+@media (max-width: 1300px) {
+  #WORKFLOW h1::before {
+    top: 7px;
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 200px;
+    left: -105px;
+  }
+}
+
+@media (max-width: 992px) {
+  #WORKFLOW h1::before {
+    top: 10px;
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 124px;
+    left: -114px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -375,7 +489,29 @@ nav .BackGrondtext button {
   height: 19px;
   width: 240px;
   right: 66px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
+}
+
+@media (max-width: 1300px) {
+  #WORKFLOW h1::after {
+    top: 7px;
+    content: "";
+    position: absolute;
+    height: 19px;
+    width: 200px;
+    right: -100px;
+  }
+}
+
+@media (max-width: 992px) {
+  #WORKFLOW h1::after {
+    top: 10px;
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 124px;
+    right: -114px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -470,11 +606,16 @@ nav .BackGrondtext button {
 
 #Isotope {
   font-family: "Raleway";
-  /* ********* SASS EXTENDS  ********* */
   /* ********* SASS FUNCTIONS ********* */
   /* ********* SASS MIXINS ********* */
   /* FILTERS */
   /* LIST */
+}
+
+#Isotope h1 {
+  margin-top: 59px;
+  font-size: 37px;
+  font-weight: 600;
 }
 
 #Isotope .content {
@@ -490,9 +631,12 @@ nav .BackGrondtext button {
 #Isotope h1 {
   margin-bottom: 0.1875em;
   line-height: 1;
-  font-family: "Asap", sans-serif;
-  font-weight: 500;
   color: black;
+}
+
+#Isotope p {
+  font-size: 17px;
+  font-weight: 500;
 }
 
 #Isotope h2 {
@@ -523,10 +667,21 @@ nav .BackGrondtext button {
 }
 
 #Isotope .button {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   margin-bottom: 1em;
-  font-family: "Asap", sans-serif;
+}
+
+@media (max-width: 768px) {
+  #Isotope .button {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 #Isotope button {
@@ -538,11 +693,29 @@ nav .BackGrondtext button {
   font-size: 0.7em;
   text-transform: uppercase;
   font-size: 0.875em;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  #Isotope button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 180px;
+    font-size: 14px;
+  }
 }
 
 #Isotope button.is-active {
-  background: #393838;
+  background: #FE0000;
   color: #ffffff;
+  border: 1px solid transparent;
 }
 
 #Isotope .list {
@@ -613,7 +786,77 @@ nav .BackGrondtext button {
   }
 }
 
-*, *::before, *::after {
+#FooterPromotion {
+  padding: 20px 0px;
+  background-color: #EDF6FF;
+}
+
+#FooterPromotion .FooterPromotionItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  #FooterPromotion .FooterPromotionItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #FooterPromotion .FooterPromotionItem img {
+    width: 150px;
+  }
+}
+
+footer {
+  padding: 40px 0px;
+  background-color: #203569;
+}
+
+footer h3 {
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  footer h3 {
+    text-align: center;
+  }
+}
+
+footer .FooterItem ul {
+  padding: 0;
+}
+
+footer .FooterItem ul li {
+  padding: 10px 0px;
+}
+
+footer .FooterItem ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+footer .FooterItem ul li a i {
+  margin-right: 11px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  footer .FooterItem ul {
+    text-align: center;
+  }
+}
+
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   offset: none;
@@ -624,5 +867,9 @@ nav .BackGrondtext button {
 ul {
   padding: 0;
   list-style: none;
+}
+
+.container {
+  width: 1400px;
 }
 /*# sourceMappingURL=style.css.map */

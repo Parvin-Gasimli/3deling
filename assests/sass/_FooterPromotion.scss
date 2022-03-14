@@ -1,0 +1,17 @@
+#FooterPromotion{
+    padding: 20px 0px;
+    background-color: $VeryligthBlue;
+    .FooterPromotionItem{
+        display: flex;
+        justify-content: space-around;
+
+        @media (max-width:768px) {
+            flex-direction: column;
+            text-align: center;
+            img{
+                width: 150px;
+            }
+            
+        }
+    }
+}

@@ -12,6 +12,25 @@
             font-weight: 600;
             &::before {
                 @include BeforeBgAbout3Deling;
+                @media (max-width:1200px) {
+                    top: 41px;
+                    content: "";
+                    position: absolute;
+                    height: 19px;
+                    width: 240px;
+                    left: 80px;
+                    
+                }
+                @media (max-width:992px) {
+                    top: 41px;
+                    content: "";
+                    position: absolute;
+                    height: 19px;
+                    width: 200px;
+                    left: -40px;
+                    
+                }
+
                 @media (max-width:768px) {
                     display: none;
                     
@@ -19,6 +38,24 @@
             }
             &::after {
                 @include AfterBgAbout3Deling;
+                @media (max-width:1200px) {
+                    top: 41px;
+                    content: "";
+                    position: absolute;
+                    height: 19px;
+                    width: 240px;
+                    right: 80px;
+                    
+                }
+                @media (max-width:992px) {
+                    top: 41px;
+                    content: "";
+                    position: absolute;
+                    height: 19px;
+                    width: 200px;
+                    right: -40px;
+                    
+                }
                 @media (max-width:768px) {
                     display: none;
                     

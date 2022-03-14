@@ -6,13 +6,51 @@
         position: relative;
         font-weight: 600;
         &::before{
+            @media (max-width:1200px) {
+                top: 10px;
+                content: "";
+                position: absolute;
+                height: 19px;
+                width: 200px;
+                left: -65px;
+                background-color: #C4C4C4;
+            }
+
+            @media (max-width:992px) {
+                top: 15px;
+                content: "";
+                position: absolute;
+                height: 8px;
+                width: 86px;
+                left: -46px;
+                background-color: #C4C4C4;
+            }
            @include BeforeBg;
            @media (max-width:768px) {
                display: none;
+
                
            }
         }
         &::after{
+            @media (max-width:1200px) {
+                top: 10px;
+                content: "";
+                position: absolute;
+                height: 19px;
+                width: 200px;
+                right: -65px;
+                background-color: #C4C4C4;
+            }
+            @media (max-width:992px) {
+                top: 15px;
+                content: "";
+                position: absolute;
+                height: 8px;
+                width: 86px;
+                right: -46px;
+                background-color: #C4C4C4;
+            }
            @include AfterBg;
            @media (max-width:768px) {
             display: none;
