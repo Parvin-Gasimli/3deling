@@ -1,7 +1,11 @@
 #Application{
-    margin-top: 5rem;
+    margin-top: 9rem;
     font-family: $FirstFontfamily;
     padding: 2rem 0rem;
+    @media (max-wdith:576px) {
+        margin-top: 5rem;
+        
+    }
     h1{
         font-size: 30px;
         position: relative;

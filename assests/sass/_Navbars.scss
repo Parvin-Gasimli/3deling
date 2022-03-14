@@ -7,7 +7,7 @@ nav {
         height: 100vh;
         padding: 240px 0px;
 
-        background-color: rgba(3, 3, 3, 0.692);
+        background-color: rgba(3, 3, 3, 0.592);
         top: 0px;
         @media (max-width: 768px) {
             padding: 250px 0px;
@@ -372,7 +372,7 @@ nav {
 }
 
 #videoBkg {
-    filter: brightness(0.7);
+    filter: brightness(0.8);
     height: 100vh;
     top: 0;
     left: fixed;
