@@ -916,15 +916,22 @@ nav .myP {
      object-fit: cover;
 }
 
-#OurProduct .ProductItem .ProductItemText {
-  text-align: center;
+@media (max-width: 768px) {
+  #OurProduct .ProductItem .ProductLogo img {
+    width: 50px;
+  }
 }
 
-#OurProduct .ProductItem .ProductItemText h5 {
+#OurProduct .ProductItemText {
+  text-align: center;
+  margin: 15px 0px !important;
+}
+
+#OurProduct .ProductItemText h5 {
   display: inline-block;
 }
 
-#OurProduct .ProductItem .ProductItemText p {
+#OurProduct .ProductItemText p {
   font-size: 1rem;
 }
 

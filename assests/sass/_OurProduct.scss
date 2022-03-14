@@ -12,16 +12,23 @@
             img {
                 width: 90px !important;
                 object-fit: cover;
+                @media (max-width:768px) {
+                    width: 50px;
+                    
+                }
             }
         }
-        .ProductItemText {
-            text-align: center;
-            h5 {
-                display: inline-block;
-            }
-            p {
-                font-size: $textFont;
-            }
+        
+    }
+
+    .ProductItemText {
+        text-align: center;
+        margin: 15px 0px !important;
+        h5 {
+            display: inline-block;
+        }
+        p {
+            font-size: $textFont;
         }
     }
     .col-lg-3{
