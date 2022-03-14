@@ -628,8 +628,8 @@ nav .BackGrondtext button {
   }
 }
 
-#Isotope button {
-  height: 60px;
+#Isotope .button-group button {
+  height: 100px;
   display: inline-block;
   padding: 10px 18px;
   margin-bottom: 10px;
@@ -645,8 +645,9 @@ nav .BackGrondtext button {
 }
 
 @media (max-width: 768px) {
-  #Isotope button {
+  #Isotope .button-group button {
     height: auto;
+    width: auto !important;
   }
 }
 
@@ -785,26 +786,6 @@ nav .BackGrondtext button {
   background-position: top;
 }
 
-#Isotope .fashion {
-  background-color: pink;
-}
-
-#Isotope .interior {
-  background-color: lightblue;
-}
-
-#Isotope .hairstyles {
-  background-color: salmon;
-}
-
-#Isotope .jewelry {
-  background-color: #cdcdc1;
-}
-
-#Isotope .bags {
-  background-color: lavender;
-}
-
 @media only screen and (max-width: 1900px) {
   #Isotope .grid-item {
     width: 16%;
@@ -862,6 +843,7 @@ nav .BackGrondtext button {
   }
   #Isotope .button {
     font-size: 10px;
+    width: auto;
   }
 }
 

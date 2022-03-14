@@ -5,29 +5,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
       flex-wrap: wrap;
-      
+    }
+    button {
+      height: 100px;
+      display: inline-block;
+      padding: 10px 18px;
+      margin-bottom: 10px;
+      background-color: white;
+      border: 1px solid grey;
+      color: grey;
+      font-family: sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      width: 200px;
+      cursor: pointer;
+      text-transform: uppercase;
+      @media (max-width: 768px) {
+        height: auto;
+       
+       width: auto !important;
+      }
+     
     }
   }
-  button {
-    height: 60px;
-    display: inline-block;
-    padding: 10px 18px;
-    margin-bottom: 10px;
-    background-color: white;
-    border: 1px solid grey;
-    color: grey;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    width: 200px;
-    cursor: pointer;
-    text-transform: uppercase;
-    @media (max-width:768px) {height: auto;
-      
-    }
-  }
+ 
 
   .button:hover {
     background-color: $RedColor;
@@ -35,8 +38,6 @@
     transition: all 0.25s ease;
     color: white;
   }
-
- 
 
   .button:active,
   .button.is-checked {
@@ -174,25 +175,7 @@
     background-position: top;
   }
 
-  .fashion {
-    background-color: pink;
-  }
 
-  .interior {
-    background-color: lightblue;
-  }
-
-  .hairstyles {
-    background-color: salmon;
-  }
-
-  .jewelry {
-    background-color: #cdcdc1;
-  }
-
-  .bags {
-    background-color: lavender;
-  }
 
   @media only screen and (max-width: 1900px) {
     .grid-item {
@@ -243,6 +226,7 @@
     }
     .button {
       font-size: 10px;
+      width: auto;
     }
   }
 }
