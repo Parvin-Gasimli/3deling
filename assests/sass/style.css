@@ -9,7 +9,8 @@ nav {
 
 nav .BackGrondtext {
   position: relative;
-  height: 100vh;
+  height: 720px;
+  overflow: hidden;
   padding: 240px 0px;
   background-color: rgba(3, 3, 3, 0.592);
   top: 0px;
@@ -412,7 +413,7 @@ nav .myP {
 #videoBkg {
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
-  height: 100vh;
+  height: 720px;
   top: 0;
   left: fixed;
   position: absolute;
@@ -428,15 +429,9 @@ nav .myP {
 }
 
 #Application {
-  margin-top: 9rem;
+  margin-top: 4rem;
   font-family: "Raleway";
   padding: 2rem 0rem;
-}
-
-@media (max-wdith: 576px) {
-  #Application {
-    margin-top: 5rem;
-  }
 }
 
 #Application h1 {
@@ -463,7 +458,7 @@ nav .myP {
     height: 19px;
     width: 200px;
     left: -65px;
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
   }
 }
 
@@ -475,7 +470,7 @@ nav .myP {
     height: 8px;
     width: 86px;
     left: -46px;
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
   }
 }
 
@@ -503,7 +498,7 @@ nav .myP {
     height: 19px;
     width: 200px;
     right: -65px;
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
   }
 }
 
@@ -515,7 +510,7 @@ nav .myP {
     height: 8px;
     width: 86px;
     right: -46px;
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
   }
 }
 
@@ -575,8 +570,8 @@ nav .myP {
   -webkit-box-direction: normal;
       -ms-flex-direction: none;
           flex-direction: none;
-  -webkit-transition: .1s all;
-  transition: .1s all;
+  -webkit-transition: 0.1s all;
+  transition: 0.1s all;
 }
 
 #Application .SocialApplication .Icons .IconItem:hover {
@@ -598,8 +593,8 @@ nav .myP {
   -webkit-box-direction: normal;
       -ms-flex-direction: none;
           flex-direction: none;
-  -webkit-transition: .1s all;
-  transition: .1s all;
+  -webkit-transition: 0.1s all;
+  transition: 0.1s all;
 }
 
 #Application .SocialApplication h3 {

@@ -4,7 +4,8 @@ nav {
 
     .BackGrondtext {
         position: relative;
-        height: 100vh;
+        height: 720px;
+        overflow: hidden;
         padding: 240px 0px;
 
         background-color: rgba(3, 3, 3, 0.592);
@@ -373,7 +374,7 @@ nav {
 
 #videoBkg {
     filter: brightness(0.8);
-    height: 100vh;
+    height: 720px;
     top: 0;
     left: fixed;
     position: absolute;

@@ -1,129 +1,117 @@
-#Application{
-    margin-top: 9rem;
+#Application {
+    margin-top: 4rem;
     font-family: $FirstFontfamily;
     padding: 2rem 0rem;
-    @media (max-wdith:576px) {
-        margin-top: 5rem;
-        
+    @media (max-wdith: 768px) {
+      
     }
-    h1{
+    h1 {
         font-size: 30px;
         position: relative;
         font-weight: 600;
-        &::before{
-            @media (max-width:1200px) {
+        &::before {
+            @media (max-width: 1200px) {
                 top: 10px;
                 content: "";
                 position: absolute;
                 height: 19px;
                 width: 200px;
                 left: -65px;
-                background-color: #C4C4C4;
+                background-color: #c4c4c4;
             }
 
-            @media (max-width:992px) {
+            @media (max-width: 992px) {
                 top: 15px;
                 content: "";
                 position: absolute;
                 height: 8px;
                 width: 86px;
                 left: -46px;
-                background-color: #C4C4C4;
+                background-color: #c4c4c4;
             }
-           @include BeforeBg;
-           @media (max-width:768px) {
-               display: none;
-
-               
-           }
+            @include BeforeBg;
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
-        &::after{
-            @media (max-width:1200px) {
+        &::after {
+            @media (max-width: 1200px) {
                 top: 10px;
                 content: "";
                 position: absolute;
                 height: 19px;
                 width: 200px;
                 right: -65px;
-                background-color: #C4C4C4;
+                background-color: #c4c4c4;
             }
-            @media (max-width:992px) {
+            @media (max-width: 992px) {
                 top: 15px;
                 content: "";
                 position: absolute;
                 height: 8px;
                 width: 86px;
                 right: -46px;
-                background-color: #C4C4C4;
+                background-color: #c4c4c4;
             }
-           @include AfterBg;
-           @media (max-width:768px) {
-            display: none;
-            
-        }
+            @include AfterBg;
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
     }
-    .SocialApplication{
-        .Icons{
-            @include Flex(center,center,none);
-            img{
+    .SocialApplication {
+        .Icons {
+            @include Flex(center, center, none);
+            img {
                 width: 100px;
                 object-fit: cover;
                 filter: grayscale(0);
                 &:hover {
                     filter: grayscale(1);
                     transform: scale(1.04);
-    
-    
                 }
-                &:hover .IconItem{
+                &:hover .IconItem {
                     overflow: hidden;
                     border-radius: 50%;
                     width: 125px;
                     height: 125px;
                     border: 4px solid;
-                    @include Flex(center,center,none);
-                  
-                    transition: .1s all;
+                    @include Flex(center, center, none);
+
+                    transition: 0.1s all;
                 }
             }
-            .IconItem
-          
-            {
+            .IconItem {
                 &:hover {
                     overflow: hidden;
                     border-radius: 50%;
                     width: 125px;
                     height: 125px;
                     border: 4px solid;
-                    @include Flex(center,center,none);
-                  
-                    transition: .1s all;
+                    @include Flex(center, center, none);
+
+                    transition: 0.1s all;
                 }
             }
-          
-
         }
-        h3{
+        h3 {
             text-align: center;
             padding: 15px 0px;
             font-size: $textFont;
             text-transform: uppercase;
-
         }
-       p{
-           padding: 0px 30px;
-       }
+        p {
+            padding: 0px 30px;
+        }
     }
-    .SocialContainer{
+    .SocialContainer {
         padding: 40px 0px;
-        .col-lg-6{
+        .col-lg-6 {
             margin: 15px 0px;
         }
-        .col-lg-12{
+        .col-lg-12 {
             width: 700px;
             margin: 0 auto;
         }
     }
-    
 }
