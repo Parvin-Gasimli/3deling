@@ -911,17 +911,25 @@ nav .myP {
 }
 
 #OurProduct .ProductItem .ProductLogo img {
-  width: 170px !important;
+  width: 90px !important;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#OurProduct .ProductItem h5 {
+#OurProduct .ProductItem .ProductItemText {
+  text-align: center;
+}
+
+#OurProduct .ProductItem .ProductItemText h5 {
   display: inline-block;
 }
 
-#OurProduct .ProductItem p {
+#OurProduct .ProductItem .ProductItemText p {
   font-size: 1rem;
+}
+
+#OurProduct .col-lg-3 {
+  margin: 15px 0px;
 }
 
 #Promotion {
@@ -958,12 +966,16 @@ nav .myP {
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
   opacity: 0.7;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 #Promotion .PromotionLogos .Logo img:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
   opacity: 1;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
@@ -974,6 +986,7 @@ nav .myP {
 }
 
 #Isotope {
+  padding: 30px 0px;
   font-family: "Raleway";
   /* ---- button-group ---- */
 }
