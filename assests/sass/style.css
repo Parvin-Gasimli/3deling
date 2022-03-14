@@ -10,14 +10,14 @@ nav {
 nav .BackGrondtext {
   position: relative;
   height: 100vh;
-  padding: 100px 0px;
+  padding: 240px 0px;
   background-color: rgba(3, 3, 3, 0.692);
   top: 0px;
 }
 
 @media (max-width: 768px) {
   nav .BackGrondtext {
-    padding: 180px 0px;
+    padding: 250px 0px;
   }
 }
 
@@ -428,6 +428,7 @@ nav .myP {
 }
 
 #Application {
+  margin-top: 5rem;
   font-family: "Raleway";
   padding: 2rem 0rem;
 }
