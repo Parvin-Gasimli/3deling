@@ -58,3 +58,12 @@ function radioButtonGroup( buttonGroup ) {
     event.target.classList.add('is-checked');
   });
 }
+
+
+$('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+
+});
