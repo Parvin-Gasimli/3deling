@@ -1,237 +1,248 @@
 #Isotope {
   font-family: $FirstFontfamily;
 
-  $baseline: 12;
-  $gutter: 20;
-  $border-radius: 0;
-  $inner-width: 1200px;
-
-  $color-white: #ffffff;
-  $color-black: #393838;
-  $color-muted: #e3e3e3;
-  $color-tomato: #ff5252;
-
-  $color-body: $color-black;
-  $color-main: $color-black;
-  $color-accent: $color-tomato;
-  $color-link-hover: $color-black;
-
-  //== TYPOGRAPHY
-
-  //-- FONT SIZE
-  $font-size-x-small: 12;
-  $font-size-small: 14;
-  $font-size-normal: 16;
-  $font-size-large: 18;
-  $font-size-x-large: 22;
-  $font-size-xx-large: 26;
-  $font-size-xxx-large: 38;
-  $font-size-ultra-large: 40;
-  $font-size-ultra-x-large: 58;
-
-  $font-size-body: $font-size-normal;
-  $font-size-h1: $font-size-xxx-large;
-  $font-size-h2: $font-size-xx-large;
-  $font-size-h3: $font-size-x-large;
-  $font-size-h4: $font-size-large;
-  $font-size-h5: $font-size-normal;
-
-  $font-weight-light: 300;
-  $font-weight-regular: 400;
-  $font-weight-medium: 500;
-  $font-weight-bold: 700;
-  $font-weight-heavy: 900;
-
-  $transition-default: 0.5s ease-in;
-  $transition-fast: 0.25s ease-in;
-
-  $breakpoint-mobile: 320px;
-  $breakpoint-phablet: 600px;
-  $breakpoint-tablet: 768px;
-  $breakpoint-laptop: 1024px;
-  $breakpoint-desktop: 1280px;
-  $breakpoint-desktop-large: 1440px;
-  $breakpoint-desktop-x-large: 1600px;
-
-  h1 {
-    margin-top: 59px;
-    font-size: 37px;
-    font-weight: 600;
-  }
-  %list-reset {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  %inner {
-    width: $inner-width;
-    margin: 0 auto;
-  }
-
-  /* ********* SASS FUNCTIONS ********* */
-
-  $context: $font-size-body;
-
-  @function em($pixels, $context: $context) {
-    @return ($pixels/$context) * 1em;
-  }
-
-  /* ********* SASS MIXINS ********* */
-
-  @mixin gradient($image: none, $from: $color-white, $to: $color-muted) {
-    background: $image $from;
-    background: $image, linear-gradient(to bottom, $from 0%, $to 100%);
-  }
-
-  .header {
-    margin-bottom: em($baseline * 3);
-    text-align: center;
-  }
-
-  h1 {
-    margin-bottom: em($baseline/4);
-    line-height: 1;
-
-    color: black;
-  }
-  p {
-    font-size: 17px;
-    font-weight: 500;
-  }
-
-  h2 {
-    font-weight: $font-weight-regular;
-  }
-
-  .copyright {
-    font-style: italic;
-  }
-
-  .content {
-    @extend %inner;
-    text-align: center;
-  }
-
-  p {
-    margin-bottom: em($baseline/2);
-  }
-
-  ul {
-    margin-bottom: 1em;
-    list-style: none;
+  .button-group {
     display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    justify-content: space-around;
-  }
-
-  /* FILTERS */
-
-  .button {
-    display: flex;
- justify-content: center;
-    width: 100%;
-    margin-bottom: 1em;
+    justify-content: center;
+    align-items: center;
     @media (max-width:768px) {
       flex-wrap: wrap;
       
     }
-  
-   
   }
-
   button {
-    margin: 0.5em;
-    padding: 0.5em;
-    border: 1px solid $color-black;
-    color: $color-black;
-    background: none;
-    font-size: 0.7em;
+    height: 60px;
+    display: inline-block;
+    padding: 10px 18px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid grey;
+    color: grey;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    width: 200px;
+    cursor: pointer;
     text-transform: uppercase;
-    font-size: em($font-size-small);
-    border-radius: 2px;
-    @media (max-width:768px) {
-      display: flex;
-      justify-content: center;
-      
-      align-items: center;
-      width: 180px;
-      font-size: 14px;
+    @media (max-width:768px) {height: auto;
       
     }
   }
 
-  button.is-active {
-    background: $RedColor;
-    color: $color-white;
-    border: 1px solid transparent;
-  }
-
-  /* LIST */
-
-  .list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .list__item {
-    display: block;
-    width: 100%;
-    height: 18em;
-    overflow: hidden;
-    margin-bottom: 1em;
-    text-align: center;
-    font-size: 1em;
-    text-transform: uppercase;
+  .button:hover {
+    background-color: $RedColor;
+    border-color: transparent;
+    transition: all 0.25s ease;
     color: white;
-    box-shadow: 0 0 2px rgba($color-black, 0.2);
   }
 
-  .list__item__title {
+ 
+
+  .button:active,
+  .button.is-checked {
+    background-color: $RedColor;
+    border-color: transparent;
+    color: white;
+  }
+
+  .button:active {
+    background-color: white;
+    border-color: white;
+    color: white;
+  }
+
+  /* ---- button-group ---- */
+
+  .button-group {
+    margin: 20px 0px 0px 10px;
+  }
+
+  .button-group:after {
+    content: "";
     display: block;
-    margin-top: 30%;
+    clear: both;
   }
 
-  @media screen and (min-width: 600px) {
-    .list {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .list__item {
-      width: calc(33% - 1em);
-      margin-right: 1em;
-    }
-    .list__item:nth-child(3n) {
-      clear: left;
-    }
-    .list__item:nth-child(-n + 2) {
-      margin-top: 0;
+  .button-group .button {
+    float: left;
+    border-radius: 0.1em;
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  .grid-item {
+    margin: 0.8%;
+    background-size: cover;
+    transition: 0.2s ease;
+  }
+
+  .grid-item:hover {
+    cursor: pointer;
+    background-color: #f63b0052;
+    background-blend-mode: multiply;
+    transition: ease 0.5s;
+  }
+
+  .g1 {
+    width: 15%;
+    height: 450px;
+
+    @include BgImg;
+  }
+
+  .g2 {
+    width: 15%;
+    height: 450px;
+
+    background-position: top;
+  }
+
+  .g3 {
+    width: 15%;
+    height: 250px;
+
+    @include BgImg;
+  }
+
+  .g4 {
+    width: 15%;
+    height: 200px;
+
+    background-position: top;
+  }
+
+  .g5 {
+    width: 31.6%;
+    height: 600px;
+
+    background-position: top;
+  }
+
+  .g6 {
+    width: 15%;
+    height: 200px;
+
+    background-position: top;
+  }
+
+  .g7 {
+    width: 15%;
+    height: 200px;
+
+    background-position: top;
+  }
+
+  .g8 {
+    width: 31.6%;
+    height: 500px;
+
+    background-position: bottom;
+  }
+
+  .g9 {
+    width: 15%;
+    height: 300px;
+
+    background-position: bottom;
+  }
+
+  .g10 {
+    width: 15%;
+    height: 200px;
+
+    background-position: top;
+  }
+
+  .g11 {
+    width: 31.6%;
+    height: 348px;
+
+    background-position: top;
+  }
+
+  .g12 {
+    width: 15%;
+    height: 250px;
+
+    background-position: bottom;
+  }
+
+  .g13 {
+    width: 15%;
+    height: 200px;
+
+    background-position: top;
+  }
+
+  .fashion {
+    background-color: pink;
+  }
+
+  .interior {
+    background-color: lightblue;
+  }
+
+  .hairstyles {
+    background-color: salmon;
+  }
+
+  .jewelry {
+    background-color: #cdcdc1;
+  }
+
+  .bags {
+    background-color: lavender;
+  }
+
+  @media only screen and (max-width: 1900px) {
+    .grid-item {
+      width: 16%;
     }
   }
-  @media screen and (min-width: 768px) {
-    button {
-      margin: 0.5em;
-      padding: 0.5em;
+  @media only screen and (max-width: 1500px) {
+    .grid-item {
+      width: 15.9%;
     }
-
-    .list__item {
-      width: calc(20% - 1em);
+  }
+  @media only screen and (max-width: 1320px) {
+    .grid-item {
+      width: 15.8%;
     }
-    .list__item:nth-child(2n) {
-      margin-right: 1em;
+  }
+  @media only screen and (max-width: 1172px) {
+    .grid-item {
+      width: 15.7%;
     }
-    .list__item:nth-child(3n) {
-      clear: none;
-      margin-right: 0;
+  }
+  @media only screen and (max-width: 1020px) {
+    .grid-item {
+      width: 18.8%;
     }
-    .list__item:nth-child(4n) {
-      clear: left;
+  }
+  @media only screen and (max-width: 862px) {
+    .grid-item {
+      width: 23.5%;
     }
-    .list__item:nth-child(-n + 3) {
-      margin-top: 0;
+  }
+  @media only screen and (max-width: 862px) {
+    .grid-item {
+      width: 23.5%;
+    }
+  }
+  @media only screen and (max-width: 672px) {
+    .grid-item {
+      width: 31.2%;
+    }
+    .button {
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 497px) {
+    .grid-item {
+      width: 47%;
+    }
+    .button {
+      font-size: 10px;
     }
   }
 }

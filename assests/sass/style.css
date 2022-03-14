@@ -606,183 +606,262 @@ nav .BackGrondtext button {
 
 #Isotope {
   font-family: "Raleway";
-  /* ********* SASS FUNCTIONS ********* */
-  /* ********* SASS MIXINS ********* */
-  /* FILTERS */
-  /* LIST */
+  /* ---- button-group ---- */
 }
 
-#Isotope h1 {
-  margin-top: 59px;
-  font-size: 37px;
-  font-weight: 600;
-}
-
-#Isotope .content {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-#Isotope .header {
-  margin-bottom: 2.25em;
-  text-align: center;
-}
-
-#Isotope h1 {
-  margin-bottom: 0.1875em;
-  line-height: 1;
-  color: black;
-}
-
-#Isotope p {
-  font-size: 17px;
-  font-weight: 500;
-}
-
-#Isotope h2 {
-  font-weight: 400;
-}
-
-#Isotope .copyright {
-  font-style: italic;
-}
-
-#Isotope .content {
-  text-align: center;
-}
-
-#Isotope p {
-  margin-bottom: 0.375em;
-}
-
-#Isotope ul {
-  margin-bottom: 1em;
-  list-style: none;
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-#Isotope .button {
+#Isotope .button-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  margin-bottom: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 768px) {
-  #Isotope .button {
+  #Isotope .button-group {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
 #Isotope button {
-  margin: 0.5em;
-  padding: 0.5em;
-  border: 1px solid #393838;
-  color: #393838;
-  background: none;
-  font-size: 0.7em;
+  height: 60px;
+  display: inline-block;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid grey;
+  color: grey;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  width: 200px;
+  cursor: pointer;
   text-transform: uppercase;
-  font-size: 0.875em;
-  border-radius: 2px;
 }
 
 @media (max-width: 768px) {
   #Isotope button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 180px;
-    font-size: 14px;
+    height: auto;
   }
 }
 
-#Isotope button.is-active {
-  background: #FE0000;
-  color: #ffffff;
-  border: 1px solid transparent;
-}
-
-#Isotope .list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#Isotope .list__item {
-  display: block;
-  width: 100%;
-  height: 18em;
-  overflow: hidden;
-  margin-bottom: 1em;
-  text-align: center;
-  font-size: 1em;
-  text-transform: uppercase;
+#Isotope .button:hover {
+  background-color: #FE0000;
+  border-color: transparent;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
   color: white;
-  -webkit-box-shadow: 0 0 2px rgba(57, 56, 56, 0.2);
-          box-shadow: 0 0 2px rgba(57, 56, 56, 0.2);
 }
 
-#Isotope .list__item__title {
+#Isotope .button:active,
+#Isotope .button.is-checked {
+  background-color: #FE0000;
+  border-color: transparent;
+  color: white;
+}
+
+#Isotope .button:active {
+  background-color: white;
+  border-color: white;
+  color: white;
+}
+
+#Isotope .button-group {
+  margin: 20px 0px 0px 10px;
+}
+
+#Isotope .button-group:after {
+  content: "";
   display: block;
-  margin-top: 30%;
+  clear: both;
 }
 
-@media screen and (min-width: 600px) {
-  #Isotope .list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #Isotope .list__item {
-    width: calc(33% - 1em);
-    margin-right: 1em;
-  }
-  #Isotope .list__item:nth-child(3n) {
-    clear: left;
-  }
-  #Isotope .list__item:nth-child(-n + 2) {
-    margin-top: 0;
+#Isotope .button-group .button {
+  float: left;
+  border-radius: 0.1em;
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+#Isotope .grid-item {
+  margin: 0.8%;
+  background-size: cover;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+#Isotope .grid-item:hover {
+  cursor: pointer;
+  background-color: #f63b0052;
+  background-blend-mode: multiply;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+#Isotope .g1 {
+  width: 15%;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#Isotope .g2 {
+  width: 15%;
+  height: 450px;
+  background-position: top;
+}
+
+#Isotope .g3 {
+  width: 15%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#Isotope .g4 {
+  width: 15%;
+  height: 200px;
+  background-position: top;
+}
+
+#Isotope .g5 {
+  width: 31.6%;
+  height: 600px;
+  background-position: top;
+}
+
+#Isotope .g6 {
+  width: 15%;
+  height: 200px;
+  background-position: top;
+}
+
+#Isotope .g7 {
+  width: 15%;
+  height: 200px;
+  background-position: top;
+}
+
+#Isotope .g8 {
+  width: 31.6%;
+  height: 500px;
+  background-position: bottom;
+}
+
+#Isotope .g9 {
+  width: 15%;
+  height: 300px;
+  background-position: bottom;
+}
+
+#Isotope .g10 {
+  width: 15%;
+  height: 200px;
+  background-position: top;
+}
+
+#Isotope .g11 {
+  width: 31.6%;
+  height: 348px;
+  background-position: top;
+}
+
+#Isotope .g12 {
+  width: 15%;
+  height: 250px;
+  background-position: bottom;
+}
+
+#Isotope .g13 {
+  width: 15%;
+  height: 200px;
+  background-position: top;
+}
+
+#Isotope .fashion {
+  background-color: pink;
+}
+
+#Isotope .interior {
+  background-color: lightblue;
+}
+
+#Isotope .hairstyles {
+  background-color: salmon;
+}
+
+#Isotope .jewelry {
+  background-color: #cdcdc1;
+}
+
+#Isotope .bags {
+  background-color: lavender;
+}
+
+@media only screen and (max-width: 1900px) {
+  #Isotope .grid-item {
+    width: 16%;
   }
 }
 
-@media screen and (min-width: 768px) {
-  #Isotope button {
-    margin: 0.5em;
-    padding: 0.5em;
+@media only screen and (max-width: 1500px) {
+  #Isotope .grid-item {
+    width: 15.9%;
   }
-  #Isotope .list__item {
-    width: calc(20% - 1em);
+}
+
+@media only screen and (max-width: 1320px) {
+  #Isotope .grid-item {
+    width: 15.8%;
   }
-  #Isotope .list__item:nth-child(2n) {
-    margin-right: 1em;
+}
+
+@media only screen and (max-width: 1172px) {
+  #Isotope .grid-item {
+    width: 15.7%;
   }
-  #Isotope .list__item:nth-child(3n) {
-    clear: none;
-    margin-right: 0;
+}
+
+@media only screen and (max-width: 1020px) {
+  #Isotope .grid-item {
+    width: 18.8%;
   }
-  #Isotope .list__item:nth-child(4n) {
-    clear: left;
+}
+
+@media only screen and (max-width: 862px) {
+  #Isotope .grid-item {
+    width: 23.5%;
   }
-  #Isotope .list__item:nth-child(-n + 3) {
-    margin-top: 0;
+}
+
+@media only screen and (max-width: 862px) {
+  #Isotope .grid-item {
+    width: 23.5%;
+  }
+}
+
+@media only screen and (max-width: 672px) {
+  #Isotope .grid-item {
+    width: 31.2%;
+  }
+  #Isotope .button {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 497px) {
+  #Isotope .grid-item {
+    width: 47%;
+  }
+  #Isotope .button {
+    font-size: 10px;
   }
 }
 
