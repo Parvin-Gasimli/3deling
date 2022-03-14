@@ -1,26 +1,32 @@
-#Promotion{
-    .Logo{
-      
-        img{
-            max-width: 100%;
-            cursor: pointer;
-            filter: grayscale(1);
-            transition: .2s all;
-            opacity: 0.7;
-            &:hover{
-                filter: grayscale(0);
-                opacity: 1;
-            }
-        }
+#Promotion {
+    padding: 50px 0px;
+    margin-top: 20px;
+
+    .PromotionLogos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         @media (max-width:768px) {
+            flex-direction: column;
             text-align: center;
-            margin-bottom: 20px;
             
         }
-    }
-    .col-lg-3{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .Logo {
+            img {
+                width: 150px;
+                cursor: pointer;
+                filter: grayscale(1);
+                transition: 0.2s all;
+                opacity: 0.7;
+                &:hover {
+                    filter: grayscale(0);
+                    opacity: 1;
+                }
+            }
+            @media (max-width: 768px) {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
     }
 }
