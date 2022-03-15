@@ -75,7 +75,7 @@ nav .BackGrondtext p {
 
 @media (max-width: 768px) {
   nav .BackGrondtext p {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 
@@ -142,6 +142,20 @@ nav .nav .logo a {
 
 nav .nav .container {
   padding: 0;
+}
+
+@media (max-width: 992px) {
+  nav .nav .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .nav .container {
+    display: block;
+  }
 }
 
 nav .nav div.main_list {
@@ -996,6 +1010,12 @@ nav .myP {
           box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  #WORKFLOW #utvs_62305b8ce581b {
+    height: 200px;
+  }
+}
+
 #WORKFLOW #utvs_62305b8ce581b .fa-youtube-play {
   position: absolute;
   color: white;
@@ -1004,9 +1024,19 @@ nav .myP {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  #WORKFLOW #utvs_62305b8ce581b .fa-youtube-play {
+    font-size: 25px;
+  }
+}
+
 #WORKFLOW #utvs_62305b8ce581b .ut-video-loading .fa-spinner {
   position: absolute;
   top: 50%;
+}
+
+#WORKFLOW #utvs_62305b8ce581b img {
+  max-width: 100%;
 }
 
 #OurProduct h1 {

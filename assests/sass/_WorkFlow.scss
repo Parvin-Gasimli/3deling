@@ -84,6 +84,11 @@
         margin: 0 auto;
         padding: 10px 7px;
         box-sizing: border-box;
+        @media (max-width:768px) {
+            height: 200px;
+
+            
+        }
 
         .fa-youtube-play {
             position: absolute;
@@ -92,12 +97,19 @@
             bottom: 10px;
             left: 20px;
             cursor: pointer;
+            @media (max-width:768px) {
+                font-size: 25px;
+                
+            }
         }
         .ut-video-loading {
             .fa-spinner {
                 position: absolute;
                 top: 50%;
             }
+        }
+        img{
+            max-width: 100%;
         }
     }
 }
