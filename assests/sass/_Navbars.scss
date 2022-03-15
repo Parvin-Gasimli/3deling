@@ -19,15 +19,25 @@ nav {
                         overflow: hidden;
                     
                       }
-                      .tricker h1{
-                       
-                        margin: 0;
-                        height: 50px;
-                        line-height: 50px;
-                        font-size: 59px;
-                        text-align: center;
-                        text-transform: uppercase;
-                        transition: margin-top .3s ease;
+                      .tricker {
+                        h1{
+                       color: white;
+                            margin: 0;
+                            height: 50px;
+                            line-height: 50px;
+                            font-size: 59px;
+                            text-align: center;
+                            text-transform: uppercase;
+                            transition: margin-top .3s ease;
+                            @media (max-width: 768px) {
+                                font-size: 34px;
+                            }
+                            span {
+                                color: $DarkBlue;
+                                font-weight: bold;
+                            }
+                      }
+        
                       }
                       .subline {
                         width: 100px;
@@ -49,6 +59,9 @@ nav {
             color: $WhiteColor;
             font-size: $textFont;
             border-bottom: 1px solid $WhiteColor;
+            @media (max-width: 768px) {
+              font-size: 14px;
+            }
         }
 
         .SliderItemtext {
@@ -57,21 +70,6 @@ nav {
 
          
 
-            h1 {
-              
-                font-weight: 400;
-                font-size: 70px;
-                color: $WhiteColor;
-
-                @media (max-width: 768px) {
-                    font-size: 34px;
-                }
-
-                span {
-                    color: $DarkBlue;
-                    font-weight: bold;
-                }
-            }
         }
 
         button {
@@ -205,12 +203,12 @@ nav {
                     }
                 }
             }
-            .nav div.show_list {
-                height: auto;
-                display: none;
-            }
+           
         }
-
+        .nav div.show_list {
+            height: auto !important;
+            display: none;
+        }
         .nav div.media_button {
             display: block;
         }

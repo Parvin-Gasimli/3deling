@@ -31,6 +31,7 @@ nav .BackGrondtext .CssSlider .SlidersItemsNav .SliderItemtext .tricker {
 }
 
 nav .BackGrondtext .CssSlider .SlidersItemsNav .SliderItemtext .tricker h1 {
+  color: white;
   margin: 0;
   height: 50px;
   line-height: 50px;
@@ -39,6 +40,17 @@ nav .BackGrondtext .CssSlider .SlidersItemsNav .SliderItemtext .tricker h1 {
   text-transform: uppercase;
   -webkit-transition: margin-top .3s ease;
   transition: margin-top .3s ease;
+}
+
+@media (max-width: 768px) {
+  nav .BackGrondtext .CssSlider .SlidersItemsNav .SliderItemtext .tricker h1 {
+    font-size: 34px;
+  }
+}
+
+nav .BackGrondtext .CssSlider .SlidersItemsNav .SliderItemtext .tricker h1 span {
+  color: #1794db;
+  font-weight: bold;
 }
 
 nav .BackGrondtext .CssSlider .SlidersItemsNav .SliderItemtext .subline {
@@ -61,26 +73,15 @@ nav .BackGrondtext p {
   border-bottom: 1px solid #ffffff;
 }
 
-nav .BackGrondtext .SliderItemtext {
-  width: 703px;
-  overflow: hidden;
-}
-
-nav .BackGrondtext .SliderItemtext h1 {
-  font-weight: 400;
-  font-size: 70px;
-  color: #ffffff;
-}
-
 @media (max-width: 768px) {
-  nav .BackGrondtext .SliderItemtext h1 {
-    font-size: 34px;
+  nav .BackGrondtext p {
+    font-size: 14px;
   }
 }
 
-nav .BackGrondtext .SliderItemtext h1 span {
-  color: #1794db;
-  font-weight: bold;
+nav .BackGrondtext .SliderItemtext {
+  width: 703px;
+  overflow: hidden;
 }
 
 nav .BackGrondtext button {
@@ -233,8 +234,8 @@ nav .nav {
     padding: 20px;
     color: black;
   }
-  nav .nav div.main_list .nav div.show_list {
-    height: auto;
+  nav .nav div.show_list {
+    height: auto !important;
     display: none;
   }
   nav .nav div.media_button {
