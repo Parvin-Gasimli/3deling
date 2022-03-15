@@ -84,3 +84,39 @@ $('.navTrigger').click(function () {
   $("#mainListDiv").fadeIn();
 
 });
+const nav = document.querySelector('.nav');
+let navTop = nav.offsetTop;
+
+
+function fixedNav() {
+    if (window.scrollY >= 550) {
+      console.log("ok");
+        nav.classList.add('SlickNav');
+    
+    } else {
+        nav.classList.remove('SlickNav');
+    }
+}
+
+window.addEventListener('scroll', fixedNav);
+
+
+(function($) {
+  var duration = 2500;  // change this to change rotation time in milliseconds
+  var current = 1;
+  var tricker = $(".tricker");
+  var height = tricker.height();
+  var number = tricker.children().length;
+  var first = tricker.children().first();
+
+  setInterval(function() {
+    var interv = current * -1 * height;
+    first.css("margin-top", interv + "px");
+    if (current == number) {
+      first.css("margin-top", "0px");
+      current = 1;
+    } else {
+      current++;
+    }
+  }, duration);
+})(jQuery);

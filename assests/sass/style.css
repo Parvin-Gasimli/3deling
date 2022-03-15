@@ -8,12 +8,44 @@ nav {
 }
 
 nav .BackGrondtext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   height: 720px;
   overflow: hidden;
   padding: 240px 0px;
   background-color: rgba(3, 3, 3, 0.592);
   top: 0px;
+}
+
+nav .BackGrondtext .CssSlider .SlidersItemsNav .SliderItemtext .tricker {
+  height: 50px;
+  overflow: hidden;
+}
+
+nav .BackGrondtext .CssSlider .SlidersItemsNav .SliderItemtext .tricker h1 {
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  font-size: 59px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: margin-top .3s ease;
+  transition: margin-top .3s ease;
+}
+
+nav .BackGrondtext .CssSlider .SlidersItemsNav .SliderItemtext .subline {
+  width: 100px;
+  height: 2px;
+  margin: 10px auto;
+  background-color: #181818;
 }
 
 @media (max-width: 768px) {
@@ -29,19 +61,24 @@ nav .BackGrondtext p {
   border-bottom: 1px solid #ffffff;
 }
 
-nav .BackGrondtext h1 {
+nav .BackGrondtext .SliderItemtext {
+  width: 703px;
+  overflow: hidden;
+}
+
+nav .BackGrondtext .SliderItemtext h1 {
   font-weight: 400;
   font-size: 70px;
   color: #ffffff;
 }
 
 @media (max-width: 768px) {
-  nav .BackGrondtext h1 {
+  nav .BackGrondtext .SliderItemtext h1 {
     font-size: 34px;
   }
 }
 
-nav .BackGrondtext h1 span {
+nav .BackGrondtext .SliderItemtext h1 span {
   color: #1794db;
   font-weight: bold;
 }
@@ -54,6 +91,17 @@ nav .BackGrondtext button {
   padding: 8px 2px;
   text-transform: uppercase;
   border: 1px solid #ffffff;
+  margin-top: 20px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+nav .BackGrondtext button:hover {
+  background-color: #ee1d24;
+  color: white;
+  border: none;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 @media (max-width: 768px) {
@@ -79,10 +127,20 @@ nav .nav .logo {
   padding-left: 3rem;
 }
 
+@media (max-width: 768px) {
+  nav .nav .logo {
+    padding-left: 10px;
+  }
+}
+
 nav .nav .logo a {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
+}
+
+nav .nav .container {
+  padding: 0;
 }
 
 nav .nav div.main_list {
@@ -113,6 +171,8 @@ nav .nav div.main_list ul li a {
   color: #fff;
   line-height: 65px;
   font-size: 1rem;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 nav .nav div.main_list ul li a:hover {
@@ -141,16 +201,12 @@ nav .nav {
     display: block;
   }
   nav .nav div.logo {
-    padding: 0;
+    padding-left: 10px;
   }
   nav .nav div.main_list {
     width: 100%;
     height: 0;
     overflow: hidden;
-  }
-  nav .nav div.show_list {
-    height: auto;
-    display: none;
   }
   nav .nav div.main_list ul {
     -webkit-box-orient: vertical;
@@ -176,6 +232,10 @@ nav .nav {
     font-size: 1rem;
     padding: 20px;
     color: black;
+  }
+  nav .nav div.main_list .nav div.show_list {
+    height: auto;
+    display: none;
   }
   nav .nav div.media_button {
     display: block;
@@ -426,6 +486,26 @@ nav .myP {
 
 .ItemSVideoText {
   padding: 0 !important;
+}
+
+.SlickNav {
+  background: white !important;
+  position: fixed !important;
+  z-index: 66666;
+}
+
+.SlickNav .navTrigger i {
+  background-color: #ee1d24;
+}
+
+.SlickNav ul li a {
+  color: black !important;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.SlickNav ul li a:hover {
+  color: #ee1d24 !important;
 }
 
 #Application {
@@ -827,12 +907,12 @@ nav .myP {
 
 @media (max-width: 1300px) {
   #WORKFLOW h1::before {
-    top: 7px;
+    top: 12px;
     content: "";
     position: absolute;
     height: 19px;
     width: 200px;
-    left: -105px;
+    left: 47px;
   }
 }
 
@@ -865,12 +945,12 @@ nav .myP {
 
 @media (max-width: 1300px) {
   #WORKFLOW h1::after {
-    top: 7px;
+    top: 12px;
     content: "";
     position: absolute;
     height: 19px;
     width: 200px;
-    right: -100px;
+    right: 47px;
   }
 }
 
@@ -900,6 +980,32 @@ nav .myP {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.3px;
   line-height: 27px;
+}
+
+#WORKFLOW #utvs_62305b8ce581b {
+  overflow: hidden;
+  height: 450px;
+  position: relative;
+  max-width: 100%;
+  border: 1px solid;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 10px 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#WORKFLOW #utvs_62305b8ce581b .fa-youtube-play {
+  position: absolute;
+  color: white;
+  bottom: 10px;
+  left: 20px;
+  cursor: pointer;
+}
+
+#WORKFLOW #utvs_62305b8ce581b .ut-video-loading .fa-spinner {
+  position: absolute;
+  top: 50%;
 }
 
 #OurProduct h1 {
