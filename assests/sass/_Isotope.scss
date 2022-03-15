@@ -1,18 +1,18 @@
 #Isotope {
   padding: 30px 0px;
-  h1{
-    font-size: 26px;
+  h1 {
+    font-size: $h1Font;
     padding: 11px 1px;
     font-family: $FirstFontfamily;
     letter-spacing: 0.5px;
     font-weight: 500;
   }
- 
 
   .button-group {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     @media (max-width: 768px) {
       flex-wrap: wrap;
     }
@@ -32,18 +32,16 @@
       text-transform: uppercase;
       @media (max-width: 992px) {
         height: 100px;
-       
-       width: auto !important;
+
+        width: auto !important;
       }
       @media (max-width: 768px) {
         height: auto;
-       
-       width: auto !important;
+
+        width: auto !important;
       }
-     
     }
   }
- 
 
   .button:hover {
     background-color: $RedColor;
@@ -85,9 +83,10 @@
   }
 
   .grid-item {
-    margin: 0.8%;
+    margin: 1.1%;
     background-size: cover;
     transition: 0.2s ease;
+    margin: 0 auto;
   }
 
   .grid-item:hover {
@@ -107,28 +106,24 @@
   .g2 {
     width: 15%;
     height: 450px;
-
     background-position: top;
   }
 
   .g3 {
     width: 15%;
     height: 250px;
-
     @include BgImg;
   }
 
   .g4 {
     width: 15%;
     height: 200px;
-
     background-position: top;
   }
 
   .g5 {
     width: 31.6%;
     height: 600px;
-
     background-position: top;
   }
 
@@ -142,7 +137,6 @@
   .g7 {
     width: 15%;
     height: 200px;
-
     background-position: top;
   }
 
@@ -187,8 +181,6 @@
 
     background-position: top;
   }
-
-
 
   @media only screen and (max-width: 1900px) {
     .grid-item {
@@ -242,11 +234,10 @@
       width: auto;
     }
   }
-  .Isotops{
+  .Isotops {
     margin-left: 90px;
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
       margin-left: 40px;
-      
     }
   }
 }

@@ -4,17 +4,17 @@
     h1 {
         font-family: $FirstFontfamily;
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: $h1Font;
         font-weight: 500;
         position: relative;
         margin-top: 50px;
         &::before {
-            top: 7px;
+            top: 10px;
             content: "";
             position: absolute;
             height: 19px;
             width: 240px;
-            left: 66px;
+            left: 150px;
             background-color: #c4c4c4;
             @media (max-width: 1300px) {
                 top: 7px;
@@ -37,12 +37,12 @@
             }
         }
         &::after {
-            top: 7px;
+            top: 10px;
             content: "";
             position: absolute;
             height: 19px;
             width: 240px;
-            right: 66px;
+            right:   150px;
             background-color: #c4c4c4;
             @media (max-width: 1300px) {
                 top: 7px;

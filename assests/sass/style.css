@@ -116,7 +116,7 @@ nav .nav div.main_list ul li a {
 }
 
 nav .nav div.main_list ul li a:hover {
-  color: #203569;
+  color: #ee1d24;
 }
 
 nav .navTrigger {
@@ -124,7 +124,7 @@ nav .navTrigger {
 }
 
 nav .nav {
-  background-color: rgba(17, 17, 17, 0.315);
+  background-color: rgba(0, 0, 0, 0.836);
   padding-bottom: 10px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -638,7 +638,7 @@ nav .myP {
   font-family: "Bebas Neue", cursive;
   position: relative;
   padding-top: 30px;
-  font-size: 30px;
+  font-size: 40px;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -809,19 +809,19 @@ nav .myP {
 #WORKFLOW h1 {
   font-family: "Bebas Neue", cursive;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 500;
   position: relative;
   margin-top: 50px;
 }
 
 #WORKFLOW h1::before {
-  top: 7px;
+  top: 10px;
   content: "";
   position: absolute;
   height: 19px;
   width: 240px;
-  left: 66px;
+  left: 150px;
   background-color: #c4c4c4;
 }
 
@@ -854,12 +854,12 @@ nav .myP {
 }
 
 #WORKFLOW h1::after {
-  top: 7px;
+  top: 10px;
   content: "";
   position: absolute;
   height: 19px;
   width: 240px;
-  right: 66px;
+  right: 150px;
   background-color: #c4c4c4;
 }
 
@@ -904,7 +904,7 @@ nav .myP {
 
 #OurProduct h1 {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 500;
   padding: 10px 0px;
   font-family: "Bebas Neue", cursive;
@@ -1025,7 +1025,7 @@ nav .myP {
 }
 
 #Isotope h1 {
-  font-size: 26px;
+  font-size: 40px;
   padding: 11px 1px;
   font-family: "Bebas Neue", cursive;
   letter-spacing: 0.5px;
@@ -1042,6 +1042,7 @@ nav .myP {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -1120,10 +1121,11 @@ nav .myP {
 }
 
 #Isotope .grid-item {
-  margin: 0.8%;
+  margin: 1.1%;
   background-size: cover;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
+  margin: 0 auto;
 }
 
 #Isotope .grid-item:hover {
