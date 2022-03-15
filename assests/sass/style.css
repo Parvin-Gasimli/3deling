@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oxygen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 nav {
-  font-family: "Raleway";
   height: 650px;
   /* Media qurey section */
   /* Animation */
@@ -24,15 +24,15 @@ nav .BackGrondtext {
 
 nav .BackGrondtext p {
   display: inline-block;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1rem;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
 }
 
 nav .BackGrondtext h1 {
   font-weight: 400;
   font-size: 70px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -42,7 +42,7 @@ nav .BackGrondtext h1 {
 }
 
 nav .BackGrondtext h1 span {
-  color: #1794DB;
+  color: #1794db;
   font-weight: bold;
 }
 
@@ -50,10 +50,10 @@ nav .BackGrondtext button {
   background: transparent;
   width: 210px;
   height: 51px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 8px 2px;
   text-transform: uppercase;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -430,14 +430,15 @@ nav .myP {
 
 #Application {
   margin-top: 4rem;
-  font-family: "Raleway";
   padding: 2rem 0rem;
 }
 
 #Application h1 {
+  letter-spacing: 0.5px;
   font-size: 30px;
   position: relative;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: "Bebas Neue", cursive;
 }
 
 #Application h1::before {
@@ -447,7 +448,7 @@ nav .myP {
   height: 19px;
   width: 200px;
   left: 87px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 @media (max-width: 1200px) {
@@ -487,7 +488,7 @@ nav .myP {
   height: 19px;
   width: 200px;
   right: 87px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 @media (max-width: 1200px) {
@@ -598,14 +599,20 @@ nav .myP {
 }
 
 #Application .SocialApplication h3 {
+  font-family: "Bebas Neue", cursive;
   text-align: center;
   padding: 15px 0px;
-  font-size: 1rem;
+  font-size: 17px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
 #Application .SocialApplication p {
   padding: 0px 30px;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  line-height: 26px;
+  font-family: "Open Sans", sans-serif;
 }
 
 #Application .SocialContainer {
@@ -622,17 +629,18 @@ nav .myP {
 }
 
 #ABOUT3DELING {
-  font-family: "Raleway";
-  background-color: #D8ECFF;
+  background-color: #d8ecff;
   padding: 20px 0px;
 }
 
 #ABOUT3DELING .HeadAbout3Deling h2 {
+  letter-spacing: 0.5px;
+  font-family: "Bebas Neue", cursive;
   position: relative;
   padding-top: 30px;
   font-size: 30px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #ABOUT3DELING .HeadAbout3Deling h2::before {
@@ -642,7 +650,7 @@ nav .myP {
   height: 19px;
   width: 240px;
   left: 200px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 @media (max-width: 1200px) {
@@ -680,7 +688,7 @@ nav .myP {
   height: 19px;
   width: 240px;
   right: 200px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 @media (max-width: 1200px) {
@@ -722,12 +730,14 @@ nav .myP {
 
 #ABOUT3DELING .TextItem p {
   font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.3px;
 }
 
 #ABOUT3DELING button {
   border: 1px solid transparent;
   background-color: #ee1d24;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 150px;
   height: 40px;
   -webkit-transition: .2s all;
@@ -736,7 +746,7 @@ nav .myP {
 }
 
 #ABOUT3DELING button:hover {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #ee1d24;
 }
 
@@ -746,7 +756,9 @@ nav .myP {
 }
 
 #ABOUT3DELING #Information h6 {
+  font-family: "Bebas Neue", cursive;
   letter-spacing: 0.5px;
+  margin-bottom: 20px;
 }
 
 #ABOUT3DELING #Information .Info {
@@ -766,10 +778,11 @@ nav .myP {
 
 #ABOUT3DELING #Information .Info h5 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
   -webkit-transition: .2s all;
   transition: .2s all;
+  font-family: "Bebas Neue", cursive;
 }
 
 #ABOUT3DELING #Information .Info h5:hover {
@@ -778,6 +791,9 @@ nav .myP {
 
 #ABOUT3DELING #Information .Info p {
   font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  text-align: initial;
 }
 
 #ABOUT3DELING #Information .Info a {
@@ -787,14 +803,14 @@ nav .myP {
 }
 
 #WORKFLOW {
-  font-family: "Raleway";
   padding: 30px 0px;
 }
 
 #WORKFLOW h1 {
+  font-family: "Bebas Neue", cursive;
   text-transform: uppercase;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   position: relative;
   margin-top: 50px;
 }
@@ -881,17 +897,18 @@ nav .myP {
 
 #WORKFLOW .TextWorkFlow p {
   font-size: 1rem;
-}
-
-#OurProduct {
-  font-family: "Raleway";
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 27px;
 }
 
 #OurProduct h1 {
   text-transform: uppercase;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 10px 0px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.5px;
 }
 
 #OurProduct .ProductItem {
@@ -908,6 +925,11 @@ nav .myP {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#OurProduct .ProductItem h5 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 17px;
 }
 
 #OurProduct .ProductItem .ProductLogo img {
@@ -933,6 +955,11 @@ nav .myP {
 
 #OurProduct .ProductItemText p {
   font-size: 1rem;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0px;
+  line-height: 22px;
+  font-family: "Open Sans", sans-serif;
 }
 
 #OurProduct .col-lg-3 {
@@ -994,8 +1021,15 @@ nav .myP {
 
 #Isotope {
   padding: 30px 0px;
-  font-family: "Raleway";
   /* ---- button-group ---- */
+}
+
+#Isotope h1 {
+  font-size: 26px;
+  padding: 11px 1px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.5px;
+  font-weight: 500;
 }
 
 #Isotope .button-group {
@@ -1255,7 +1289,7 @@ nav .myP {
 
 #FooterPromotion {
   padding: 20px 0px;
-  background-color: #EDF6FF;
+  background-color: #edf6ff;
 }
 
 #FooterPromotion .FooterPromotionItem {
@@ -1285,7 +1319,7 @@ footer {
 }
 
 footer h3 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1rem;
 }
 
@@ -1307,7 +1341,7 @@ footer .FooterItem ul li a {
   text-decoration: none;
   font-size: 14px;
   font-weight: 300;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 footer .FooterItem ul li a i {

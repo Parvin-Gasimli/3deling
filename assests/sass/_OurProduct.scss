@@ -1,13 +1,19 @@
 #OurProduct {
-    font-family: $FirstFontfamily;
+  
     h1 {
         text-transform: uppercase;
         font-size: 25px;
-        font-weight: 600;
+        font-weight: 500;
         padding: 10px 0px;
+        font-family: $FirstFontfamily;
+        letter-spacing: 0.5px
     }
     .ProductItem {
         @include Flex(none, center, column);
+        h5{
+            font-family: $FirstFontfamily;
+            font-size: 17px;
+        }
         .ProductLogo {
             img {
                 width: 90px !important;
@@ -29,6 +35,11 @@
         }
         p {
             font-size: $textFont;
+            font-size: 15px;
+            text-align: center;
+            letter-spacing: 0px;
+            line-height: 22px;
+            font-family: $TextFontFamily;
         }
     }
     .col-lg-3{

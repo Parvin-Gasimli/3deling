@@ -1,14 +1,17 @@
 #Application {
     margin-top: 4rem;
-    font-family: $FirstFontfamily;
+ 
     padding: 2rem 0rem;
     @media (max-wdith: 768px) {
       
     }
     h1 {
+
+        letter-spacing: 0.5px;
         font-size: 30px;
         position: relative;
-        font-weight: 600;
+        font-weight: 500;
+        font-family: $FirstFontfamily;
         &::before {
             @media (max-width: 1200px) {
                 top: 10px;
@@ -95,13 +98,19 @@
             }
         }
         h3 {
+            font-family: $FirstFontfamily;
             text-align: center;
             padding: 15px 0px;
-            font-size: $textFont;
+            font-size: 17px;
+            letter-spacing: 0.5px;
             text-transform: uppercase;
         }
         p {
             padding: 0px 30px;
+            letter-spacing: 0.5px;
+            font-size: 15px;
+            line-height: 26px;
+            font-family: $TextFontFamily;
         }
     }
     .SocialContainer {

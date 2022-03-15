@@ -1,9 +1,12 @@
 #ABOUT3DELING {
     #Information {
+        
         margin-top: 10px;
         padding-top: 20px;
         h6 {
+            font-family: $FirstFontfamily;
             letter-spacing: 0.5px;
+            margin-bottom: 20px;
         }
 
         .Info {
@@ -17,15 +20,19 @@
             }
             h5 {
                 font-size: 20px;
-                font-weight: 500;
+                font-weight: 400;
                 cursor: pointer;
                 transition: .2s all;
+                font-family: $FirstFontfamily;
                 &:hover{
                     color: $RedColor;
                 }
             }
             p {
                 font-size: $textFont;
+                font-family: $TextFontFamily;
+                font-size: 15px;
+                text-align: initial;
             }
             a {
                 text-decoration: none;

@@ -1,15 +1,17 @@
 #ABOUT3DELING {
-    font-family: $FirstFontfamily;
+   
     // height: 500px;
     background-color: $LightBlue;
     padding: 20px 0px;
     .HeadAbout3Deling {
         h2 {
+            letter-spacing: 0.5px;
+            font-family: $FirstFontfamily;
             position: relative;
             padding-top: 30px;
             font-size: 30px;
             text-transform: uppercase;
-            font-weight: 600;
+            font-weight: 500;
             &::before {
                 @include BeforeBgAbout3Deling;
                 @media (max-width:1200px) {
@@ -74,6 +76,8 @@
         padding: 20px 10px;
         p{
             font-size: $textFont;
+            font-family: $TextFontFamily;
+            letter-spacing: 0.3px;
         }
     }
     button{
