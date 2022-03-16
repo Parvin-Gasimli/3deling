@@ -76,11 +76,12 @@
 
     #utvs_62305b8ce581b {
         overflow: hidden;
-        height: 450px;
+        height: 600px;
+        width: 1000px !important;
         position: relative;
         max-width: 100%;
         border: 1px solid;
-        width: 1100px;
+      
         margin: 0 auto;
         padding: 10px 7px;
         box-sizing: border-box;
@@ -106,6 +107,8 @@
             .fa-spinner {
                 position: absolute;
                 top: 50%;
+                left: 0;
+                right: 0;
             }
         }
         img{

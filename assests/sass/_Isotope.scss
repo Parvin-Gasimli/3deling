@@ -8,16 +8,8 @@
     font-weight: 500;
   }
 
-  .button-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    @media (max-width: 768px) {
-      flex-wrap: wrap;
-    }
+  .button {
     button {
-      height: 60px;
       display: inline-block;
       padding: 10px 18px;
       margin-bottom: 10px;
@@ -27,7 +19,7 @@
       font-family: sans-serif;
       font-size: 16px;
       font-weight: 300;
-      width: 200px;
+
       cursor: pointer;
       text-transform: uppercase;
       @media (max-width: 992px) {
@@ -40,204 +32,245 @@
 
         width: auto !important;
       }
+      .button:active {
+        background-color: $RedColor;
+        border-color: transparent;
+        color: white;
+      }
     }
   }
 
-  .button:hover {
+  button:hover {
     background-color: $RedColor;
     border-color: transparent;
     transition: all 0.25s ease;
     color: white;
   }
 
-  .button:active,
-  .button.is-checked {
-    background-color: $RedColor;
-    border-color: transparent;
-    color: white;
+  $baseline: 12;
+  $gutter: 20;
+  $border-radius: 0;
+  $inner-width: 1200px;
+
+  //== COLOURS
+  $color-white: #ffffff;
+  $color-black: #393838;
+  $color-muted: #e3e3e3;
+  $color-tomato: #ff5252;
+
+  $color-body: $color-black;
+  $color-main: $color-black;
+  $color-accent: $color-tomato;
+  $color-link-hover: $color-black;
+
+  $font-size-x-small: 12;
+  $font-size-small: 14;
+  $font-size-normal: 16;
+  $font-size-large: 18;
+  $font-size-x-large: 22;
+  $font-size-xx-large: 26;
+  $font-size-xxx-large: 38;
+  $font-size-ultra-large: 40;
+  $font-size-ultra-x-large: 58;
+
+  $font-size-body: $font-size-normal;
+  $font-size-h1: $font-size-xxx-large;
+  $font-size-h2: $font-size-xx-large;
+  $font-size-h3: $font-size-x-large;
+  $font-size-h4: $font-size-large;
+  $font-size-h5: $font-size-normal;
+
+  //-- FONT WEIGHT
+  $font-weight-light: 300;
+  $font-weight-regular: 400;
+  $font-weight-medium: 500;
+  $font-weight-bold: 700;
+  $font-weight-heavy: 900;
+
+  //== TRANSITIONS
+
+  $transition-default: 0.5s ease-in;
+  $transition-fast: 0.25s ease-in;
+
+  //== MEDIA QUERIES
+
+  $breakpoint-mobile: 320px;
+  $breakpoint-phablet: 600px;
+  $breakpoint-tablet: 768px;
+  $breakpoint-laptop: 1024px;
+  $breakpoint-desktop: 1280px;
+  $breakpoint-desktop-large: 1440px;
+  $breakpoint-desktop-x-large: 1600px;
+
+  /* ********* SASS EXTENDS  ********* */
+
+  %list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
-  .button:active {
-    background-color: white;
-    border-color: white;
-    color: white;
-  }
-
-  /* ---- button-group ---- */
-
-  .button-group {
-    margin: 20px 0px 0px 10px;
-  }
-
-  .button-group:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-
-  .button-group .button {
-    float: left;
-    border-radius: 0.1em;
-    margin-left: 0;
-    margin-right: 5px;
-  }
-
-  .grid-item {
-    margin: 1.1%;
-    background-size: cover;
-    transition: 0.2s ease;
+  %inner {
+    width: $inner-width;
     margin: 0 auto;
   }
 
-  .grid-item:hover {
-    cursor: pointer;
-    background-color: #f63b0052;
-    background-blend-mode: multiply;
-    transition: ease 0.5s;
+  /* ********* SASS FUNCTIONS ********* */
+
+  $context: $font-size-body;
+
+  @function em($pixels, $context: $context) {
+    @return ($pixels/$context) * 1em;
   }
 
-  .g1 {
-    width: 15%;
-    height: 450px;
+  /* ********* SASS MIXINS ********* */
 
-    @include BgImg;
+  @mixin gradient($image: none, $from: $color-white, $to: $color-muted) {
+    background: $image $from;
+    background: $image, linear-gradient(to bottom, $from 0%, $to 100%);
   }
 
-  .g2 {
-    width: 15%;
-    height: 450px;
-    background-position: top;
+  h2 {
+    font-weight: $font-weight-regular;
   }
 
-  .g3 {
-    width: 15%;
-    height: 250px;
-    @include BgImg;
+  .copyright {
+    font-style: italic;
   }
 
-  .g4 {
-    width: 15%;
-    height: 200px;
-    background-position: top;
+  .content {
+    @extend %inner;
+    text-align: center;
   }
 
-  .g5 {
-    width: 31.6%;
-    height: 600px;
-    background-position: top;
+  p {
+    margin-bottom: em($baseline/2);
   }
 
-  .g6 {
-    width: 15%;
-    height: 200px;
-
-    background-position: top;
+  ul {
+    margin-bottom: 1em;
+    list-style: none;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-around;
   }
 
-  .g7 {
-    width: 15%;
-    height: 200px;
-    background-position: top;
+  /* FILTERS */
+
+  .button {
+    display: block;
+    width: 100%;
+    padding: 20px 0px;
   }
 
-  .g8 {
-    width: 31.6%;
-    height: 500px;
-
-    background-position: bottom;
+  button {
+    margin: 0.5em;
+    padding: 0.5rem;
+    border: 1px solid $color-black;
+    color: $color-black;
+    background: none;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-size: em($font-size-small);
   }
 
-  .g9 {
-    width: 15%;
-    height: 300px;
-
-    background-position: bottom;
+  button.is-active {
+    background: $RedColor;
+    border: transparent;
+    color: $color-white;
   }
 
-  .g10 {
-    width: 15%;
-    height: 200px;
+  /* LIST */
 
-    background-position: top;
+  .list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
-  .g11 {
-    width: 31.6%;
-    height: 348px;
+  .list__item {
+    display: block;
+    width: 100%;
+    height: 18em;
+    overflow: hidden;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 0 0 2px rgba($color-black, 0.2);
+    position: relative;
+    .HoverItemIsotope {
+      width: 100%;
+      height: 100%;
 
-    background-position: top;
+      background-color: #20356996;
+      color: white;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      right: 0;
+      transform: translateY(-320px);
+      transition: .3s ease;
+      .HoverBody {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    &:hover .HoverItemIsotope{
+      transform: translateY(0px);
+    }
+
   }
 
-  .g12 {
-    width: 15%;
-    height: 250px;
-
-    background-position: bottom;
+  .list__item__title {
+    display: block;
+    margin-top: 30%;
   }
 
-  .g13 {
-    width: 15%;
-    height: 200px;
-
-    background-position: top;
-  }
-
-  @media only screen and (max-width: 1900px) {
-    .grid-item {
-      width: 16%;
+  @media screen and (min-width: 600px) {
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .list__item {
+      width: calc(33% - 1em);
+      margin-right: 1em;
+    }
+    .list__item:nth-child(3n) {
+      clear: left;
+    }
+    .list__item:nth-child(-n + 2) {
+      margin-top: 0;
     }
   }
-  @media only screen and (max-width: 1500px) {
-    .grid-item {
-      width: 15.9%;
+  @media screen and (min-width: 768px) {
+    button {
+      margin: 0.5em;
+      padding: 0.5em;
     }
-  }
-  @media only screen and (max-width: 1320px) {
-    .grid-item {
-      width: 15.8%;
+
+    .list__item {
+      width: calc(20% - 1em);
     }
-  }
-  @media only screen and (max-width: 1172px) {
-    .grid-item {
-      width: 15.7%;
+    .list__item:nth-child(2n) {
+      margin-right: 1em;
     }
-  }
-  @media only screen and (max-width: 1020px) {
-    .grid-item {
-      width: 18.8%;
+    .list__item:nth-child(3n) {
+      clear: none;
+      margin-right: 0;
     }
-  }
-  @media only screen and (max-width: 862px) {
-    .grid-item {
-      width: 23.5%;
+    .list__item:nth-child(4n) {
+      clear: left;
     }
-  }
-  @media only screen and (max-width: 862px) {
-    .grid-item {
-      width: 23.5%;
-    }
-  }
-  @media only screen and (max-width: 672px) {
-    .grid-item {
-      width: 31.2%;
-    }
-    .button {
-      font-size: 10px;
-    }
-  }
-  @media only screen and (max-width: 497px) {
-    .grid-item {
-      width: 47%;
-    }
-    .button {
-      font-size: 10px;
-      width: auto;
-    }
-  }
-  .Isotops {
-    margin-left: 90px;
-    @media (max-width: 768px) {
-      margin-left: 40px;
+    .list__item:nth-child(-n + 3) {
+      margin-top: 0;
     }
   }
 }
