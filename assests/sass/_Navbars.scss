@@ -1,6 +1,4 @@
 nav {
-    height: 650px;
-
     .BackGrondtext {
         display: flex;
         justify-content: center;
@@ -139,11 +137,21 @@ nav {
         margin: 0;
         padding: 0;
         li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: auto;
             height: 65px;
             padding: 0;
-            padding-right: 3rem;
+            padding-right: 1rem;
+            color: $mainTextColor;
+            i {
+                font-size: 6px;
+                margin-left: 9px;
+                margin-top: 6px;
+            }
             a {
+                margin-left: 4px;
                 text-decoration: none;
                 color: #fff;
                 line-height: 65px;
@@ -162,11 +170,11 @@ nav {
 
     .nav {
         background-color: rgba(0, 0, 0, 0.592);
-    
+
         padding-bottom: 10px;
         -webkit-transition: all 0.4s ease;
         transition: all 0.4s ease;
-        &:hover{
+        &:hover {
             background-color: rgba(0, 0, 0, 0.836);
         }
     }
@@ -437,14 +445,14 @@ nav {
 
     #Product {
         position: relative;
-       
+
         ul {
-            border-top: 2px solid $RedColor;
+            border-top: 2px solid #203569;
             z-index: 666666;
-          height: auto;
+            height: auto;
             width: 200px;
             height: auto;
-            background-color: rgba(26, 5, 5, 0.767);
+            background-color: #203569;
             padding: 0;
             position: absolute;
             top: 60px;
@@ -452,29 +460,28 @@ nav {
             right: 0px;
             display: flex;
             flex-direction: column;
-display: none;
-            transition: .4s ease;
-            .ProductItem{
+            display: none;
+            transition: 0.4s ease;
+            .ProductItem {
                 text-align: left;
                 padding-left: 25px;
                 height: 50px;
                 a {
                     font-size: 14px;
-                    color: rgb(122, 122, 122) !important;
-                    transition: .3s ease;
-                    &:hover{
+                    color: white !important;
+                    transition: 0.3s ease;
+                    &:hover {
                         color: $RedColor !important;
                     }
                 }
-                @media (max-width:768px) {
-            background-color: rgb(0, 0, 0);
+                @media (max-width: 768px) {
+                    background-color: rgb(0, 0, 0);
                 }
             }
         }
         &:hover ul {
-          display: flex;
+            display: flex;
         }
-      
     }
 }
 
