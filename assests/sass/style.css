@@ -799,7 +799,7 @@ nav #Product:hover ul {
 
 @media (max-width: 768px) {
   #Application .SocialApplication p {
-    padding: 0px;
+    padding: 28px;
   }
 }
 
