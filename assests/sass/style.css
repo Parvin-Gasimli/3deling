@@ -1616,7 +1616,12 @@ footer .FooterItem ul li a i {
   margin-bottom: 100px;
 }
 
+#Blogs .CenterBlog p {
+  font-size: 14px;
+}
+
 #Blogs .CenterBlog h1 {
+  font-family: "Bebas Neue", cursive;
   font-size: 25px;
   cursor: pointer;
   -webkit-transition: 0.2s ease;
@@ -1637,6 +1642,7 @@ footer .FooterItem ul li a i {
 #Blogs .CenterBlog img {
   border-radius: 7px;
   max-width: 100%;
+  padding: 14px 0px;
 }
 
 #Blogs .RightBlog {
