@@ -216,17 +216,20 @@
       left: 0;
       right: 0;
       transform: translateY(-320px);
-      transition: .3s ease;
+      transition: 0.3s ease;
       .HoverBody {
         p {
           font-size: 12px;
         }
       }
     }
-    &:hover .HoverItemIsotope{
+    &:hover .HoverItemIsotope {
       transform: translateY(0px);
     }
-
+    @media (max-width:768px) {
+      max-width: 100%;
+      
+    }
   }
 
   .list__item__title {
@@ -258,6 +261,9 @@
 
     .list__item {
       width: calc(20% - 1em);
+      img {
+        max-width: 100%;
+      }
     }
     .list__item:nth-child(2n) {
       margin-right: 1em;

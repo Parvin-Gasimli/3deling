@@ -1406,8 +1406,8 @@ nav #Product:hover ul {
   right: 0;
   -webkit-transform: translateY(-320px);
           transform: translateY(-320px);
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 #Isotope .list__item .HoverItemIsotope .HoverBody p {
@@ -1417,6 +1417,12 @@ nav #Product:hover ul {
 #Isotope .list__item:hover .HoverItemIsotope {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
+}
+
+@media (max-width: 768px) {
+  #Isotope .list__item {
+    max-width: 100%;
+  }
 }
 
 #Isotope .list__item__title {
@@ -1451,6 +1457,9 @@ nav #Product:hover ul {
   }
   #Isotope .list__item {
     width: calc(20% - 1em);
+  }
+  #Isotope .list__item img {
+    max-width: 100%;
   }
   #Isotope .list__item:nth-child(2n) {
     margin-right: 1em;
