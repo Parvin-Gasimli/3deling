@@ -1529,17 +1529,28 @@ footer .FooterItem ul li a i {
   }
 }
 
-#Blogs .BlogLeft h1 {
-  font-size: 55px;
-  font-weight: 600;
-  text-align: end;
-  margin: 0;
+#Blogs .BlogLeft .DateFormats {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #EFEFEF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#Blogs .BlogLeft p {
-  margin-top: -7px;
+#Blogs .BlogLeft .DateFormats #date {
+  font-size: 50px;
   text-align: end;
-  font-size: 17px;
+}
+
+#Blogs .BlogLeft .DateFormats #year {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: end;
 }
 
 #Blogs .BlogLeft ul {
@@ -1552,9 +1563,9 @@ footer .FooterItem ul li a i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1575,10 +1586,10 @@ footer .FooterItem ul li a i {
   color: black;
 }
 
-#Blogs .BlogLeft ul li p {
+#Blogs .BlogLeft ul li span {
   margin-left: 10px;
   margin-bottom: 0px;
-  font-size: 12px;
+  font-size: 10px;
   text-decoration: none;
   color: black;
   -webkit-transition: 0.3s ease;
@@ -1587,12 +1598,12 @@ footer .FooterItem ul li a i {
   font-weight: 500;
 }
 
-#Blogs .BlogLeft ul li p:hover {
+#Blogs .BlogLeft ul li span:hover {
   color: #203569;
 }
 
 @media (max-width: 768px) {
-  #Blogs .BlogLeft ul li p {
+  #Blogs .BlogLeft ul li span {
     margin: 0;
   }
 }
@@ -1601,8 +1612,12 @@ footer .FooterItem ul li a i {
   font-weight: 600;
 }
 
+#Blogs .CenterBlog {
+  margin-bottom: 100px;
+}
+
 #Blogs .CenterBlog h1 {
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
@@ -1620,6 +1635,7 @@ footer .FooterItem ul li a i {
 }
 
 #Blogs .CenterBlog img {
+  border-radius: 7px;
   max-width: 100%;
 }
 

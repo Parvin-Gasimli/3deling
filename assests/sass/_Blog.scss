@@ -1,23 +1,28 @@
 #Blogs {
     .BlogLeft {
-        h1 {
-            font-size: 55px;
-            font-weight: 600;
-            text-align: end;
-            margin: 0;
-        }
-        p {
-            margin-top: -7px;
-            text-align: end;
-            font-size: 17px;
-        }
+       .DateFormats{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #EFEFEF;
+           display: flex;
+           flex-direction: column;
+           #date{
+               font-size: 50px;
+               text-align: end;
+           }
+           #year{
+               font-size: 20px;
+               font-weight: 500;
+               text-align: end;
+           }
+       }
         ul {
             padding: 0;
             text-align: end;
             @media (max-width: 768px) {
                 display: flex;
 
-                justify-content: space-between;
+                justify-content: space-evenly;
                 align-items: center;
             }
             li {
@@ -29,10 +34,10 @@
                     text-decoration: none;
                     color: black;
                 }
-                p {
+                span{
                     margin-left: 10px;
                     margin-bottom: 0px;
-                    font-size: 12px;
+                    font-size: 10px;
                     text-decoration: none;
                     color: black;
                     transition: 0.3s ease;
@@ -52,8 +57,9 @@
         }
     }
     .CenterBlog {
+        margin-bottom: 100px;
         h1 {
-            font-size: 30px;
+            font-size: 25px;
             cursor: pointer;
             transition: 0.2s ease;
             &:hover {
@@ -65,6 +71,7 @@
             }
         }
         img {
+            border-radius: 7px;
             max-width: 100%;
         }
     }
