@@ -24,6 +24,9 @@
                     opacity: 1;
                     transform: scale(1.05);
                 }
+                @media (max-width: 768px) {
+                  width: 135px;
+                }
             }
             @media (max-width: 768px) {
                 text-align: center;
