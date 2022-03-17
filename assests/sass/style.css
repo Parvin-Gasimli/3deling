@@ -1642,7 +1642,7 @@ footer .FooterItem ul li a i {
 #Blogs .CenterBlog img {
   border-radius: 7px;
   max-width: 100%;
-  padding: 14px 0px;
+  margin-bottom: 20px;
 }
 
 #Blogs .RightBlog {
