@@ -11,8 +11,8 @@
                text-align: end;
            }
            #year{
-               font-size: 20px;
-               font-weight: 500;
+               font-size: 14px;
+               font-weight: 400;
                text-align: end;
            }
        }
@@ -74,6 +74,10 @@
                 font-variant: unicase;
             }
         }
+        h4{
+            font-size: 20px;
+            font-weight: 500;
+        }
         img {
             border-radius: 7px;
             max-width: 100%;
@@ -81,10 +85,13 @@
         }
     }
     .RightBlog {
-        margin-top: 50px;
+        margin-top: 39px;
         input {
-            width: 398px;
+            width: 340px;
             padding: 8px;
+            &:focus{
+                box-shadow: none;
+            }
             @media (max-width:768px) {
                 width: 300px;
                 padding: 5px;

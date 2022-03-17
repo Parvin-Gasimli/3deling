@@ -1563,8 +1563,8 @@ footer .FooterItem ul li a i {
 }
 
 #Blogs .BlogLeft .DateFormats #year {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   text-align: end;
 }
 
@@ -1654,6 +1654,11 @@ footer .FooterItem ul li a i {
   }
 }
 
+#Blogs .CenterBlog h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
 #Blogs .CenterBlog img {
   border-radius: 7px;
   max-width: 100%;
@@ -1661,12 +1666,17 @@ footer .FooterItem ul li a i {
 }
 
 #Blogs .RightBlog {
-  margin-top: 50px;
+  margin-top: 39px;
 }
 
 #Blogs .RightBlog input {
-  width: 398px;
+  width: 340px;
   padding: 8px;
+}
+
+#Blogs .RightBlog input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media (max-width: 768px) {
