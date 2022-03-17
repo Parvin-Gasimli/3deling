@@ -71,6 +71,10 @@
             font-family: $TextFontFamily;
             letter-spacing: 0.3px;
             line-height: 27px;
+            @media (max-width:768px) {
+                padding: 9px 21px;
+                
+            }
         }
     }
 
