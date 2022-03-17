@@ -797,6 +797,12 @@ nav #Product:hover ul {
   font-family: "Open Sans", sans-serif;
 }
 
+@media (max-width: 768px) {
+  #Application .SocialApplication p {
+    padding: 0px;
+  }
+}
+
 #Application .SocialContainer {
   padding: 40px 0px;
 }
@@ -1457,9 +1463,6 @@ nav #Product:hover ul {
   }
   #Isotope .list__item {
     width: calc(20% - 1em);
-  }
-  #Isotope .list__item img {
-    max-width: 100%;
   }
   #Isotope .list__item:nth-child(2n) {
     margin-right: 1em;

@@ -111,6 +111,10 @@
             font-size: 15px;
             line-height: 26px;
             font-family: $TextFontFamily;
+            @media (max-width:768px) {
+                padding: 0px;
+                
+            }
         }
     }
     .SocialContainer {

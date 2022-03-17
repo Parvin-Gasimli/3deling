@@ -261,9 +261,7 @@
 
     .list__item {
       width: calc(20% - 1em);
-      img {
-        max-width: 100%;
-      }
+      
     }
     .list__item:nth-child(2n) {
       margin-right: 1em;
