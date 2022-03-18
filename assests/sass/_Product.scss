@@ -30,6 +30,7 @@
             @include Flex(center, center, none);
             @media (max-width: 576px) {
                 height: auto;
+                padding: 21px 0px;
             }
             img {
                 width: 100px;

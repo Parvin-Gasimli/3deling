@@ -131,7 +131,22 @@ $(document).ready(function() {
     prevArrow: '<i class="fa-solid fa-chevron-left"></i>',
     nextArrow: '<i class="fa-solid fa-chevron-right"></i>',
     speed: 1200,
-    adaptiveHeight: false
+    adaptiveHeight: false,
+    responsive: [{
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+       breakpoint: 400,
+       settings: {
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+       }
+    }]
   });
 
   $bar = $('.slider-progress .progress');

@@ -1813,6 +1813,7 @@ footer .FooterItem ul li a i {
 @media (max-width: 576px) {
   #Product .image .infos {
     height: auto;
+    padding: 21px 0px;
   }
 }
 
