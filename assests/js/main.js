@@ -106,3 +106,67 @@ $(document).ready(function($) {
     }]
 });
 });
+
+
+
+
+$(window).on("scroll", function (event) {
+  if ($(this).scrollTop() > 600) {
+      $(".back-to-top").fadeIn(200);
+  } else {
+      $(".back-to-top").fadeOut(200);
+  }
+});
+
+$(document).ready(function() {
+  var time = 2;
+  var $bar,
+    $slick,
+    isPause,
+    tick,
+    percentTime;
+
+  $slick = $('.slider');
+  $slick.slick({
+    prevArrow: '<i class="fa-solid fa-chevron-left"></i>',
+    nextArrow: '<i class="fa-solid fa-chevron-right"></i>',
+    speed: 1200,
+    adaptiveHeight: false
+  });
+
+  $bar = $('.slider-progress .progress');
+
+  function startProgressbar() {
+    resetProgressbar();
+    percentTime = 0;
+    isPause = false;
+    tick = setInterval(interval, 30);
+  }
+
+  function interval() {
+    if (isPause === false) {
+      percentTime += 1 / (time + 0.1);
+      $bar.css({
+        width: percentTime + "%"
+      });
+      if (percentTime >= 100) {
+        $slick.slick('slickNext');
+        startProgressbar();
+      }
+    }
+  }
+
+  function resetProgressbar() {
+    $bar.css({
+      width: 0 + '%'
+    });
+    clearTimeout(tick);
+  }
+
+  startProgressbar();
+
+  $('.slick-next, .slick-prev').click(function() {
+    startProgressbar();
+  });
+
+});
