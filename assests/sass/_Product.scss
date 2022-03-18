@@ -1,17 +1,99 @@
 #Product {
-
-    .slider-wrapper{
+    .slider-wrapper {
         position: relative;
         width: 100%;
         height: 600px;
         overflow: hidden;
-        @media (max-width:950px) {
+
+        @media (max-width: 950px) {
             height: auto;
-            
         }
-      }
-      
-      .slick-slider {
+    }
+    .image {
+        position: relative;
+        height: 600px;
+
+        @media (max-width: 768px) {
+            height: auto;
+        }
+
+        .infos {
+            background-color: rgba(0, 0, 0, 0.664);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 5555;
+            right: 0px;
+            left: 0px;
+            padding: 15px 0px;
+            @include Flex(center, center, none);
+            @media (max-width: 576px) {
+                height: auto;
+            }
+            img {
+                width: 100px;
+                margin: 0 auto;
+                @media (max-width: 576px) {
+                    width: 40px;
+                    padding: 8px;
+                }
+            }
+            h2 {
+                font-size: 37px;
+                font-weight: 600;
+                margin-top: 15px;
+                text-align: center;
+                border-top: 2px solid white;
+                border-bottom: 2px solid white;
+                padding: 20px 0px;
+                color: white;
+                text-transform: uppercase;
+                span {
+                    color: $RedColor;
+                }
+                @media (max-width: 576px) {
+                    font-size: 14px;
+                    padding: 11px;
+                }
+            }
+            p {
+                font-size: 15px;
+                color: white;
+                @media (max-width: 576px) {
+                    font-size: 13px;
+                    margin: 0;
+                    padding: 0px 20px;
+                }
+            }
+            button {
+                text-align: center;
+                padding: 15px 0px;
+                background-color: rgba(128, 128, 128, 0.562);
+                width: 100%;
+                color: white;
+                font-size: 17px;
+                border: 1px solid black;
+                filter: blur(0.2px);
+                transition: 0.2s all;
+                &:hover {
+                    background-color: $mainTextColor;
+                    color: white;
+                    border: 1px solid transparent;
+                }
+                @media (max-width: 576px) {
+                    padding: 5px 0px;
+                    width: auto;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .slick-slider {
         position: relative;
         display: block;
         box-sizing: border-box;
@@ -25,149 +107,168 @@
         -ms-touch-action: none;
         touch-action: none;
         -webkit-tap-highlight-color: transparent;
-      }
-      
-      .slick-list {
+    }
+
+    .slick-list {
         position: relative;
         overflow: hidden;
         display: block;
         margin: 0;
         padding: 0;
-      }
-      
-      .slick-list:focus {
+    }
+
+    .slick-list:focus {
         outline: none;
-      }
-      
-      .slick-list.dragging {
+    }
+
+    .slick-list.dragging {
         cursor: pointer;
         cursor: hand;
-      }
-      
-      .slick-slider .slick-list,
-      .slick-track,
-      .slick-slide,
-      .slick-slide img {
+    }
+
+    .slick-slider .slick-list,
+    .slick-track,
+    .slick-slide,
+    .slick-slide img {
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
         -o-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
-      }
-      
-      .slick-track {
+    }
+
+    .slick-track {
         position: relative;
         left: 0;
         top: 0;
         display: block;
         zoom: 1;
-      }
-      
-      .slick-track:before,
-      .slick-track:after {
+    }
+
+    .slick-track:before,
+    .slick-track:after {
         content: "";
         display: table;
-      }
-      
-      .slick-track:after {
+    }
+
+    .slick-track:after {
         clear: both;
-      }
-      
-      .slick-loading .slick-track {
+    }
+
+    .slick-loading .slick-track {
         visibility: hidden;
-      }
-      
-      .slick-slide {
+    }
+
+    .slick-slide {
         float: left;
         height: 100%;
         min-height: 1px;
         display: none;
-      }
-      
-      .slick-slide img {
+    }
+
+    .slick-slide img {
         display: block;
         max-width: 100%;
-      }
-      
-      .slick-slide.dragging img {
+    }
+
+    .slick-slide.dragging img {
         pointer-events: none;
-      }
-      
-      .slick-initialized .slick-slide {
+    }
+
+    .slick-initialized .slick-slide {
         display: block;
-      }
-      
-      .slick-loading .slick-slide {
+    }
+
+    .slick-loading .slick-slide {
         visibility: hidden;
-      }
-      
-      .slick-vertical .slick-slide {
+    }
+
+    .slick-vertical .slick-slide {
         display: block;
         height: auto;
         border: 1px solid transparent;
-      }
-      
-      .slick-slide > .slick-slider-img {
+    }
+
+    .slick-slide > .slick-slider-img {
         position: relative;
         display: block;
         width: 100%;
-      }
-      
-      .slick-slide .image {
-        /*height: 180px;*/
-      }
-      
-      .slick-slide img {
+        filter: blur(2px);
+    }
+
+    .slick-slide img {
         display: block;
         width: 100%;
-      }
-      
-      .slick-slide img.slick-loading {
+    }
+
+    .slick-slide img.slick-loading {
         display: none;
-      }
-      
-      
-      .fa-chevron-left{
+    }
+
+    .fa-chevron-left {
         background: rgba(185, 184, 184, 0.774);
         border: none;
         border-radius: none;
         position: absolute;
-        top: 20%;
+        top: 40%;
         transform: translateY(-20%);
-        left: 0;
-        padding: 0.25em 0.5em;
-        box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+        left: 10px;
+        padding: 1em 1.5em;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
         z-index: 400;
-      }
-      
-      .fa-chevron-right{
-        background: rgba(138, 137, 137, 0.705);
+        cursor: pointer;
+        transition: 0.2s ease;
+        &:hover {
+            color: $mainTextColor;
+        }
+        @media (max-width:576px) {
+            left: 5px;
+            padding: 4px 10px;
+            
+        }
+    }
+
+    .fa-chevron-right {
+        background: rgba(185, 184, 184, 0.774);
         border: none;
         border-radius: none;
         position: absolute;
-        top: 20%;
+        cursor: pointer;
+        top: 40%;
         transform: translateY(-20%);
-        right: 0;
-        padding: 0.25em 0.5em;
-        box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+        right: 10px;
+        padding: 1em 1.5em;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
         z-index: 400;
-      }
-      
-      /* progress bar */
-      .slider-progress {
+        transition: 0.2s ease;
+        &:hover {
+            color: $mainTextColor;
+        }
+        @media (max-width:576px) {
+            right: 5px;
+            padding: 4px 10px;
+            
+        }
+    }
+
+    /* progress bar */
+    .slider-progress {
         width: 100%;
         height: 10px;
-        background: rgba(255,255,255,0.5);
+        background: rgba(255, 255, 255, 0.5);
         position: absolute;
         bottom: 0;
-      }
-      .slider-progress .progress {
+        @media (max-width:576px) {
+            height: 2px;
+            
+        }
+    }
+    .slider-progress .progress {
         width: 0%;
         height: 10px;
-        background: #e74c3c;
-      }
-      
-    
+        background: $RedColor;
+        
+    }
 }
 
 #ProductMeshModel {
@@ -276,12 +377,11 @@
         position: relative;
         .fa-chevron-right {
             @include Flex(center, center, none);
-           @include SlickProductRight;
+            @include SlickProductRight;
         }
         .fa-chevron-left {
             @include Flex(center, center, none);
             @include SlickProductLeft;
-           
         }
     }
 }
