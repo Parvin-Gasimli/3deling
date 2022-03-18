@@ -1,5 +1,118 @@
-#Product{
+#Product {
+}
 
+#ProductMeshModel {
+    padding: 40px 0px;
+    margin: 15px 0px;
+    h1 {
+        font-family: $FirstFontfamily;
+        font-size: 38px;
+    }
+    .LeftP {
+        padding: 30px 0px;
+        margin: 10px 0px;
+        p {
+            line-height: 33px;
+        }
+    }
+    .RightP {
+        @extend .LeftP;
+    }
+    h5 {
+        display: inline-block;
 
-    
+        font-family: $FirstFontfamily;
+        font-size: 20px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+
+            top: 28px;
+            left: 77px;
+            background-color: $RedColor;
+            width: 40px;
+            height: 2px;
+        }
+    }
+
+    .IncludeApp {
+        padding: 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .AppItem {
+            display: flex;
+            align-items: center;
+        }
+        p {
+            font-weight: 500;
+            margin: 0;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        &:hover {
+            color: $RedColor;
+        }
+    }
+}
+
+#FooterSliderSection {
+    .card-img-top {
+        width: 100%;
+        border-top-left-radius: calc(0.25rem - 1px);
+        border-top-right-radius: calc(0.25rem - 1px);
+    }
+    .card {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        .HoverItemProduct {
+            @include HoverProduct;
+
+            @include Flex(center, center, none);
+            opacity: 0;
+            transition: 0.3s ease;
+            .HoverProductItem {
+                @include Flex(none, center, column);
+                text-align: center;
+                i {
+                    font-size: 20px;
+                    color: white;
+                    margin: 10px 0px;
+                }
+                p {
+                    font-size: 14px;
+                    color: white;
+                }
+            }
+        }
+        &:hover .HoverItemProduct {
+            opacity: 1;
+        }
+        img {
+            transform: scale(1);
+            transition: 0.3s ease;
+        }
+        &:hover img {
+            transform: scale(1.2);
+        }
+    }
+
+    .card-slider {
+        position: relative;
+        .fa-chevron-right {
+            @include Flex(center, center, none);
+           @include SlickProductRight;
+        }
+        .fa-chevron-left {
+            @include Flex(center, center, none);
+            @include SlickProductLeft;
+           
+        }
+    }
 }

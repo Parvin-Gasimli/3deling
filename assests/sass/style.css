@@ -19,9 +19,15 @@ nav .BackGrondtext {
   position: relative;
   height: auto;
   overflow: hidden;
-  padding: 247px 0px;
+  padding: 214px 0px;
   background-color: rgba(3, 3, 3, 0.592);
   top: 0px;
+}
+
+@media (max-width: 768px) {
+  nav .BackGrondtext {
+    padding: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -575,7 +581,7 @@ nav #Product:hover ul {
 #videoBkg {
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
-  height: 720px;
+  height: 655px;
   top: 0;
   left: fixed;
   position: absolute;
@@ -584,6 +590,12 @@ nav #Product:hover ul {
   /* height: 300px; */
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  #videoBkg {
+    height: 716px;
+  }
 }
 
 .ItemSVideoText {
@@ -1743,6 +1755,233 @@ footer .FooterItem ul li a i {
 #Blogs .RightBlog #ButtonList li button:hover {
   color: white;
   background-color: #203569;
+}
+
+#ProductMeshModel {
+  padding: 40px 0px;
+  margin: 15px 0px;
+}
+
+#ProductMeshModel h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 38px;
+}
+
+#ProductMeshModel .LeftP, #ProductMeshModel .RightP {
+  padding: 30px 0px;
+  margin: 10px 0px;
+}
+
+#ProductMeshModel .LeftP p, #ProductMeshModel .RightP p {
+  line-height: 33px;
+}
+
+#ProductMeshModel h5 {
+  display: inline-block;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  position: relative;
+}
+
+#ProductMeshModel h5::after {
+  position: absolute;
+  content: "";
+  top: 28px;
+  left: 77px;
+  background-color: #ee1d24;
+  width: 40px;
+  height: 2px;
+}
+
+#ProductMeshModel .IncludeApp {
+  padding: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  #ProductMeshModel .IncludeApp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+#ProductMeshModel .IncludeApp .AppItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#ProductMeshModel .IncludeApp p {
+  font-weight: 500;
+  margin: 0;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#ProductMeshModel .IncludeApp:hover {
+  color: #ee1d24;
+}
+
+#FooterSliderSection .card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+#FooterSliderSection .card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#FooterSliderSection .card .HoverItemProduct {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #20356996;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#FooterSliderSection .card .HoverItemProduct .HoverProductItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#FooterSliderSection .card .HoverItemProduct .HoverProductItem i {
+  font-size: 20px;
+  color: white;
+  margin: 10px 0px;
+}
+
+#FooterSliderSection .card .HoverItemProduct .HoverProductItem p {
+  font-size: 14px;
+  color: white;
+}
+
+#FooterSliderSection .card:hover .HoverItemProduct {
+  opacity: 1;
+}
+
+#FooterSliderSection .card img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#FooterSliderSection .card:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#FooterSliderSection .card-slider {
+  position: relative;
+}
+
+#FooterSliderSection .card-slider .fa-chevron-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  top: 50%;
+  right: 10px;
+  position: absolute;
+  z-index: 5555;
+  width: 40px;
+  border: 1px solid transparent;
+  padding: 10px 0px;
+  background-color: rgba(212, 211, 211, 0.808);
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#FooterSliderSection .card-slider .fa-chevron-right:hover {
+  opacity: 1;
+}
+
+#FooterSliderSection .card-slider .fa-chevron-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  z-index: 666;
+  top: 50%;
+  left: 10px;
+  position: absolute;
+  width: 40px;
+  border: 1px solid transparent;
+  padding: 10px 0px;
+  background-color: rgba(212, 211, 211, 0.808);
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#FooterSliderSection .card-slider .fa-chevron-left:hover {
+  opacity: 1;
 }
 
 *,
