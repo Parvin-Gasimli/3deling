@@ -1887,7 +1887,7 @@ footer .FooterItem ul li a i {
 
 @media (max-width: 576px) {
   #Product .image .infos button {
-    padding: 5px 0px;
+    padding: 5px 5px;
     width: auto;
     margin: 0 auto;
     display: -webkit-box;
