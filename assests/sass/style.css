@@ -1486,7 +1486,7 @@ nav #Product:hover ul {
     padding: 0.5em;
   }
   #Isotope .list__item {
-    width: calc(20% - 1em);
+    width: calc(25% - 1em);
   }
   #Isotope .list__item:nth-child(2n) {
     margin-right: 1em;
@@ -2457,6 +2457,39 @@ footer .FooterItem ul li a i {
   #OutTeamItems .teamItemBody .teams p {
     font-size: 13px;
   }
+}
+
+#OutTeamItems ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  #OutTeamItems ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#AboutData {
+  padding: 40px 0px;
+}
+
+#AboutData .AboutLeft img {
+  width: 100%;
+  margin: 5px 0px;
 }
 
 #contactPage {
