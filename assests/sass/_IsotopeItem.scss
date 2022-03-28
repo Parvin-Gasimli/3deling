@@ -1,0 +1,147 @@
+#IsotopeHead {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    .CenterisotopeItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        .HeadIsotopeItems {
+            border-bottom: 2px solid white;
+            border-top: 2px solid white;
+            height: 100px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            @media (max-width:576px) {
+                padding: 10px;
+                
+            }
+            h1 {
+                font-family: $FirstFontfamily;
+                color: white;
+                margin: 0;
+                height: 50px;
+                line-height: 50px;
+                font-size: 59px;
+                text-align: center;
+                text-transform: uppercase;
+                transition: margin-top 0.3s ease;
+                @media (max-width: 768px) {
+                    font-size: 34px;
+                }
+                span {
+                    color: $DarkBlue;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+#IsotopeIconItem {
+    padding: 30px 0px;
+    h1 {
+        font-size: 18px;
+        font-family: $FirstFontfamily;
+    }
+    .SocialIsotope {
+        display: flex;
+        .IconIsotope {
+            i {
+                color: $RedColor;
+                font-size: 18px;
+            }
+        }
+        .IsotopeItemtext {
+            margin-left: 20px;
+            p{
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+    }
+    border-bottom: 2px solid $RedColor;
+}
+
+#BOP{
+    padding: 30px 0px;
+    .BopLeft{
+        h1{
+            font-family: $FirstFontfamily;
+            font-size: 30px;
+        }
+        p{
+            line-height: 30px;
+        }
+    }
+    .BobRight{
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+#IsotopeVideoItem{
+    width: 100%;
+    height: 100vh;
+    background-color: $DarkBlue;
+    iframe{
+        width: 80%;
+        height: 100vh;
+        padding: 10px 0px;
+        @media (max-width:576px) {
+            width: 100%;
+            
+        }
+    }
+}
+
+#IsotopeFooterItem{
+    .IsotopefooterCard{
+        .IsotopeCardItem{
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            .CardImgsItemsIsotope{
+                width: 12.3%;
+                overflow: hidden;
+                margin: 0px 1px;
+                @media (max-width:768px) {
+                    width: 49%;
+                    
+                }
+                @media (max-width:576px) {
+                    width: 100%;
+                    margin: 7px 0px;
+                    
+                }
+            }
+           
+           img{
+            // width: 12.2%;
+            max-width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            transition: .2s all;
+            margin: 5px 0px;
+            cursor: pointer;
+            @media (max-width:576px) {
+                width: 100%;
+                margin: 10px 0px;
+                
+            }
+           
+            &:hover{
+                transform: scale(1.095);
+            }
+           }
+        }
+    }
+}

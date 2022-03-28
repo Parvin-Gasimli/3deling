@@ -104,6 +104,7 @@ nav {
         text-align: center;
         z-index: 666;
         .logo {
+           
             @media (max-width: 768px) {
                 padding-left: 10px;
             }
@@ -115,6 +116,9 @@ nav {
                 text-decoration: none;
                 color: #fff;
                 font-size: 1rem;
+                img{
+                    width: 100px;
+                }
             }
         }
         .container {

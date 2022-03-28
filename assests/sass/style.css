@@ -155,6 +155,10 @@ nav .nav .logo a {
   font-size: 1rem;
 }
 
+nav .nav .logo a img {
+  width: 100px;
+}
+
 nav .nav .container {
   padding: 0;
 }
@@ -1440,7 +1444,12 @@ nav #Product:hover ul {
   transition: 0.3s ease;
 }
 
-#Isotope .list__item .HoverItemIsotope .HoverBody p {
+#Isotope .list__item .HoverItemIsotope a {
+  text-decoration: none;
+  color: white;
+}
+
+#Isotope .list__item .HoverItemIsotope a .HoverBody p {
   font-size: 12px;
 }
 
@@ -2114,7 +2123,7 @@ footer .FooterItem ul li a i {
 }
 
 #ProductMeshModel .LeftP p, #ProductMeshModel .RightP p {
-  line-height: 33px;
+  line-height: 40px;
 }
 
 #ProductMeshModel h5 {
@@ -2323,6 +2332,24 @@ footer .FooterItem ul li a i {
 
 #FooterSliderSection .card-slider .fa-chevron-left:hover {
   opacity: 1;
+}
+
+#ProductVideo {
+  width: 100%;
+  height: 100vh;
+  background-color: #a7a3a3;
+}
+
+#ProductVideo iframe {
+  width: 80%;
+  height: 100vh;
+  padding: 10px 0px;
+}
+
+@media (max-width: 576px) {
+  #ProductVideo iframe {
+    width: 100%;
+  }
 }
 
 #OurTeam {
@@ -2547,6 +2574,10 @@ footer .FooterItem ul li a i {
   color: black;
 }
 
+#ContactInput img {
+  max-width: 100%;
+}
+
 .ContactForm form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2618,6 +2649,190 @@ footer .FooterItem ul li a i {
 .ContactForm button:hover {
   background-color: #203569;
   color: white;
+}
+
+#IsotopeHead {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#IsotopeHead .CenterisotopeItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#IsotopeHead .CenterisotopeItem .HeadIsotopeItems {
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+@media (max-width: 576px) {
+  #IsotopeHead .CenterisotopeItem .HeadIsotopeItems {
+    padding: 10px;
+  }
+}
+
+#IsotopeHead .CenterisotopeItem .HeadIsotopeItems h1 {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  font-size: 59px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: margin-top 0.3s ease;
+  transition: margin-top 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  #IsotopeHead .CenterisotopeItem .HeadIsotopeItems h1 {
+    font-size: 34px;
+  }
+}
+
+#IsotopeHead .CenterisotopeItem .HeadIsotopeItems h1 span {
+  color: #1794db;
+  font-weight: bold;
+}
+
+#IsotopeIconItem {
+  padding: 30px 0px;
+  border-bottom: 2px solid #ee1d24;
+}
+
+#IsotopeIconItem h1 {
+  font-size: 18px;
+  font-family: "Bebas Neue", cursive;
+}
+
+#IsotopeIconItem .SocialIsotope {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#IsotopeIconItem .SocialIsotope .IconIsotope i {
+  color: #ee1d24;
+  font-size: 18px;
+}
+
+#IsotopeIconItem .SocialIsotope .IsotopeItemtext {
+  margin-left: 20px;
+}
+
+#IsotopeIconItem .SocialIsotope .IsotopeItemtext p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#BOP {
+  padding: 30px 0px;
+}
+
+#BOP .BopLeft h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+}
+
+#BOP .BopLeft p {
+  line-height: 30px;
+}
+
+#BOP .BobRight img {
+  width: 100%;
+}
+
+#IsotopeVideoItem {
+  width: 100%;
+  height: 100vh;
+  background-color: #1794db;
+}
+
+#IsotopeVideoItem iframe {
+  width: 80%;
+  height: 100vh;
+  padding: 10px 0px;
+}
+
+@media (max-width: 576px) {
+  #IsotopeVideoItem iframe {
+    width: 100%;
+  }
+}
+
+#IsotopeFooterItem .IsotopefooterCard .IsotopeCardItem {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#IsotopeFooterItem .IsotopefooterCard .IsotopeCardItem .CardImgsItemsIsotope {
+  width: 12.3%;
+  overflow: hidden;
+  margin: 0px 1px;
+}
+
+@media (max-width: 768px) {
+  #IsotopeFooterItem .IsotopefooterCard .IsotopeCardItem .CardImgsItemsIsotope {
+    width: 49%;
+  }
+}
+
+@media (max-width: 576px) {
+  #IsotopeFooterItem .IsotopefooterCard .IsotopeCardItem .CardImgsItemsIsotope {
+    width: 100%;
+    margin: 7px 0px;
+  }
+}
+
+#IsotopeFooterItem .IsotopefooterCard .IsotopeCardItem img {
+  max-width: 100%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  margin: 5px 0px;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  #IsotopeFooterItem .IsotopefooterCard .IsotopeCardItem img {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+#IsotopeFooterItem .IsotopefooterCard .IsotopeCardItem img:hover {
+  -webkit-transform: scale(1.095);
+          transform: scale(1.095);
 }
 
 *,

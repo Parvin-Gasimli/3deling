@@ -40,9 +40,13 @@
     }
 }
 #ContactInput{
+    img{
+        max-width: 100%;
+    }
    
 }
 .ContactForm{
+   
     form{
         display: flex;
         flex-direction: column;
