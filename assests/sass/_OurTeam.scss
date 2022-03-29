@@ -107,4 +107,17 @@
             margin: 5px 0px;
         }
     }
+    .AboutRight{
+        h1{
+            font-size: 40px;
+            color: $RedColor;
+            padding: 10px 0px;
+            span{
+                color: $DarkBlue;
+            }
+        }
+        p{
+            line-height: 30px;
+        }
+    }
 }

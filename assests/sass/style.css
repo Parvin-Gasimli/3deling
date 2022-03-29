@@ -213,7 +213,7 @@ nav .nav div.main_list ul li {
 nav .nav div.main_list ul li i {
   font-size: 6px;
   margin-left: 9px;
-  margin-top: 6px;
+  margin-top: 0px;
 }
 
 nav .nav div.main_list ul li a {
@@ -221,9 +221,12 @@ nav .nav div.main_list ul li a {
   text-decoration: none;
   color: #fff;
   line-height: 65px;
-  font-size: 1rem;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav .nav div.main_list ul li a:hover {
@@ -287,6 +290,7 @@ nav .nav:hover {
     font-size: 1rem;
     padding: 20px;
     color: black;
+    font-family: "Montserrat", sans-serif;
   }
   nav .nav div.show_list {
     height: auto !important;
@@ -530,12 +534,15 @@ nav #Product {
 }
 
 nav #Product ul {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   border-top: 2px solid #203569;
   z-index: 666666;
   height: auto;
-  width: 200px;
+  width: 220px;
   height: auto;
-  background-color: #203569;
+  background-color: #203569e6;
   padding: 0;
   position: absolute;
   top: 60px;
@@ -555,19 +562,22 @@ nav #Product ul {
 
 nav #Product ul .ProductItem {
   text-align: left;
-  padding-left: 25px;
+  padding-left: 20px;
   height: 50px;
 }
 
 nav #Product ul .ProductItem a {
-  font-size: 14px;
+  font-size: 11px;
   color: white !important;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 nav #Product ul .ProductItem a:hover {
   color: #ee1d24 !important;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
@@ -981,7 +991,8 @@ nav #Product:hover ul {
 }
 
 #ABOUT3DELING #Information .Info h5 {
-  font-size: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
   font-weight: 400;
   cursor: pointer;
   -webkit-transition: .2s all;
@@ -998,6 +1009,8 @@ nav #Product:hover ul {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   text-align: initial;
+  line-height: 31px;
+  padding: 14px 0px;
 }
 
 #ABOUT3DELING #Information .Info a {
@@ -1420,6 +1433,27 @@ nav #Product:hover ul {
   position: relative;
 }
 
+#Isotope .list__item .IsotopeInfo {
+  position: absolute;
+  bottom: 0px;
+  background-color: #20356996;
+  color: white;
+  text-align: inherit;
+  left: 0;
+  right: 0;
+  width: 100%;
+  font-size: 13px;
+  height: 59px;
+  padding: 11px 1px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+#Isotope .list__item .IsotopeInfo p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 #Isotope .list__item .HoverItemIsotope {
   width: 100%;
   height: 100%;
@@ -1450,12 +1484,17 @@ nav #Product:hover ul {
 }
 
 #Isotope .list__item .HoverItemIsotope a .HoverBody p {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 #Isotope .list__item:hover .HoverItemIsotope {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
+}
+
+#Isotope .list__item:hover .IsotopeInfo {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
 }
 
 @media (max-width: 768px) {
@@ -2517,6 +2556,20 @@ footer .FooterItem ul li a i {
 #AboutData .AboutLeft img {
   width: 100%;
   margin: 5px 0px;
+}
+
+#AboutData .AboutRight h1 {
+  font-size: 40px;
+  color: #ee1d24;
+  padding: 10px 0px;
+}
+
+#AboutData .AboutRight h1 span {
+  color: #1794db;
+}
+
+#AboutData .AboutRight p {
+  line-height: 30px;
 }
 
 #contactPage {

@@ -7,9 +7,8 @@ nav {
         height: auto;
         overflow: hidden;
         padding: 214px 0px;
-        @media (max-width:768px) {
-          padding: 0;
-            
+        @media (max-width: 768px) {
+            padding: 0;
         }
 
         background-color: rgba(3, 3, 3, 0.592);
@@ -104,7 +103,6 @@ nav {
         text-align: center;
         z-index: 666;
         .logo {
-           
             @media (max-width: 768px) {
                 padding-left: 10px;
             }
@@ -116,7 +114,8 @@ nav {
                 text-decoration: none;
                 color: #fff;
                 font-size: 1rem;
-                img{
+              
+                img {
                     width: 100px;
                 }
             }
@@ -156,15 +155,18 @@ nav {
             i {
                 font-size: 6px;
                 margin-left: 9px;
-                margin-top: 6px;
+                margin-top: 0px;
             }
             a {
                 margin-left: 4px;
                 text-decoration: none;
                 color: #fff;
                 line-height: 65px;
-                font-size: 1rem;
+                font-size: 12px;
+                font-weight: 500;
+                text-transform: uppercase;
                 transition: 0.2s linear;
+               font-family: $fontMonserrat ; 
                 &:hover {
                     color: $RedColor;
                 }
@@ -225,6 +227,7 @@ nav {
                         font-size: 1rem;
                         padding: 20px;
                         color: black;
+                       font-family: $fontMonserrat;
                     }
                 }
             }
@@ -454,13 +457,13 @@ nav {
     #Product {
         position: relative;
 
-        ul {
+        ul {align-items: baseline;
             border-top: 2px solid #203569;
             z-index: 666666;
             height: auto;
-            width: 200px;
+            width: 220px;
             height: auto;
-            background-color: #203569;
+            background-color: #203569e6;
             padding: 0;
             position: absolute;
             top: 60px;
@@ -472,14 +475,17 @@ nav {
             transition: 0.4s ease;
             .ProductItem {
                 text-align: left;
-                padding-left: 25px;
+                padding-left: 20px;
                 height: 50px;
                 a {
-                    font-size: 14px;
+                    font-size: 11px;
                     color: white !important;
                     transition: 0.3s ease;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 500;
                     &:hover {
                         color: $RedColor !important;
+                        font-weight: 500;
                     }
                 }
                 @media (max-width: 768px) {
@@ -503,9 +509,8 @@ nav {
     width: 100%;
     /* height: 300px; */
     object-fit: cover;
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
         height: 716px;
-        
     }
 }
 .ItemSVideoText {
