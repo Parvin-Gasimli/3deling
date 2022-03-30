@@ -1,13 +1,11 @@
 footer {
- 
     padding: 40px 0px;
     background-color: $footerBg;
     h3 {
         color: $WhiteColor;
         font-size: $textFont;
-        @media (max-width:768px) {
+        @media (max-width: 768px) {
             text-align: center;
-            
         }
     }
     .FooterItem {
@@ -26,9 +24,8 @@ footer {
                     }
                 }
             }
-            @media (max-width:768px) {
+            @media (max-width: 768px) {
                 text-align: center;
-                
             }
         }
     }

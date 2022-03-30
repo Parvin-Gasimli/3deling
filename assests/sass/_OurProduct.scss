@@ -1,16 +1,15 @@
 #OurProduct {
-  
     h1 {
         text-transform: uppercase;
         font-size: $h1Font;
         font-weight: 500;
         padding: 10px 0px;
         font-family: $FirstFontfamily;
-        letter-spacing: 0.5px
+        letter-spacing: 0.5px;
     }
     .ProductItem {
         @include Flex(none, center, column);
-        h5{
+        h5 {
             font-family: $FirstFontfamily;
             font-size: 17px;
         }
@@ -18,13 +17,11 @@
             img {
                 width: 90px !important;
                 object-fit: cover;
-                @media (max-width:768px) {
+                @media (max-width: 768px) {
                     width: 50px;
-                    
                 }
             }
         }
-        
     }
 
     .ProductItemText {
@@ -42,7 +39,7 @@
             font-family: $TextFontFamily;
         }
     }
-    .col-lg-3{
+    .col-lg-3 {
         margin: 15px 0px;
     }
 }
