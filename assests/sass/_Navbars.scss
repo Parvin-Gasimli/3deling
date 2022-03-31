@@ -29,7 +29,7 @@ nav {
                             margin: 0;
                             height: 50px;
                             line-height: 50px;
-                            font-size: 59px;
+                            font-size: 40px;
                             text-align: center;
                             text-transform: uppercase;
                             transition: margin-top 0.3s ease;
@@ -114,7 +114,7 @@ nav {
                 text-decoration: none;
                 color: #fff;
                 font-size: 1rem;
-              
+
                 img {
                     width: 100px;
                 }
@@ -166,7 +166,7 @@ nav {
                 font-weight: 500;
                 text-transform: uppercase;
                 transition: 0.2s linear;
-               font-family: $fontMonserrat ; 
+                font-family: $fontMonserrat;
                 &:hover {
                     color: $RedColor;
                 }
@@ -227,7 +227,7 @@ nav {
                         font-size: 1rem;
                         padding: 20px;
                         color: black;
-                       font-family: $fontMonserrat;
+                        font-family: $fontMonserrat;
                     }
                 }
             }
@@ -454,10 +454,55 @@ nav {
         }
     }
 
+    #About {
+        position: relative;
+        ul {
+            align-items: baseline;
+            border-top: 2px solid #203569;
+            z-index: 666666;
+            height: auto;
+            width: 130px;
+            height: auto;
+            background-color: #203569e6;
+            padding: 0;
+            position: absolute;
+            top: 50px;
+            left: -57px;
+            right: 0px;
+            display: flex;
+            flex-direction: column;
+            display: none;
+            transition: 0.4s ease;
+            .Aboutİtem {
+                text-align: left;
+                padding-left: 20px;
+                height: 50px;
+                a {
+                    font-size: 11px;
+                    color: white !important;
+                    transition: 0.3s ease;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 500;
+                    &:hover {
+                        color: $RedColor !important;
+                        font-weight: 500;
+                    }
+                }
+                @media (max-width: 768px) {
+                    background-color: rgb(0, 0, 0);
+                }
+            }
+        }
+        &:hover ul {
+            display: flex;
+        }
+    }
+
     #Product {
         position: relative;
 
-        ul {align-items: baseline;
+        ul {
+            align-items: baseline;
             border-top: 2px solid #203569;
             z-index: 666666;
             height: auto;
