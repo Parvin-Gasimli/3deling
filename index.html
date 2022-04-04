@@ -1,1069 +1,1363 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assests/sass/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assests/sass/style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Lexend+Tera:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
-    <link rel="shortcut icon" href="assests/Images/download 1.svg" type="image/x-icon">
-    <title>3 Deling.Com</title>
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Lexend+Tera:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
 
-<body>
-    <div class="back-to-top" id="back-to-top"><a href="#"><i class="fas fa-chevron-up"></i></a></div>
-    <video id="videoBkg" poster="" preload autoplay muted loop>
-        <source src="https://www.3deling.com/wp-content/uploads/2016/08/Intro3-1.mp4" type="video/mp4">
-    </video>
-    <nav class="navs">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+        <link rel="shortcut icon" href="assests/Images/download 1.svg"
+            type="image/x-icon">
+        <title>3 Deling.Com</title>
+    </head>
 
-        <div class="nav">
-            <div class="container">
-                <div class="logo">
-                    <a href="index.html"><img src="assests/Images/bmd1.png" alt=""></a>
-                </div>
-                <div id="mainListDiv" class="main_list">
-                    <ul class="navlinks">
-                        <li></a><a href="index.html">Home</a><i class="fa-solid fa-circle"></i></li>
-                        <li id="About"><a href="About.html">About</a><i class="fa-solid fa-circle"></i>
+    <body>
+        <div class="back-to-top" id="back-to-top"><a href="#"><i class="fas
+                    fa-chevron-up"></i></a></div>
+        <video id="videoBkg" poster="" preload autoplay muted loop>
+            <source
+                src="https://www.3deling.com/wp-content/uploads/2016/08/Intro3-1.mp4"
+                type="video/mp4">
+        </video>
+        <nav class="navs">
+
+            <div class="nav">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html"><img src="assests/Images/bmd1.png"
+                                alt=""></a>
+                    </div>
+                    <div id="mainListDiv" class="main_list">
+                        <ul class="navlinks">
+                            <li></a><a href="index.html">Home</a><i
+                                class="fa-solid fa-circle"></i></li>
+                        <li id="About"><a href="About.html">About</a><i
+                                class="fa-solid fa-circle"></i>
                             <ul>
                                 <li class="Aboutİtem"><a href="#ABOUT3DELING">Haqqimizda</a></li>
-                                <li class="Aboutİtem"><a href="About.html"> Bizim Tim</a></li>
-                               
+                                <li class="Aboutİtem"><a href="About.html">
+                                        Bizim Tim</a></li>
+
                             </ul>
-                        
-                        
+
+
                         </li>
-                        <li><a href="Project.html">Projects</a><i class="fa-solid fa-circle"></i></li>
-                        <li id="Product"><a href="#">Products</a><i class="fa-solid fa-circle"></i>
+                        <li><a href="Project.html">Projects</a><i
+                                class="fa-solid fa-circle"></i></li>
+                        <li id="Product"><a href="#">Products</a><i
+                                class="fa-solid fa-circle"></i>
                             <ul>
-                                <li class="ProductItem"><a href="#"> REGISTERETED POINT CLOUD</a></li>
-                                <li class="ProductItem"><a href="#"> 3D CAD MODELS</a></li>
-                                <li class="ProductItem"><a href="Product.html"> ED MESH MODELS</a></li>
+                                <li class="ProductItem"><a href="#">
+                                        REGISTERETED POINT CLOUD</a></li>
+                                <li class="ProductItem"><a href="#"> 3D CAD
+                                        MODELS</a></li>
+                                <li class="ProductItem"><a href="Product.html">
+                                        ED MESH MODELS</a></li>
                                 <li class="ProductItem"><a href="#">BIM MODELS</a></li>
-                                <li class="ProductItem"><a href="#">PLANT DESIGN MODELS</a></li>
-                                <li class="ProductItem"><a href="#">2D CAD DOCUMENTATION</a></li>
+                                <li class="ProductItem"><a href="#">PLANT DESIGN
+                                        MODELS</a></li>
+                                <li class="ProductItem"><a href="#">2D CAD
+                                        DOCUMENTATION</a></li>
                                 <li class="ProductItem"><a href="#">ORTHOPHOTOS</a></li>
                             </ul>
 
                         </li>
-                        <li><a href="Blog.html">Blog</a><i class="fa-solid fa-circle"></i></li>
-                        <li><a href="contact.html">Contact</a><i class="fa-solid fa-circle"></i></li>
+                        <li><a href="Blog.html">Blog</a><i class="fa-solid
+                                fa-circle"></i></li>
+                        <li><a href="contact.html">Contact</a><i class="fa-solid
+                                fa-circle"></i></li>
                         <li><a href="#">Az</a><i class="fa-solid fa-circle"></i></li>
                         <li><a href="#">En</a>
-                        <!-- <li><a href="#">Ru</a></li> -->
-                    </ul>
+                            <!-- <li><a href="#">Ru</a></li> -->
+                        </ul>
+                    </div>
+                    <span class="navTrigger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>
                 </div>
-                <span class="navTrigger">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </span>
             </div>
-        </div>
-        <div class="container-fluid ItemSVideoText ">
-            <row>
-                <div class="col-lg-12 text-center">
-                    <div class="BackGrondtext">
-                        <div class="CssSlider">
-                            <div class="SlidersItemsNav">
-                                <p>BIMD LASER SCANNING - REGISTERED POINT CLOUD - BIMD MODELING</p>
-                                <div class="SliderItemtext">
+            <div class="container-fluid ItemSVideoText">
+                <row>
+                    <div class="col-lg-12 text-center">
+                        <div class="BackGrondtext">
+                            <div class="CssSlider">
+                                <div class="SlidersItemsNav">
+                                    <p>BIMD LASER SCANNING - REGISTERED POINT
+                                        CLOUD - BIMD MODELING</p>
+                                    <div class="SliderItemtext">
 
 
-                                    <div class='tricker'>
+                                        <div class='tricker'>
 
-                                        <h1> BİMD <span>MODELLƏŞDİRMƏ</span></h1>
-                                        <h1> BİMD <span>ŞƏHƏRSALMA</span></h1>
-                                        <h1> BİMD <span>LAYİHƏLƏNDİRMƏ</span></h1>
-                                        <h1> BİMD <span>YENİDƏNQURMA</span></h1>
-                                        <h1>BİMD  <span>BƏRPA İSLƏRİ</span></h1>
-                                        <h1> BİMD <span>XİDMƏTLƏR</span></h1>
-                                        <h1> BİMD <span>FƏALİYƏTLƏR</span></h1>
+                                            <h1> BİMD <span>MODELLƏŞDİRMƏ</span></h1>
+                                            <h1> BİMD <span>ŞƏHƏRSALMA</span></h1>
+                                            <h1> BİMD <span>LAYİHƏLƏNDİRMƏ</span></h1>
+                                            <h1> BİMD <span>YENİDƏNQURMA</span></h1>
+                                            <h1>BİMD <span>BƏRPA İSLƏRİ</span></h1>
+                                            <h1> BİMD <span>XİDMƏTLƏR</span></h1>
+                                            <h1> BİMD <span>FƏALİYƏTLƏR</span></h1>
+                                        </div>
+
+
+
+
+
+
+
                                     </div>
 
-
-
-
-
+                                    <button type="submit">
+                                        Read more
+                                    </button>
 
 
                                 </div>
-
-                                <button type="submit">
-                                    Read more
-                                </button>
-
-
                             </div>
                         </div>
                     </div>
-                </div>
-            </row>
-        </div>
-
-    </nav>
-
-    <main id="main">
-
-
-
-
-
-        <section id="Application">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>
-                            APPLICATIONS FOR 3D LASER SCANNING
-                        </h1>
-                    </div>
-                </div>
+                </row>
             </div>
 
+        </nav>
 
-            <div class="container SocialContainer">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12 data-aos=" fade-right"">
-                        <div class="SocialApplication">
+        <main id="main">
 
-                            <div class="Icons">
-                                <div class="IconItem">
-                                    <img src="assests/Images/Artboard 1 copy 2.png" alt="">
-                                </div>
-                            </div>
-                            <h3>PROPERTY DEVELOPMENT</h3>
-                            <p>
-                                3Deling produce as-built surveys and clash detection analysis for a range of industrial
-                                applications like power stations to oil installations. Utilising point cloud data as a
-                                basis, we can provide a bespoke product to suit your particular need. Whether it is 3D
-                                CAD based (DWG, DGN etc.) or intelligent PDMS databases and models, our team will
-                                elaborate with you to provide a solution to your unique requirements.
-                            </p>
+
+
+
+
+            <section id="Application">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>
+                                APPLICATIONS FOR 3D LASER SCANNING
+                            </h1>
                         </div>
-
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-right">
-                        <div class="SocialApplication">
-
-                            <div class="Icons">
-                                <div class="IconItem">
-                                    <img src="assests/Images/Artboard 1 copy 3.png" alt="">
-                                </div>
-                            </div>
-                            <h3>INDUSTRIAL APPLICATIONS</h3>
-                            <p>
-                                BIMD produce as-built surveys and clash detection analysis for a range of industrial
-                                applications like power stations to oil installations. Utilising point cloud data as a
-                                basis, we can provide a bespoke product to suit your particular need. Whether it is 3D
-                                CAD based (DWG, DGN etc.) or intelligent PDMS databases and models.
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-right">
-                        <div class="SocialApplication">
-
-                            <div class="Icons">
-                                <div class="IconItem">
-                                    <img src="assests/Images/Artboard 1 copy 4.png" alt="">
-                                </div>
-                            </div>
-                            <h3>URBAN PLANNING</h3>
-                            <p>
-                                BIMD offer a range of building measurement services. Utilising highly accurate 3D point
-                                cloud information as a base we can produce a diverse range of products including
-                                Building Information Models (BIMD), mostly delivered in Revit (AECOsim & ArchiCAD
-                                available), 3D CAD models, 2D floor plans, sections and elevations. Point clouds and
-                                panoramic images can also be specified as deliverables. Our team will elaborate with you
-                                to develop your scope and deliver the right product for your needs.
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-right">
-                        <div class="SocialApplication">
-
-                            <div class="Icons">
-                                <div class="IconItem">
-                                    <img src="assests/Images/Artboard 1 copy 5.png" alt="">
-                                </div>
-                            </div>
-                            <h3>HERITAGE</h3>
-                            <p>
-                                Utilising our extensive experience 3Deling provide highly accurate documentation for the
-                                heritage sites. As well as 2D or 3D CAD deliverables we can also supply a range of
-                                photographic or scan-based products from panoramic imagery, virtual tours and
-                                walkthroughs to high-resolution orthoimages.
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 text-center " data-aos="fade-right">
-                        <div class="SocialApplication">
-
-                            <div class="Icons">
-                                <div class="IconItem">
-                                    <img src="assests/Images/Artboard 1 copy 6.png" alt="">
-                                </div>
-                            </div>
-                            <h3>DIGITAL PLANT
-                            </h3>
-                            <p>
-                                BIMD laser scanning can be utilised to capture large urban areas. The point cloud
-                                information can be further use to support your planning and design needs. Our products
-                                include 2D or 3D topographical surveys, 3D modelling for Rights of Light analysis and 2D
-                                or 3D models for the production of contextual elevations.
-                            </p>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </div>
-
-        </section>
-
-        <section id="ABOUT3DELING">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center" data-aos="fade-right">
-                        <div class="HeadAbout3Deling">
-                            <h2>ABOUT BIMD</h2>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-12 text-center" data-aos="fade-right">
-                        <div class="textAbout3Deling">
-                            <p>
-                                BIMD - The experts in 3D laser scanning and point cloud processing
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6" data-aos="flip-up">
-                        <div class="TextItem">
-                            <p>
-                                BİMD Qapalı Səhmdar Cəmiyyəti müasir qabaqcıl texnologiyalar tətbiq etməklə tikinti
-                                obyektlərinin layihə-smeta sənədlərinin işlənib hazırlanması, layihələndirmə, bərpa,
-                                müəllif nəzarəti, beynəlxalq layihələrin adaptasiyası, lazer ölçmə və 3D modelləşdirmə
-                                fəaliyyətləri üzrə xidmətlər təqdim edir.
-
-                                <br>
-                                BİMD şirkəti fəaliyyətə başladığı ilk gündən layihələndirmə sahəsində BIM
-                                texnologiyasını tətbiq etməyi qarşısına məqsəd qoymuş və həyata keçirdiyi ilk layihədə
-                                bu texnologiyadan istifadə etmişdir. Biz, tikinti obyektlərinin bütün həyat dövrü
-                                ərzində məlumat bazasını formalaşdırır və idarə edirik.
-
-                                <br>
-                                Fəaliyyəti dövründə BİMD şirkəti Azərbaycanda tikinti sektorunda Bina İnformasiya
-                                Modelləşdirmə və lazer texnologiyalarını tətbiq edən ilk şirkətlərdən biri olaraq bir
-                                sıra uğurlu layihələrə imza atmış, tərəfdaşlarının və sifarişçilərin rəğbətini qazana
-                                bilmişdir.
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-6" data-aos="flip-up">
-                        <div class="TextItem">
-                            <p>
-                                Şirkətimiz yerli və xarici özəl tərəfdaşlarla əməkdaşlıq etməklə yanaşı, Dövlət
-                                Şəhərsalma və Arxitektura Komitəsi, Təhsil Nazirliyi, Mədəniyyət Nazirliyi, Dövlət
-                                Turizm Agentliyi kimi dövlət təşkilatlarının elan etdikləri müsabiqələrdə də fəal
-                                iştirak edərək bir neçə tenderin qalibi olmuş, ölkəmizin müxtəlif regionlarında iri
-                                tikinti obyektlərinin layihələndirilməsi və tikintiyə müəllif nəzarəti xidmətlərini
-                                həyata keçirmişdir.
-
-                                <br>
-                                Hazırda BİMD şirkəti işğaldan azad olunmuş ərazilərin bərpası ilə bağlı müsabiqə və
-                                layihələrdə fəal iştirak edir və mədəni irsimizin incisi olan Şuşa Qalasının bərpası
-                                layihəsinin ilk mərhələsini uğurla icra etmişdir.
-                                <br>
-                                Biz bununla qürur duyuruq və inanırıq ki, intibah quruculuqdadır.
-
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 text-center" data-aos="flip-up">
-
-                        <button type="submit">
-                            Services
-                        </button>
                     </div>
                 </div>
-            </div>
 
-            <div id="Information">
+
+                <div class="container SocialContainer">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 data-aos="fade-right"">
+                            <div class="SocialApplication">
+
+                                <div class="Icons">
+                                    <div class="IconItem">
+                                        <img src="assests/Images/Artboard 1 copy
+                                            2.png" alt="">
+                                    </div>
+                                </div>
+                                <h3>PROPERTY DEVELOPMENT</h3>
+                                <p>
+                                    3Deling produce as-built surveys and clash
+                                    detection analysis for a range of industrial
+                                    applications like power stations to oil
+                                    installations. Utilising point cloud data as
+                                    a
+                                    basis, we can provide a bespoke product to
+                                    suit your particular need. Whether it is 3D
+                                    CAD based (DWG, DGN etc.) or intelligent
+                                    PDMS databases and models, our team will
+                                    elaborate with you to provide a solution to
+                                    your unique requirements.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12"
+                            data-aos="fade-right">
+                            <div class="SocialApplication">
+
+                                <div class="Icons">
+                                    <div class="IconItem">
+                                        <img src="assests/Images/Artboard 1 copy
+                                            3.png" alt="">
+                                    </div>
+                                </div>
+                                <h3>INDUSTRIAL APPLICATIONS</h3>
+                                <p>
+                                    BIMD produce as-built surveys and clash
+                                    detection analysis for a range of industrial
+                                    applications like power stations to oil
+                                    installations. Utilising point cloud data as
+                                    a
+                                    basis, we can provide a bespoke product to
+                                    suit your particular need. Whether it is 3D
+                                    CAD based (DWG, DGN etc.) or intelligent
+                                    PDMS databases and models.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12"
+                            data-aos="fade-right">
+                            <div class="SocialApplication">
+
+                                <div class="Icons">
+                                    <div class="IconItem">
+                                        <img src="assests/Images/Artboard 1 copy
+                                            4.png" alt="">
+                                    </div>
+                                </div>
+                                <h3>URBAN PLANNING</h3>
+                                <p>
+                                    BIMD offer a range of building measurement
+                                    services. Utilising highly accurate 3D point
+                                    cloud information as a base we can produce a
+                                    diverse range of products including
+                                    Building Information Models (BIMD), mostly
+                                    delivered in Revit (AECOsim & ArchiCAD
+                                    available), 3D CAD models, 2D floor plans,
+                                    sections and elevations. Point clouds and
+                                    panoramic images can also be specified as
+                                    deliverables. Our team will elaborate with
+                                    you
+                                    to develop your scope and deliver the right
+                                    product for your needs.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12"
+                            data-aos="fade-right">
+                            <div class="SocialApplication">
+
+                                <div class="Icons">
+                                    <div class="IconItem">
+                                        <img src="assests/Images/Artboard 1 copy
+                                            5.png" alt="">
+                                    </div>
+                                </div>
+                                <h3>HERITAGE</h3>
+                                <p>
+                                    Utilising our extensive experience 3Deling
+                                    provide highly accurate documentation for
+                                    the
+                                    heritage sites. As well as 2D or 3D CAD
+                                    deliverables we can also supply a range of
+                                    photographic or scan-based products from
+                                    panoramic imagery, virtual tours and
+                                    walkthroughs to high-resolution orthoimages.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center"data-aos="fade-right">
+                            <div class="SocialApplication">
+
+                                <div class="Icons">
+                                    <div class="IconItem">
+                                        <img src="assests/Images/Artboard 1 copy
+                                            6.png" alt="">
+                                    </div>
+                                </div>
+                                <h3>DIGITAL PLANT
+                                </h3>
+                                <p>
+                                    BIMD laser scanning can be utilised to
+                                    capture large urban areas. The point cloud
+                                    information can be further use to support
+                                    your planning and design needs. Our products
+                                    include 2D or 3D topographical surveys, 3D
+                                    modelling for Rights of Light analysis and
+                                    2D
+                                    or 3D models for the production of
+                                    contextual elevations.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="ABOUT3DELING">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center"
+                            data-aos="fade-right">
+                            <div class="HeadAbout3Deling">
+                                <h2>ABOUT BIMD</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 text-center"
+                            data-aos="fade-right">
+                            <div class="textAbout3Deling">
+                                <p>
+                                    BIMD - The experts in 3D laser scanning and
+                                    point cloud processing
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" data-aos="flip-up">
+                            <div class="TextItem">
+                                <p>
+                                    BİMD Qapalı Səhmdar Cəmiyyəti müasir
+                                    qabaqcıl texnologiyalar tətbiq etməklə
+                                    tikinti
+                                    obyektlərinin layihə-smeta sənədlərinin
+                                    işlənib hazırlanması, layihələndirmə, bərpa,
+                                    müəllif nəzarəti, beynəlxalq layihələrin
+                                    adaptasiyası, lazer ölçmə və 3D
+                                    modelləşdirmə
+                                    fəaliyyətləri üzrə xidmətlər təqdim edir.
+                                    <br>
+                                    BİMD şirkəti fəaliyyətə başladığı ilk gündən
+                                    layihələndirmə sahəsində BIM
+                                    texnologiyasını tətbiq etməyi qarşısına
+                                    məqsəd qoymuş və həyata keçirdiyi ilk
+                                    layihədə
+                                    bu texnologiyadan istifadə etmişdir. Biz,
+                                    tikinti obyektlərinin bütün həyat dövrü
+                                    ərzində məlumat bazasını formalaşdırır və
+                                    idarə edirik.
+
+                                    <br>
+                                    Fəaliyyəti dövründə BİMD şirkəti
+                                    Azərbaycanda tikinti sektorunda Bina
+                                    İnformasiya
+                                    Modelləşdirmə və lazer texnologiyalarını
+                                    tətbiq edən ilk şirkətlərdən biri olaraq bir
+                                    sıra uğurlu layihələrə imza atmış,
+                                    tərəfdaşlarının və sifarişçilərin rəğbətini
+                                    qazana
+                                    bilmişdir.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6" data-aos="flip-up">
+                            <div class="TextItem">
+                                <p>
+                                    Şirkətimiz yerli və xarici özəl
+                                    tərəfdaşlarla əməkdaşlıq etməklə yanaşı,
+                                    Dövlət
+                                    Şəhərsalma və Arxitektura Komitəsi, Təhsil
+                                    Nazirliyi, Mədəniyyət Nazirliyi, Dövlət
+                                    Turizm Agentliyi kimi dövlət təşkilatlarının
+                                    elan etdikləri müsabiqələrdə də fəal
+                                    iştirak edərək bir neçə tenderin qalibi
+                                    olmuş, ölkəmizin müxtəlif regionlarında iri
+                                    tikinti obyektlərinin layihələndirilməsi və
+                                    tikintiyə müəllif nəzarəti xidmətlərini
+                                    həyata keçirmişdir.
+
+                                    <br>
+                                    Hazırda BİMD şirkəti işğaldan azad olunmuş
+                                    ərazilərin bərpası ilə bağlı müsabiqə və
+                                    layihələrdə fəal iştirak edir və mədəni
+                                    irsimizin incisi olan Şuşa Qalasının bərpası
+                                    layihəsinin ilk mərhələsini uğurla icra
+                                    etmişdir.
+                                    <br>
+                                    Biz bununla qürur duyuruq və inanırıq ki,
+                                    intibah quruculuqdadır.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 text-center" data-aos="flip-up">
+                            <button type="submit">
+                                Services
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Information">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <h6>
+                                    ADDITIONAL INFORMATION:</h6>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-12"
+                                data-aos="flip-up">
+                                <div class="Info">
+                                    <div class="InfoIcon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="InfoHead">
+
+                                        <h5>Insurance</h5>
+                                        <p>
+                                            We have full professional liability
+                                            insurance
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12"
+                                data-aos="flip-up">
+                                <div class="Info">
+                                    <div class="InfoIcon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="InfoHead">
+
+                                        <h5>Safety training</h5>
+                                        <p>
+                                            We have safety training for the
+                                            offshore industry accredited by
+                                            OPITO & NOGEPA.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12"
+                                data-aos="flip-up">
+                                <div class="Info">
+                                    <div class="InfoIcon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="InfoHead">
+
+                                        <h5>In2Rail project</h5>
+                                        <p>
+                                            We are part of In2Rail project
+                                            (Innovative Intelligent Rail), see
+                                            the
+                                        </p>
+                                        <a href="#">partner list</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12"
+                                data-aos="flip-up">
+                                <div class="Info">
+                                    <div class="InfoIcon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="InfoHead">
+
+                                        <h5>ISO 9001:2015</h5>
+                                        <p>
+                                            Our Quality Management System is ISO
+                                            9001:2015 certified
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </section>
+            <section id="WORKFLOW">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
-                            <h6>
-                                ADDITIONAL INFORMATION:</h6>
+                            <h1>
+                                BIMD LASER SCANNING SITE WORKFLOW
+                            </h1>
                         </div>
-
-                        <div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-up">
-                            <div class="Info">
-                                <div class="InfoIcon">
-                                    <i class="fa-solid fa-check"></i>
-                                </div>
-                                <div class="InfoHead">
-
-                                    <h5>Insurance</h5>
-                                    <p>
-                                        We have full professional liability insurance
-                                    </p>
-                                </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12"
+                            data-aos="flip-up">
+                            <div class="TextWorkFlow">
+                                <p>
+                                    This video presentation takes you through
+                                    our custom laser scanning- site workflow. We
+                                    place a great deal of emphasis on the
+                                    quality of our deliverables. On request, we
+                                    are
+                                    happy to supply our survey network
+                                    adjustment and registration reports.
+                                </p>
+                                <p></p>
+                                <p>
+                                    For larger sites, we install, measure and
+                                    adjust a combination of scanning targets and
+                                    retro targets which are controlled via total
+                                    station observations. Along with the scan
+                                    data we can also supply a coordinate list of
+                                    the retro targets which will be left on
+                                    site.
+                                </p>
                             </div>
 
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-up">
-                            <div class="Info">
-                                <div class="InfoIcon">
-                                    <i class="fa-solid fa-check"></i>
-                                </div>
-                                <div class="InfoHead">
-
-                                    <h5>Safety training</h5>
-                                    <p>
-                                        We have safety training for the offshore industry accredited by OPITO & NOGEPA.
-                                    </p>
-                                </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12"
+                            data-aos="flip-up">
+                            <div class="TextWorkFlow">
+                                <p>
+                                    These can be used as an ongoing control
+                                    network for setting out or further survey
+                                    works
+                                    during the construction phase of a project,
+                                    ensuring all works are completed on a
+                                    consistent grid. All control will be
+                                    relative to a predetermined network, whether
+                                    that
+                                    be a local, site or a national grid. Further
+                                    to the capture of the scan data we also
+                                    offer a wide range of services converting
+                                    cloud data into vector files, from
+                                    traditional
+                                    CAD deliverables through BIMD ready formats
+                                    such as Revit to PDMS for industrial
+                                    applications. We can also offer engineering
+                                    services.
+                                </p>
                             </div>
 
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-up">
-                            <div class="Info">
-                                <div class="InfoIcon">
-                                    <i class="fa-solid fa-check"></i>
-                                </div>
-                                <div class="InfoHead">
 
-                                    <h5>In2Rail project</h5>
-                                    <p>
-                                        We are part of In2Rail project (Innovative Intelligent Rail), see the
-                                    </p>
-                                    <a href="#">partner list</a>
-                                </div>
+                        </div>
+                        <div class="col-lg-12 pt-5 text-center"
+                            data-aos="flip-up">
+
+                            <div id="utvs_62305b8ce581b"
+                                class="ut-shortcode-video-wrap">
+                                <figure class="ut-video-caption"><a
+                                        class="ut-load-video"
+                                        href="https://www.youtube.com/watch?v=YOu0owjOrPw&vl=en"><img
+                                            alt="Video"
+                                            src="https://www.3deling.com/wp-content/uploads/2017/09/laser3.jpg"
+                                            /><i
+                                            class="fa fa-youtube-play fa-4x
+                                            fa-border"></i></a></figure>
+                                <div class="ut-video-loading"><i class="fa
+                                        fa-spinner fa-3x fa-spin"></i></div>
                             </div>
 
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-up">
-                            <div class="Info">
-                                <div class="InfoIcon">
-                                    <i class="fa-solid fa-check"></i>
-                                </div>
-                                <div class="InfoHead">
-
-                                    <h5>ISO 9001:2015</h5>
-                                    <p>
-                                        Our Quality Management System is ISO 9001:2015 certified
-                                    </p>
-                                </div>
-                            </div>
 
                         </div>
-
-
                     </div>
                 </div>
 
-            </div>
+            </section>
 
 
-        </section>
-        <section id="WORKFLOW">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h1>
-                            BIMD LASER SCANNING SITE WORKFLOW
-                        </h1>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12" data-aos="flip-up">
-                        <div class="TextWorkFlow">
-                            <p>
-                                This video presentation takes you through our custom laser scanning- site workflow. We
-                                place a great deal of emphasis on the quality of our deliverables. On request, we are
-                                happy to supply our survey network adjustment and registration reports.
-                            </p>
-                            <p></p>
-                            <p>
-                                For larger sites, we install, measure and adjust a combination of scanning targets and
-                                retro targets which are controlled via total station observations. Along with the scan
-                                data we can also supply a coordinate list of the retro targets which will be left on
-                                site.
+
+            <section id="OurProduct">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h1>OUR PRODUCTS</h1>
+                            <p>We offer a wide range of products plotted or
+                                generated from the point cloud data including:
                             </p>
                         </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3" data-aos="flip-up">
+                                    <div class="ProductItem">
+                                        <div class="ProductLogo"> <img
+                                                src="assests/Images/Artboard 1
+                                                copy 2.png" alt="">
+                                        </div>
+
+                                        <div class="ProductItemText">
+                                            <h5>BIMD mesh models</h5>
+                                            <p>Ideal for irregular or
+                                                organically shaped objects.</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3" data-aos="flip-up">
+                                    <div class="ProductItem">
+                                        <div class="ProductLogo"> <img
+                                                src="assests/Images/Artboard 1
+                                                copy 3.png" alt="">
+                                        </div>
+                                        <div class="ProductItemText">
+                                            <h5>Plant design models</h5>
+                                            <p>We can covert point clouds to
+                                                Aveva PDMS, CADWorx and Open
+                                                Plant models.</p>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3" data-aos="flip-up">
+                                    <div class="ProductItem">
+                                        <div class="ProductLogo"> <img
+                                                src="assests/Images/Artboard 1
+                                                copy 4.png" alt="">
+                                        </div>
+                                        <div class="ProductItemText">
+                                            <h5>Orthophoto</h5>
+                                            <p>We offer Orthophotos – metric
+                                                images commonly specified for
+                                                heritage sites.
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3" data-aos="flip-up">
+                                    <div class="ProductItem">
+                                        <div class="ProductLogo"> <img
+                                                src="assests/Images/Artboard 1
+                                                copy 5.png" alt="">
+                                        </div>
+                                        <div class="ProductItemText">
+                                            <h5>Deformation surveys</h5>
+                                            <p>We offer deformation surveys and
+                                                movement monitoring.</p>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3" data-aos="flip-up">
+                                    <div class="ProductItem">
+                                        <div class="ProductLogo"> <img
+                                                src="assests/Images/Artboard 1
+                                                copy 6.png" alt="">
+                                        </div>
+                                        <div class="ProductItemText">
+                                            <h5>3D CAD models</h5>
+                                            <p>We offer a range of 3D CAD
+                                                models, in different formats and
+                                                levels of detail
+                                                to
+                                                suit your needs.</p>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3" data-aos="flip-up">
+                                    <div class="ProductItem">
+                                        <div class="ProductLogo"> <img
+                                                src="assests/Images/Artboard 1
+                                                copy 7.png" alt="">
+                                        </div>
+                                        <div class="ProductItemText">
+                                            <h5>Volume surveys</h5>
+                                            <p>We offer highly accurate and fast
+                                                volumetric surveys utilising
+                                                laser scanning
+                                                technology.</p>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3" data-aos="flip-up">
+                                    <div class="ProductItem">
+                                        <div class="ProductLogo"> <img
+                                                src="assests/Images/Artboard
+                                                1.png" alt=""></div>
+
+                                        <div class="ProductItemText">
+                                            <h5>ROL-Right of Light Surveys</h5>
+                                            <p>We offer 2D or 3D modelling
+                                                tailored specifically for use
+                                                within the Rights
+                                                of Light analysis.</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3" data-aos="flip-up">
+                                    <div class="ProductItem">
+                                        <div class="ProductLogo">
+                                            <img src="assests/Images/q5.png"
+                                                alt="">
+                                        </div>
+
+                                        <div class="ProductItemText">
+                                            <h5>Construction Verification</h5>
+                                            <p>We can perform clash detection
+                                                analysis, comparing either
+                                                design model to
+                                                cloud or cloud to cloud.</p>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12" data-aos="flip-up">
-                        <div class="TextWorkFlow">
+                </div>
+
+            </section>
+            <section id="Isotope">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h1>OUR PROJECTS</h1>
                             <p>
-                                These can be used as an ongoing control network for setting out or further survey works
-                                during the construction phase of a project, ensuring all works are completed on a
-                                consistent grid. All control will be relative to a predetermined network, whether that
-                                be a local, site or a national grid. Further to the capture of the scan data we also
-                                offer a wide range of services converting cloud data into vector files, from traditional
-                                CAD deliverables through BIMD ready formats such as Revit to PDMS for industrial
-                                applications. We can also offer engineering services.
+                                We believe our work speaks for itself. Browse
+                                our most recent projects below you can sort
+                                them by application or by product.
                             </p>
                         </div>
-
-
-                    </div>
-                    <div class="col-lg-12 pt-5 text-center" data-aos="flip-up">
-
-                        <div id="utvs_62305b8ce581b" class="ut-shortcode-video-wrap ">
-                            <figure class="ut-video-caption"><a class="ut-load-video"
-                                    href="https://www.youtube.com/watch?v=YOu0owjOrPw&vl=en"><img alt="Video"
-                                        src="https://www.3deling.com/wp-content/uploads/2017/09/laser3.jpg" /><i
-                                        class="fa fa-youtube-play fa-4x fa-border"></i></a></figure>
-                            <div class="ut-video-loading"><i class="fa fa-spinner fa-3x fa-spin"></i></div>
-                        </div>
-
-
                     </div>
                 </div>
-            </div>
-
-        </section>
 
 
-
-        <section id="OurProduct">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h1>OUR PRODUCTS</h1>
-                        <p>We offer a wide range of products plotted or generated from the point cloud data including:
-                        </p>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-3" data-aos="flip-up">
-                                <div class="ProductItem">
-                                    <div class="ProductLogo"> <img src="assests/Images/Artboard 1 copy 2.png" alt="">
-                                    </div>
-
-                                    <div class="ProductItemText">
-                                        <h5>BIMD mesh models</h5>
-                                        <p>Ideal for irregular or organically shaped objects.</p>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <div class="col-lg-3" data-aos="flip-up">
-                                <div class="ProductItem">
-                                    <div class="ProductLogo"> <img src="assests/Images/Artboard 1 copy 3.png" alt="">
-                                    </div>
-                                    <div class="ProductItemText">
-                                        <h5>Plant design models</h5>
-                                        <p>We can covert point clouds to Aveva PDMS, CADWorx and Open Plant models.</p>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                            <div class="col-lg-3" data-aos="flip-up">
-                                <div class="ProductItem">
-                                    <div class="ProductLogo"> <img src="assests/Images/Artboard 1 copy 4.png" alt="">
-                                    </div>
-                                    <div class="ProductItemText">
-                                        <h5>Orthophoto</h5>
-                                        <p>We offer Orthophotos – metric images commonly specified for heritage sites.
-                                        </p>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                            <div class="col-lg-3" data-aos="flip-up">
-                                <div class="ProductItem">
-                                    <div class="ProductLogo"> <img src="assests/Images/Artboard 1 copy 5.png" alt="">
-                                    </div>
-                                    <div class="ProductItemText">
-                                        <h5>Deformation surveys</h5>
-                                        <p>We offer deformation surveys and movement monitoring.</p>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                            <div class="col-lg-3" data-aos="flip-up">
-                                <div class="ProductItem">
-                                    <div class="ProductLogo"> <img src="assests/Images/Artboard 1 copy 6.png" alt="">
-                                    </div>
-                                    <div class="ProductItemText">
-                                        <h5>3D CAD models</h5>
-                                        <p>We offer a range of 3D CAD models, in different formats and levels of detail
-                                            to
-                                            suit your needs.</p>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                            <div class="col-lg-3" data-aos="flip-up">
-                                <div class="ProductItem">
-                                    <div class="ProductLogo"> <img src="assests/Images/Artboard 1 copy 7.png" alt="">
-                                    </div>
-                                    <div class="ProductItemText">
-                                        <h5>Volume surveys</h5>
-                                        <p>We offer highly accurate and fast volumetric surveys utilising laser scanning
-                                            technology.</p>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                            <div class="col-lg-3" data-aos="flip-up">
-                                <div class="ProductItem">
-                                    <div class="ProductLogo"> <img src="assests/Images/Artboard 1.png" alt=""></div>
-
-                                    <div class="ProductItemText">
-                                        <h5>ROL-Right of Light Surveys</h5>
-                                        <p>We offer 2D or 3D modelling tailored specifically for use within the Rights
-                                            of Light analysis.</p>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <div class="col-lg-3" data-aos="flip-up">
-                                <div class="ProductItem">
-                                    <div class="ProductLogo">
-                                        <img src="assests/Images/q5.png" alt="">
-                                    </div>
-
-                                    <div class="ProductItemText">
-                                        <h5>Construction Verification</h5>
-                                        <p>We can perform clash detection analysis, comparing either design model to
-                                            cloud or cloud to cloud.</p>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="button js-filter text-center">
+                    <button data-filter="*" class="is-active"> Hamısı</button>
+                    <button data-filter=".filter1">Lazer Scaning</button>
+                    <button data-filter=".filter2">Konsept Layihələr</button>
+                    <button data-filter=".filter3">Mədəni İrsin Bərpası</button>
+                    <button data-filter=".filter4">BİMD Layihələr</button>
+                    <button data-filter=".filter5">Şəhər Salma</button>
                 </div>
-            </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
 
-        </section>
-        <section id="Isotope">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h1>OUR PROJECTS</h1>
-                        <p>
-                            We believe our work speaks for itself. Browse our most recent projects below you can sort
-                            them by application or by product.
-                        </p>
-                    </div>
-                </div>
-            </div>
+                            <ul class="list">
 
-
-            <div class="button js-filter text-center">
-                <button data-filter="*" class="is-active"> Hamısı</button>
-                <button data-filter=".filter1">Lazer Scaning</button>
-                <button data-filter=".filter2">Konsept Layihələr</button>
-                <button data-filter=".filter3">Mədəni İrsin Bərpası</button>
-                <button data-filter=".filter4">BİMD Layihələr</button>
-                <button data-filter=".filter5">Şəhər Salma</button>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-
-                        <ul class="list ">
-
-                            <li class="list__item filter3">
-                                <img src="assests/Images/3Deling-kosciol-Jacka-mesh-model-800x450.jpg"
-                                    alt="image description" />
+                                <li class="list__item filter3">
+                                    <img
+                                        src="assests/Images/3Deling-kosciol-Jacka-mesh-model-800x450.jpg"
+                                        alt="image description" />
 
                                     <div class="IsotopeInfo">
                                         <p>
-                                           QARABAG LAYIHESI
+                                            QARABAG LAYIHESI
                                         </p>
                                     </div>
-                                <div class="HoverItemIsotope">
-                                    <a href="IsotopeItem.html">
+                                    <div class="HoverItemIsotope">
+                                        <a href="IsotopeItem.html">
+
+                                            <div class="HoverBody">
+
+                                                <i class="far fa-folder-open"></i>
+                                                <p>
+                                                    BIMD mesh models,
+                                                    Architecture &
+                                                    Constructions, Registered
+                                                    Point cloud,
+                                                    Volume surveys
+                                                </p>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list__item filter1">
+                                    <img
+                                        src="assests/Images/baterpol_06-800x450.jpg"
+                                        alt="image description" />
+                                    <div class="IsotopeInfo">
+                                        <p>
+                                            FIZULI LAYIHESI
+                                        </p>
+                                    </div>
+                                    <div class="HoverItemIsotope">
+
+                                        <a href="IsotopeItem.html">
+                                            <div class="HoverBody">
+
+                                                <i class="far fa-folder-open"></i>
+                                                <p>
+                                                    BIMD mesh models,
+                                                    Architecture &
+                                                    Constructions, Registered
+                                                    Point cloud,
+                                                    Volume surveys
+                                                </p>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+                                <li class="list__item filter2">
+                                    <img
+                                        src="assests/Images/leo-wew-800x450.jpg"
+                                        alt="image description" />
+                                    <div class="IsotopeInfo">
+                                        <p>
+                                            SUSA LAYIHESI
+                                        </p>
+                                    </div>
+                                    <div class="HoverItemIsotope">
+
+                                        <a href="IsotopeItem.html">
+                                            <div class="HoverBody">
+
+                                                <i class="far fa-folder-open"></i>
+                                                <p>
+                                                    BIMD mesh models,
+                                                    Architecture &
+                                                    Constructions, Registered
+                                                    Point cloud,
+                                                    Volume surveys
+                                                </p>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list__item filter1">
+                                    <img
+                                        src="assests/Images/slomniki_09-800x450.jpg"
+                                        alt="image description" />
+                                    <div class="IsotopeInfo">
+                                        <p>
+                                            QARABAG LAYIHESI.
+                                        </p>
+                                    </div>
+                                    <div class="HoverItemIsotope">
+
+                                        <a href="IsotopeItem.html">
+                                            <div class="HoverBody">
+
+                                                <i class="far fa-folder-open"></i>
+                                                <p>
+                                                    BIMD mesh models,
+                                                    Architecture &
+                                                    Constructions, Registered
+                                                    Point cloud,
+                                                    Volume surveys
+                                                </p>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list__item filter2">
+
+
+                                    <img
+                                        src="assests/Images/MANCHESTER-15-800x450.jpg"
+                                        alt="image description" />
+                                    <div class="IsotopeInfo">
+                                        <p>
+                                            QARABAG LAYIHESI.
+                                        </p>
+                                    </div>
+                                    <div class="HoverItemIsotope">
+
+                                        <a href="IsotopeItem.html">
+                                            <div class="HoverBody">
+
+                                                <i class="far fa-folder-open"></i>
+                                                <p>
+                                                    BIMD mesh models,
+                                                    Architecture &
+                                                    Constructions, Registered
+                                                    Point cloud,
+                                                    Volume surveys
+                                                </p>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+                                </li>
+                                <li class="list__item filter3">
+                                    <img
+                                        src="assests/Images/milton-03-800x450.jpg"
+                                        alt="image description" />
+                                    <div class="IsotopeInfo">
+                                        <p>
+                                            FIZULI LAYIHESI
+                                        </p>
+                                    </div>
+                                    <div class="HoverItemIsotope">
+
+                                        <a href="IsotopeItem.html">
+                                            <div class="HoverBody">
+
+                                                <i class="far fa-folder-open"></i>
+                                                <p>
+                                                    BIMD mesh models,
+                                                    Architecture &
+                                                    Constructions, Registered
+                                                    Point cloud,
+                                                    Volume surveys
+                                                </p>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list__item filter1">
+                                    <img
+                                        src="assests/Images/MONASTERY_20-800x450.jpg"
+                                        alt="image description" />
+                                    <div class="IsotopeInfo">
+                                        <p>
+                                            SUSA LAYIHESI
+                                        </p>
+                                    </div>
+                                    <div class="HoverItemIsotope">
+
+                                        <a href="IsotopeItem.html">
+                                            <div class="HoverBody">
+
+                                                <i class="far fa-folder-open"></i>
+                                                <p>
+                                                    BIMD mesh models,
+                                                    Architecture &
+                                                    Constructions, Registered
+                                                    Point cloud,
+                                                    Volume surveys
+                                                </p>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list__item filter2">
+                                    <img
+                                        src="assests/Images/pabianice-side-800x450.jpg"
+                                        alt="image description" />
+                                    <div class="IsotopeInfo">
+                                        <p>
+                                            QARABAG LAYIHESI
+                                        </p>
+                                    </div>
+                                    <div class="HoverItemIsotope">
+
+                                        <a href="IsotopeItem.html">
+                                            <div class="HoverBody">
+
+                                                <i class="far fa-folder-open"></i>
+                                                <p>
+                                                    BIMD mesh models,
+                                                    Architecture &
+                                                    Constructions, Registered
+                                                    Point cloud,
+                                                    Volume surveys
+                                                </p>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list__item filter2">
+                                    <img
+                                        src="assests/Images/rzeznia-hero-800x450
+                                        (1).jpg" alt="image description" />
+                                    <div class="IsotopeInfo">
+                                        <p>
+                                            SUSA LAYIHESI
+                                        </p>
+                                    </div>
+                                    <div class="HoverItemIsotope">
+
+                                        <a href="IsotopeItem.html">
+                                            <div class="HoverBody">
+
+                                                <i class="far fa-folder-open"></i>
+                                                <p>
+                                                    BIMD mesh models,
+                                                    Architecture &
+                                                    Constructions, Registered
+                                                    Point cloud,
+                                                    Volume surveys
+                                                </p>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list__item filter3">
+                                    <img
+                                        src="assests/Images/rzeznia-hero-800x450.jpg"
+                                        alt="image description" />
+                                    <div class="IsotopeInfo">
+                                        <p>
+                                            AGDAM LAYIHESI
+                                        </p>
+                                    </div>
+                                    <div class="HoverItemIsotope">
+
+                                        <a href="IsotopeItem.html">
+                                            <div class="HoverBody">
+
+                                                <i class="far fa-folder-open"></i>
+                                                <p>
+                                                    BIMD mesh models,
+                                                    Architecture &
+                                                    Constructions, Registered
+                                                    Point cloud,
+                                                    Volume surveys
+                                                </p>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list__item filter">
+                                    <img
+                                        src="assests/Images/Point_cloud_uniejow_v2-800x450.jpg"
+                                        alt="image description" />
+                                    <div class="IsotopeInfo">
+                                        <p>
+                                            FIZULI LAYIHESI
+                                        </p>
+                                    </div>
+                                    <div class="HoverItemIsotope">
 
                                         <div class="HoverBody">
 
                                             <i class="far fa-folder-open"></i>
                                             <p>
-                                                BIMD mesh models, Architecture & Constructions, Registered Point cloud,
+                                                BIMD mesh models, Architecture &
+                                                Constructions, Registered Point
+                                                cloud,
                                                 Volume surveys
                                             </p>
 
                                         </div>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="list__item filter1">
-                                <img src="assests/Images/baterpol_06-800x450.jpg" alt="image description" />
-                                <div class="IsotopeInfo">
-                                    <p>
-                                        FIZULI LAYIHESI
-                                    </p>
-                                </div>
-                                <div class="HoverItemIsotope">
+                                    </div>
+                                </li>
+                                <li class="list__item filter4">
+                                    <img
+                                        src="assests/Images/rzeznia-hero-800x450.jpg"
+                                        alt="image description" />
+                                    <div class="IsotopeInfo">
+                                        <p>
+                                            CEBRAYIL LAYIHESI
+                                        </p>
+                                    </div>
+                                    <div class="HoverItemIsotope">
 
-                                    <a href="IsotopeItem.html">
                                         <div class="HoverBody">
 
                                             <i class="far fa-folder-open"></i>
                                             <p>
-                                                BIMD mesh models, Architecture & Constructions, Registered Point cloud,
+                                                BIMD mesh models, Architecture &
+                                                Constructions, Registered Point
+                                                cloud,
                                                 Volume surveys
                                             </p>
-    
+
                                         </div>
-                                    </a>
-                                </div>
-
-                            </li>
-                            <li class="list__item filter2">
-                                <img src="assests/Images/leo-wew-800x450.jpg" alt="image description" />
-                                <div class="IsotopeInfo">
-                                    <p>
-                                      SUSA LAYIHESI
-                                    </p>
-                                </div>
-                                <div class="HoverItemIsotope">
-
-                                  <a href="IsotopeItem.html">
-                                    <div class="HoverBody">
-
-                                        <i class="far fa-folder-open"></i>
-                                        <p>
-                                            BIMD mesh models, Architecture & Constructions, Registered Point cloud,
-                                            Volume surveys
-                                        </p>
-
                                     </div>
-                                  </a>
-                                </div>
-                            </li>
-                            <li class="list__item filter1">
-                                <img src="assests/Images/slomniki_09-800x450.jpg" alt="image description" />
-                                <div class="IsotopeInfo">
-                                    <p>
-                                       QARABAG LAYIHESI.
-                                    </p>
-                                </div>
-                                <div class="HoverItemIsotope">
-
-                                 <a href="IsotopeItem.html">
-                                    <div class="HoverBody">
-
-                                        <i class="far fa-folder-open"></i>
+                                </li>
+                                <li class="list__item filter5">
+                                    <img
+                                        src="assests/Images/wieliczka-21-800x450.jpg"
+                                        alt="image description" />
+                                    <div class="IsotopeInfo">
                                         <p>
-                                            BIMD mesh models, Architecture & Constructions, Registered Point cloud,
-                                            Volume surveys
+                                            AGDAM LAYIHESI
                                         </p>
-
                                     </div>
-                                 </a>
-                                </div>
-                            </li>
-                            <li class="list__item filter2">
+                                    <div class="HoverItemIsotope">
 
+                                        <div class="HoverBody">
 
-                                <img src="assests/Images/MANCHESTER-15-800x450.jpg" alt="image description" />
-                                <div class="IsotopeInfo">
-                                    <p>
-                                       QARABAG LAYIHESI.
-                                    </p>
-                                </div>
-                                <div class="HoverItemIsotope">
+                                            <i class="far fa-folder-open"></i>
+                                            <p>
+                                                BIMD mesh models, Architecture &
+                                                Constructions, Registered Point
+                                                cloud,
+                                                Volume surveys
+                                            </p>
 
-                                   <a href="IsotopeItem.html">
-                                    <div class="HoverBody">
-
-                                        <i class="far fa-folder-open"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list__item filter5">
+                                    <div class="IsotopeInfo">
                                         <p>
-                                            BIMD mesh models, Architecture & Constructions, Registered Point cloud,
-                                            Volume surveys
+                                            SUSA LAYIHESI
                                         </p>
-
                                     </div>
-                                   </a>
-                                </div>
+                                    <img
+                                        src="assests/Images/siekierki_10-800x450.jpg"
+                                        alt="image description" />
+                                    <div class="HoverItemIsotope">
 
+                                        <div class="HoverBody">
 
-                            </li>
-                            <li class="list__item filter3">
-                                <img src="assests/Images/milton-03-800x450.jpg" alt="image description" />
-                                <div class="IsotopeInfo">
-                                    <p>
-                                       FIZULI LAYIHESI
-                                    </p>
-                                </div>
-                                <div class="HoverItemIsotope">
+                                            <i class="far fa-folder-open"></i>
+                                            <p>
+                                                BIMD mesh models, Architecture &
+                                                Constructions, Registered Point
+                                                cloud,
+                                                Volume surveys
+                                            </p>
 
-                                   <a href="IsotopeItem.html">
-                                    <div class="HoverBody">
-
-                                        <i class="far fa-folder-open"></i>
-                                        <p>
-                                            BIMD mesh models, Architecture & Constructions, Registered Point cloud,
-                                            Volume surveys
-                                        </p>
-
+                                        </div>
                                     </div>
-                                   </a>
-                                </div>
-                            </li>
-                            <li class="list__item filter1">
-                                <img src="assests/Images/MONASTERY_20-800x450.jpg" alt="image description" />
-                                <div class="IsotopeInfo">
-                                    <p>
-                                       SUSA LAYIHESI
-                                    </p>
-                                </div>
-                                <div class="HoverItemIsotope">
-
-                                  <a href="IsotopeItem.html">
-                                    <div class="HoverBody">
-
-                                        <i class="far fa-folder-open"></i>
-                                        <p>
-                                            BIMD mesh models, Architecture & Constructions, Registered Point cloud,
-                                            Volume surveys
-                                        </p>
-
-                                    </div>
-                                  </a>
-                                </div>
-                            </li>
-                            <li class="list__item filter2">
-                                <img src="assests/Images/pabianice-side-800x450.jpg" alt="image description" />
-                                <div class="IsotopeInfo">
-                                    <p>
-                                       QARABAG LAYIHESI
-                                    </p>
-                                </div>
-                                <div class="HoverItemIsotope">
-
-                                 <a href="IsotopeItem.html">
-                                    <div class="HoverBody">
-
-                                        <i class="far fa-folder-open"></i>
-                                        <p>
-                                            BIMD mesh models, Architecture & Constructions, Registered Point cloud,
-                                            Volume surveys
-                                        </p>
-
-                                    </div>
-                                 </a>
-                                </div>
-                            </li>
-                            <li class="list__item filter2">
-                                <img src="assests/Images/rzeznia-hero-800x450 (1).jpg" alt="image description" />
-                                <div class="IsotopeInfo">
-                                    <p>
-                                       SUSA LAYIHESI
-                                    </p>
-                                </div>
-                                <div class="HoverItemIsotope">
-
-                                  <a href="IsotopeItem.html">
-                                    <div class="HoverBody">
-
-                                        <i class="far fa-folder-open"></i>
-                                        <p>
-                                            BIMD mesh models, Architecture & Constructions, Registered Point cloud,
-                                            Volume surveys
-                                        </p>
-
-                                    </div>
-                                  </a>
-                                </div>
-                            </li>
-                            <li class="list__item filter3">
-                                <img src="assests/Images/rzeznia-hero-800x450.jpg" alt="image description" />
-                                <div class="IsotopeInfo">
-                                    <p>
-                                       AGDAM LAYIHESI
-                                    </p>
-                                </div>
-                                <div class="HoverItemIsotope">
-
-                                 <a href="IsotopeItem.html">
-                                    <div class="HoverBody">
-
-                                        <i class="far fa-folder-open"></i>
-                                        <p>
-                                            BIMD mesh models, Architecture & Constructions, Registered Point cloud,
-                                            Volume surveys
-                                        </p>
-
-                                    </div>
-                                 </a>
-                                </div>
-                            </li>
-                            <li class="list__item filter">
-                                <img src="assests/Images/Point_cloud_uniejow_v2-800x450.jpg" alt="image description" />
-                                <div class="IsotopeInfo">
-                                    <p>
-                                      FIZULI LAYIHESI
-                                    </p>
-                                </div>
-                                <div class="HoverItemIsotope">
-
-                                    <div class="HoverBody">
-
-                                        <i class="far fa-folder-open"></i>
-                                        <p>
-                                            BIMD mesh models, Architecture & Constructions, Registered Point cloud,
-                                            Volume surveys
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list__item filter4">
-                                <img src="assests/Images/rzeznia-hero-800x450.jpg" alt="image description" />
-                                <div class="IsotopeInfo">
-                                    <p>
-                                       CEBRAYIL LAYIHESI
-                                    </p>
-                                </div>
-                                <div class="HoverItemIsotope">
-
-                                    <div class="HoverBody">
-
-                                        <i class="far fa-folder-open"></i>
-                                        <p>
-                                            BIMD mesh models, Architecture & Constructions, Registered Point cloud,
-                                            Volume surveys
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list__item filter5">
-                                <img src="assests/Images/wieliczka-21-800x450.jpg" alt="image description" />
-                                <div class="IsotopeInfo">
-                                    <p>
-                                       AGDAM LAYIHESI
-                                    </p>
-                                </div>
-                                <div class="HoverItemIsotope">
-
-                                    <div class="HoverBody">
-
-                                        <i class="far fa-folder-open"></i>
-                                        <p>
-                                            BIMD mesh models, Architecture & Constructions, Registered Point cloud,
-                                            Volume surveys
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list__item filter5">
-                                <div class="IsotopeInfo">
-                                    <p>
-                                       SUSA LAYIHESI
-                                    </p>
-                                </div>
-                                <img src="assests/Images/siekierki_10-800x450.jpg" alt="image description" />
-                                <div class="HoverItemIsotope">
-
-                                    <div class="HoverBody">
-
-                                        <i class="far fa-folder-open"></i>
-                                        <p>
-                                            BIMD mesh models, Architecture & Constructions, Registered Point cloud,
-                                            Volume surveys
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
-
-        <section id="Promotion">
-
-
-            <div class="PromotionLogos">
-                <div class="Logo" data-aos="flip-up">
-                    <img src="assests/Images/iso3.svg" alt="">
-                </div>
-
-
-                <div class="Logo" data-aos="flip-up">
-                    <img src="assests/Images/123.png" alt="">
-                </div>
-
-                <div class="Logo" data-aos="flip-up">
-                    <img src="assests/Images/1234.png" alt="">
-                </div>
-
-
-                <div class="Logo" data-aos="flip-up">
-                    <img src="assests/Images/logo-achilles_Obszar-roboczy-1.png" alt="">
-                </div>
-
-
-                <div class="Logo" data-aos="flip-up">
-                    <img src="assests/Images/construction-line1.png" alt="">
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section id="FooterPromotion">
-            <div class="FooterPromotionItem">
-
-                <div class="ImgItems">
-                    <a href="#">
-                        <img src="assests/Images/autodesk (1).png" alt="">
-                    </a>
-                </div>
-                <div class="ImgItems">
-                    <a href="#">
-                        <img src="assests/Images/bentley (1).png" alt="">
-                    </a>
-                </div>
-                <div class="ImgItems">
-                    <a href="#">
-                        <img src="assests/Images/riegl.png" alt="">
-                    </a>
-                </div>
-                <div class="ImgItems">
-                    <a href="#">
-                        <img src="assests/Images/trimble.png" alt="">
-                    </a>
-                </div>
-                <div class="ImgItems">
-                    <a href="#">
-                        <img src="assests/Images/aveva.png" alt="">
-                    </a>
-                </div>
-                <div class="ImgItems">
-                    <a href="#">
-                        <img src="assests/Images/leica (1).png" alt="">
-                    </a>
-                </div>
-            </div>
-
-
-        </section>
-
-
-    </main>
-
-
-    <footer>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="FooterItem">
-                        <h3>
-                            Xidmətlərimiz
-                        </h3>
-                        <ul>
-                            <li><a href="#">BİMD</a></li>
-                            <li><a href="#">3D Modelləşdirmə</a></li>
-                            <li><a href="#">İnformasiya Sistemi</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="col-lg-4">
-
-                    <div class="FooterItem">
-                        <h3>
-                           Əlaqə
-                        </h3>
-                        <ul>
-                            <li><a href="tel:012 5655737"><i class="fa-solid fa-phone"></i> (+994 12) 565 57 37</a></a></li>
-                            <li><a href="#"><i class="fa-solid fa-envelope-open-text"></i> www.bimd.az
-                                    </a></a></li>
-                            <li><a href="#"> <i class="fa-solid fa-location-dot"></i>Azerbaijan  Baku AZ 1075
-                             
-
-                                Ahmad Rajabli street 156,
-                              
-                                
-                                Aynali Plaza 32</a></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-
-                    <div class="FooterItem">
-                        <h3>Xidmətlərimiz</h3>
-                        <ul>
-                            <li><a href="#">Konsept Layihələr</a></li>
-                            <li><a href="#">Mövcud Layihələr</a></li>
-                            <li><a href="#">Davam Edən Layihələr</a></li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
+
+            </section>
+
+            <section id="Promotion">
+
+
+                <div class="PromotionLogos">
+                    <div class="Logo" data-aos="flip-up">
+                        <img src="assests/Images/iso3.svg" alt="">
+                    </div>
+
+
+                    <div class="Logo" data-aos="flip-up">
+                        <img src="assests/Images/123.png" alt="">
+                    </div>
+
+                    <div class="Logo" data-aos="flip-up">
+                        <img src="assests/Images/1234.png" alt="">
+                    </div>
+
+
+                    <div class="Logo" data-aos="flip-up">
+                        <img
+                            src="assests/Images/logo-achilles_Obszar-roboczy-1.png"
+                            alt="">
+                    </div>
+
+
+                    <div class="Logo" data-aos="flip-up">
+                        <img src="assests/Images/construction-line1.png" alt="">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="FooterPromotion">
+                <div class="FooterPromotionItem">
+
+                    <div class="ImgItems">
+                        <a href="#">
+                            <img src="assests/Images/autodesk (1).png" alt="">
+                        </a>
+                    </div>
+                    <div class="ImgItems">
+                        <a href="#">
+                            <img src="assests/Images/bentley (1).png" alt="">
+                        </a>
+                    </div>
+                    <div class="ImgItems">
+                        <a href="#">
+                            <img src="assests/Images/riegl.png" alt="">
+                        </a>
+                    </div>
+                    <div class="ImgItems">
+                        <a href="#">
+                            <img src="assests/Images/trimble.png" alt="">
+                        </a>
+                    </div>
+                    <div class="ImgItems">
+                        <a href="#">
+                            <img src="assests/Images/aveva.png" alt="">
+                        </a>
+                    </div>
+                    <div class="ImgItems">
+                        <a href="#">
+                            <img src="assests/Images/leica (1).png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Yerləşdiyimiz Ünvan</h4>
+                                    <span>Azerbaijan Baku AZ 1075 Ahmad Rajabli
+                                        street 156, Aynali Plaza 32</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span><a href="tel:012 565 5737">(+994 12)
+                                            565 57 37</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4> Bimd@info.az</h4>
+                                    <span> <a href="mailto: bimd@info.az">
+                                            bimd@info.az</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img style="width:
+                                            100px; object-fit: cover;"
+                                            src="assests/Images/bmd1.png"
+                                            class="img-fluid" alt="logo"></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>BIMD Illərdir sizinlədir</p>
+                                </div>
+                                <div class="footer-social-icon">
+                                    <span>Bizi İzləyin</span>
+                                    <a href="#"><i class="fab fa-facebook-f
+                                            facebook-bg"></i></a>
+                                    <a href="#"><i class="fab fa-twitter
+                                            twitter-bg"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g
+                                            google-bg"></i></a>
+                                            <a href="#"> <i class="fab fa-linkedin linkedin_bg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Tövsiyyələr</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#">BİMD Yenidenqurma</a></li>
+                                    <li><a href="#">BİMD İnkişaf</a></li>
+                                    <li><a href="#">BİMD Servis</a></li>
+                                    <li><a href="#">BİMD portfolio</a></li>
+                                    <li><a href="#">BİMD Teams</a></li>
+
+
+                                    <li><a href="#"> BİMD Expert Team</a></li>
+                                    <li><a href="#"> BİMD Latest News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Subscribe</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Don’t miss to subscribe to our new feeds,
+                                        kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Email
+                                            Address">
+                                        <button><i class="fab
+                                                fa-telegram-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p>Copyright &copy; 2022, Created By Jugaad Developer Teams </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 d-none d-lg-block
+                            text-right">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-    </footer>
 
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+        <script src="https://kit.fontawesome.com/a447e57785.js"
+            crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="https://kit.fontawesome.com/a447e57785.js" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assests/js/main.js"></script>
-    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="assests/js/main.js"></script>
+        <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
-</body>
+    </body>
 
 </html>
