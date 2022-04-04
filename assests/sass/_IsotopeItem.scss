@@ -110,7 +110,7 @@
             display: flex;
             flex-wrap: wrap;
             .CardImgsItemsIsotope{
-                width: 12.3%;
+                width: 16.3%;
                 overflow: hidden;
                 margin: 0px 1px;
                 @media (max-width:768px) {
@@ -127,7 +127,7 @@
            img{
             // width: 12.2%;
             max-width: 100%;
-            height: 45vh;
+            height: 37vh;
             object-fit: cover;
             transition: .2s all;
             margin: 5px 0px;
