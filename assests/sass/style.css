@@ -2654,7 +2654,7 @@ footer .footer-menu li a {
   content: "";
   height: 19px;
   width: 220px;
-  left: 186px;
+  left: 273px;
   background-color: #c4c4c4;
 }
 
@@ -2679,7 +2679,7 @@ footer .footer-menu li a {
   content: "";
   height: 19px;
   width: 220px;
-  right: 186px;
+  right: 273px;
   background-color: #c4c4c4;
 }
 
@@ -2699,7 +2699,10 @@ footer .footer-menu li a {
 }
 
 #OurTeam p {
-  font-size: 1rem;
+  FONT-SIZE: 15px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 27px;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.3px;
 }
