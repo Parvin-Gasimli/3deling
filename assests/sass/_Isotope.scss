@@ -206,6 +206,10 @@
     color: white;
     box-shadow: 0 0 2px rgba($color-black, 0.2);
     position: relative;
+    img{
+      width: 512px;
+    object-fit: cover;
+    }
 
 
     .IsotopeInfo{

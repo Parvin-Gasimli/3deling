@@ -19,10 +19,7 @@
                 width: 150px;
             }
             @media (max-width: 576px) {
-                width: 60px;
-                height: 12px;
-                left: 160px;
-                top: 40px;
+                display: none;
             }
         }
         &::after {
@@ -37,10 +34,7 @@
                 width: 150px;
             }
             @media (max-width: 576px) {
-                width: 60px;
-                height: 12px;
-                right: 160px;
-                top: 40px;
+            display: none;
             }
         }
     }
@@ -115,7 +109,7 @@
     .AboutRight{
         h1{
             display: flex;
-            align-items: center;
+            text-align: start;
             flex-direction: column;
             font-size: 40px;
             color: black;

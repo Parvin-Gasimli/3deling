@@ -561,6 +561,12 @@ nav #About ul {
   transition: 0.4s ease;
 }
 
+@media (max-wdith: 578px) {
+  nav #About ul {
+    left: 0;
+  }
+}
+
 nav #About ul .Aboutİtem {
   text-align: left;
   padding-left: 20px;
@@ -588,6 +594,75 @@ nav #About ul .Aboutİtem a:hover {
 }
 
 nav #About:hover ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav #Project {
+  position: relative;
+}
+
+nav #Project ul {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  border-top: 2px solid #203569;
+  z-index: 666666;
+  height: auto;
+  width: 190px;
+  height: auto;
+  background-color: #203569e6;
+  padding: 0;
+  position: absolute;
+  top: 50px;
+  left: -27px;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+@media (max-wdith: 608px) {
+  nav #Project ul {
+    left: 0;
+  }
+}
+
+nav #Project ul .ProjectItem {
+  text-align: left;
+  padding-left: 20px;
+  height: 50px;
+}
+
+nav #Project ul .ProjectItem a {
+  font-size: 11px;
+  color: white !important;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+nav #Project ul .ProjectItem a:hover {
+  color: #ee1d24 !important;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  nav #Project ul .ProjectItem {
+    background-color: black;
+  }
+}
+
+nav #Project:hover ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1496,6 +1571,12 @@ nav #Product:hover ul {
   -webkit-box-shadow: 0 0 2px rgba(57, 56, 56, 0.2);
           box-shadow: 0 0 2px rgba(57, 56, 56, 0.2);
   position: relative;
+}
+
+#Isotope .list__item img {
+  width: 512px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #Isotope .list__item .IsotopeInfo {
@@ -2635,6 +2716,12 @@ footer .footer-menu li a {
   }
 }
 
+#ProductImages img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #OurTeam {
   padding: 20px 0px;
 }
@@ -2666,10 +2753,7 @@ footer .footer-menu li a {
 
 @media (max-width: 576px) {
   #OurTeam h1::before {
-    width: 60px;
-    height: 12px;
-    left: 160px;
-    top: 40px;
+    display: none;
   }
 }
 
@@ -2691,10 +2775,7 @@ footer .footer-menu li a {
 
 @media (max-width: 576px) {
   #OurTeam h1::after {
-    width: 60px;
-    height: 12px;
-    right: 160px;
-    top: 40px;
+    display: none;
   }
 }
 
@@ -2809,9 +2890,7 @@ footer .footer-menu li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
