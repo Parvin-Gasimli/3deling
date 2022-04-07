@@ -7,36 +7,7 @@
         padding: 20px 0px;
         display: inline-block;
         position: relative;
-        &::before {
-            position: absolute;
-            top: 36px;
-            content: "";
-            height: 19px;
-            width: 220px;
-            left: 273px;
-            background-color: $grayColor;
-            @media (max-width: 768px) {
-                width: 150px;
-            }
-            @media (max-width: 576px) {
-                display: none;
-            }
-        }
-        &::after {
-            position: absolute;
-            top: 36px;
-            content: "";
-            height: 19px;
-            width: 220px;
-            right: 273px;
-            background-color: $grayColor;
-            @media (max-width: 768px) {
-                width: 150px;
-            }
-            @media (max-width: 576px) {
-            display: none;
-            }
-        }
+      
     }
     p {
         FONT-SIZE: 15px;

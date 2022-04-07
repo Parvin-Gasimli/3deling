@@ -10,7 +10,7 @@
         display: inline-block;
       
         &::before {
-            top: 10px;
+            top: 17px;
             content: "";
             position: absolute;
             height: 19px;
@@ -18,7 +18,7 @@
             left: 505px;
             background-color: #c4c4c4;
             @media (max-width: 1200px) {
-                top: 12px;
+                top: 17px;
                 content: "";
                 position: absolute;
                 height: 19px;
@@ -26,7 +26,7 @@
                 right: -306px;
             }
             @media (max-width: 992px) {
-                top: 10px;
+                top: 17px;
                 content: "";
                 position: absolute;
                 height: 12px;
@@ -39,7 +39,7 @@
             }
         }
         &::after {
-            top: 10px;
+            top: 17px;
             content: "";
             position: absolute;
             height: 19px;
@@ -47,7 +47,7 @@
             right: 505px;
             background-color: #c4c4c4;
             @media (max-width: 1200px) {
-                top: 12px;
+                top: 17px;
                 content: "";
                 position: absolute;
                 height: 19px;
@@ -55,7 +55,7 @@
                 left: -306px;
             }
             @media (max-width: 992px) {
-                top: 10px;
+                top: 17px;
                 content: "";
                 position: absolute;
                 height: 12px;

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Lexend+Tera:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 nav {
   /* Media qurey section */
@@ -783,7 +783,7 @@ nav #Product:hover ul {
 
 #Application {
   margin-top: 4rem;
-  padding: 2rem 0rem;
+  padding: 3rem 0rem;
 }
 
 #Application h1 {
@@ -791,7 +791,7 @@ nav #Product:hover ul {
   font-size: 30px;
   position: relative;
   font-weight: 500;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 #Application h1::before {
@@ -952,7 +952,7 @@ nav #Product:hover ul {
 }
 
 #Application .SocialApplication h3 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
   text-align: center;
   padding: 15px 0px;
   font-size: 17px;
@@ -994,7 +994,7 @@ nav #Product:hover ul {
 
 #ABOUT3DELING .HeadAbout3Deling h2 {
   letter-spacing: 0.5px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
   position: relative;
   padding-top: 30px;
   font-size: 40px;
@@ -1115,7 +1115,7 @@ nav #Product:hover ul {
 }
 
 #ABOUT3DELING #Information h6 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 0.5px;
   margin-bottom: 20px;
 }
@@ -1142,7 +1142,7 @@ nav #Product:hover ul {
   cursor: pointer;
   -webkit-transition: .2s all;
   transition: .2s all;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 #ABOUT3DELING #Information .Info h5:hover {
@@ -1169,7 +1169,7 @@ nav #Product:hover ul {
 }
 
 #WORKFLOW h1 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 500;
@@ -1179,7 +1179,7 @@ nav #Product:hover ul {
 }
 
 #WORKFLOW h1::before {
-  top: 10px;
+  top: 17px;
   content: "";
   position: absolute;
   height: 19px;
@@ -1190,7 +1190,7 @@ nav #Product:hover ul {
 
 @media (max-width: 1200px) {
   #WORKFLOW h1::before {
-    top: 12px;
+    top: 17px;
     content: "";
     position: absolute;
     height: 19px;
@@ -1201,7 +1201,7 @@ nav #Product:hover ul {
 
 @media (max-width: 992px) {
   #WORKFLOW h1::before {
-    top: 10px;
+    top: 17px;
     content: "";
     position: absolute;
     height: 12px;
@@ -1217,7 +1217,7 @@ nav #Product:hover ul {
 }
 
 #WORKFLOW h1::after {
-  top: 10px;
+  top: 17px;
   content: "";
   position: absolute;
   height: 19px;
@@ -1228,7 +1228,7 @@ nav #Product:hover ul {
 
 @media (max-width: 1200px) {
   #WORKFLOW h1::after {
-    top: 12px;
+    top: 17px;
     content: "";
     position: absolute;
     height: 19px;
@@ -1239,7 +1239,7 @@ nav #Product:hover ul {
 
 @media (max-width: 992px) {
   #WORKFLOW h1::after {
-    top: 10px;
+    top: 17px;
     content: "";
     position: absolute;
     height: 12px;
@@ -1320,7 +1320,7 @@ nav #Product:hover ul {
   font-size: 40px;
   font-weight: 500;
   padding: 10px 0px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 0.5px;
 }
 
@@ -1341,7 +1341,7 @@ nav #Product:hover ul {
 }
 
 #OurProduct .ProductItem h5 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 17px;
 }
 
@@ -1450,7 +1450,7 @@ nav #Product:hover ul {
 #Isotope h1 {
   font-size: 40px;
   padding: 11px 1px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 0.5px;
   font-weight: 500;
 }
@@ -2042,7 +2042,7 @@ footer .footer-menu li a {
 }
 
 #Blogs .CenterBlog h1 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 25px;
   cursor: pointer;
   -webkit-transition: 0.2s ease;
@@ -2067,8 +2067,17 @@ footer .footer-menu li a {
 
 #Blogs .CenterBlog img {
   border-radius: 7px;
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 20px;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#Blogs .CenterBlog iframe {
+  width: 100%;
+  height: 480px;
+  border-radius: 7px;
 }
 
 #Blogs .RightBlog {
@@ -2095,7 +2104,7 @@ footer .footer-menu li a {
 #Blogs .RightBlog p {
   margin-top: 15px;
   font-size: 15px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 #Blogs .RightBlog #recentPost, #Blogs .RightBlog #Archive, #Blogs .RightBlog #category {
@@ -2168,6 +2177,10 @@ footer .footer-menu li a {
   #Product .image {
     height: auto;
   }
+}
+
+#Product .image .InfoSliderItem p {
+  text-align: center;
 }
 
 #Product .image .infos {
@@ -2252,7 +2265,7 @@ footer .footer-menu li a {
 
 #Product .image .infos button {
   text-align: center;
-  padding: 15px 0px;
+  padding: 15px 10px;
   background-color: rgba(128, 128, 128, 0.562);
   width: 100%;
   color: white;
@@ -2483,7 +2496,7 @@ footer .footer-menu li a {
 }
 
 #ProductMeshModel h1 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 38px;
 }
 
@@ -2498,7 +2511,7 @@ footer .footer-menu li a {
 
 #ProductMeshModel h5 {
   display: inline-block;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 20px;
   position: relative;
 }
@@ -2735,55 +2748,11 @@ footer .footer-menu li a {
 
 #OurTeam h1 {
   text-align: center;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 50px;
   padding: 20px 0px;
   display: inline-block;
   position: relative;
-}
-
-#OurTeam h1::before {
-  position: absolute;
-  top: 36px;
-  content: "";
-  height: 19px;
-  width: 220px;
-  left: 273px;
-  background-color: #c4c4c4;
-}
-
-@media (max-width: 768px) {
-  #OurTeam h1::before {
-    width: 150px;
-  }
-}
-
-@media (max-width: 576px) {
-  #OurTeam h1::before {
-    display: none;
-  }
-}
-
-#OurTeam h1::after {
-  position: absolute;
-  top: 36px;
-  content: "";
-  height: 19px;
-  width: 220px;
-  right: 273px;
-  background-color: #c4c4c4;
-}
-
-@media (max-width: 768px) {
-  #OurTeam h1::after {
-    width: 150px;
-  }
-}
-
-@media (max-width: 576px) {
-  #OurTeam h1::after {
-    display: none;
-  }
 }
 
 #OurTeam p {
@@ -2831,7 +2800,7 @@ footer .footer-menu li a {
 }
 
 #OutTeamItems .teamItemBody .teams span {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
   margin-left: 10px;
   font-size: 22px;
   letter-spacing: 1px;
@@ -3084,7 +3053,7 @@ footer .footer-menu li a {
 }
 
 #IsotopeHead .CenterisotopeItem .HeadIsotopeItems h1 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
   color: white;
   margin: 0;
   height: 50px;
@@ -3114,7 +3083,7 @@ footer .footer-menu li a {
 
 #IsotopeIconItem h1 {
   font-size: 18px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 #IsotopeIconItem .SocialIsotope {
@@ -3142,7 +3111,7 @@ footer .footer-menu li a {
 }
 
 #BOP .BopLeft h1 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 30px;
 }
 
