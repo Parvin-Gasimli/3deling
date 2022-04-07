@@ -55,9 +55,7 @@
 }
 
 #OutTeamItems {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+ 
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -89,7 +87,10 @@
         }
     }
     ul {
+        width: 88%;
         display: flex;
+    
+        justify-content: space-around;
         @media (max-width: 576px) {
             display: flex;
             justify-content: center;

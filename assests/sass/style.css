@@ -37,6 +37,12 @@ nav .BackGrondtext {
   }
 }
 
+nav .BackGrondtext .CssSlider .SlidersItemsNav .SliderItemtext {
+  border-bottom: 1px solid white;
+  display: inherit;
+  width: 560px;
+}
+
 nav .BackGrondtext .CssSlider .SlidersItemsNav .SliderItemtext .tricker {
   height: 50px;
   overflow: hidden;
@@ -2559,6 +2565,7 @@ footer .footer-menu li a {
 }
 
 #FooterSliderSection .card {
+  height: 220px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -2795,18 +2802,6 @@ footer .footer-menu li a {
   }
 }
 
-#OutTeamItems {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 @media (max-width: 768px) {
   #OutTeamItems {
     -webkit-box-orient: vertical;
@@ -2854,9 +2849,12 @@ footer .footer-menu li a {
 }
 
 #OutTeamItems ul {
+  width: 88%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 @media (max-width: 576px) {
@@ -3066,7 +3064,7 @@ footer .footer-menu li a {
 #IsotopeHead .CenterisotopeItem .HeadIsotopeItems {
   border-bottom: 2px solid white;
   border-top: 2px solid white;
-  height: 100px;
+  height: 147px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3091,7 +3089,7 @@ footer .footer-menu li a {
   margin: 0;
   height: 50px;
   line-height: 50px;
-  font-size: 59px;
+  font-size: 100px;
   text-align: center;
   text-transform: uppercase;
   -webkit-transition: margin-top 0.3s ease;
