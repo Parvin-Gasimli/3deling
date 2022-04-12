@@ -6,7 +6,7 @@ nav {
         position: relative;
         height: auto;
         overflow: hidden;
-        padding: 214px 0px;
+        padding: 250px 0px;
         @media (max-width: 768px) {
             padding: 0;
         }
@@ -160,6 +160,7 @@ nav {
                 font-size: 6px;
                 margin-left: 9px;
                 margin-top: 0px;
+                color: white;
             }
             a {
                 margin-left: 4px;
@@ -485,7 +486,7 @@ nav {
             .Aboutİtem {
                 text-align: left;
                 padding-left: 20px;
-                height: 50px;
+                height: 35px;
                 a {
                     font-size: 11px;
                     color: white !important;
@@ -533,7 +534,7 @@ nav {
             .ProjectItem {
                 text-align: left;
                 padding-left: 20px;
-                height: 50px;
+                height: 35px;
                 a {
                     font-size: 11px;
                     color: white !important;
@@ -579,7 +580,7 @@ nav {
             .ProductItem {
                 text-align: left;
                 padding-left: 20px;
-                height: 50px;
+                height: 35px;
                 a {
                     font-size: 11px;
                     color: white !important;
@@ -604,7 +605,7 @@ nav {
 
 #videoBkg {
     filter: brightness(0.8);
-    height: 655px;
+  height: 730px;
     top: 0;
     left: fixed;
     position: absolute;
@@ -632,6 +633,9 @@ nav {
 
     ul {
         li {
+            i{
+                color: #203569 !important;
+            }
             a {
                 color: black !important;
                 transition: 0.2s all;

@@ -20,7 +20,7 @@ nav .BackGrondtext {
   position: relative;
   height: auto;
   overflow: hidden;
-  padding: 214px 0px;
+  padding: 250px 0px;
   background-color: rgba(3, 3, 3, 0.592);
   top: 0px;
 }
@@ -221,6 +221,7 @@ nav .nav div.main_list ul li i {
   font-size: 6px;
   margin-left: 9px;
   margin-top: 0px;
+  color: white;
 }
 
 nav .nav div.main_list ul li a {
@@ -576,7 +577,7 @@ nav #About ul {
 nav #About ul .Aboutİtem {
   text-align: left;
   padding-left: 20px;
-  height: 50px;
+  height: 35px;
 }
 
 nav #About ul .Aboutİtem a {
@@ -645,7 +646,7 @@ nav #Project ul {
 nav #Project ul .ProjectItem {
   text-align: left;
   padding-left: 20px;
-  height: 50px;
+  height: 35px;
 }
 
 nav #Project ul .ProjectItem a {
@@ -708,7 +709,7 @@ nav #Product ul {
 nav #Product ul .ProductItem {
   text-align: left;
   padding-left: 20px;
-  height: 50px;
+  height: 35px;
 }
 
 nav #Product ul .ProductItem a {
@@ -740,7 +741,7 @@ nav #Product:hover ul {
 #videoBkg {
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
-  height: 655px;
+  height: 730px;
   top: 0;
   left: fixed;
   position: absolute;
@@ -769,6 +770,10 @@ nav #Product:hover ul {
 
 .SlickNav .navTrigger i {
   background-color: #ee1d24;
+}
+
+.SlickNav ul li i {
+  color: #203569 !important;
 }
 
 .SlickNav ul li a {
@@ -1274,7 +1279,7 @@ nav #Product:hover ul {
 #WORKFLOW #utvs_62305b8ce581b {
   overflow: hidden;
   height: 600px;
-  width: 1000px !important;
+  width: 1240px !important;
   position: relative;
   max-width: 100%;
   border: 1px solid;
